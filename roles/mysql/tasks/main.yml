@@ -5,12 +5,13 @@
   loop:
     - mysql-client
     - mysql-server
+    - python3-pymysql
   tags:
     - mysql-install
 
 # Server Manajer - Config MySQL DB
 - name: "sets the root password"
-  no_log: true
+  no_log: false
   mysql_user:
     name: "{{ mysql_root_username }}"
     password: "{{ mysql_root_password }}"
@@ -21,7 +22,7 @@
     - mysql-install
 
 - name: "removes all anonymous user accounts"
-  no_log: true
+  no_log: false
   mysql_user:
     name: ''
     host_all: yes
@@ -50,7 +51,7 @@
 
 # Server Manajer - Create MySQL DB
 - name: "create database app"
-  no_log: true
+  no_log: false
   mysql_db:
     name: "{{ app_database }}"
     state: present
@@ -60,7 +61,7 @@
     - mysql-create-db
 
 - name: "create database user"
-  no_log: true
+  no_log: false
   mysql_user:
     name: "{{ app_username }}"
     password: "{{ app_password }}"
@@ -73,7 +74,7 @@
 
 # Server Manajer - Delete MySQL DB
 - name: "delete database app"
-  no_log: true
+  no_log: false
   mysql_db:
     name: "{{ app_database }}"
     state: absent
@@ -83,7 +84,7 @@
     - mysql-delete-db
 
 - name: "delete database user"
-  no_log: true
+  no_log: false
   mysql_user:
     name: "{{ app_username }}"
     password: "{{ app_password }}"

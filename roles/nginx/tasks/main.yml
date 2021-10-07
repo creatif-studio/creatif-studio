@@ -7,11 +7,12 @@
   tags:
     - nginx-install
 
-- name: "copy index.html"
+- name: "replace nginx index.html"
   copy: 
     src: "{{ item }}"
-    dest: "/var/www/"
+    dest: "/var/www/html/index.nginx-debian.html"
   with_items:
     - index.html
+  notify: Reload Nginx
   tags:
     - nginx-install

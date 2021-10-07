@@ -5,20 +5,11 @@
     name: phpmyadmin 
     question: phpmyadmin/reconfigure-webserver 
     vtype: multiselect
-    value:
+    value: ''
   tags:
     - phpmyadmin-install
 
-- name: "debconf for webserver"
-  debconf: 
-    name: phpmyadmin 
-    question: phpmyadmin/dbconfig-install
-    vtype: boolean
-    value: true
-  tags:
-    - phpmyadmin-install
-
-- name: "debconf for webserver"
+- name: "debconf for install"
   debconf: 
     name: phpmyadmin 
     question: phpmyadmin/dbconfig-install
@@ -73,8 +64,27 @@
 
 - name: "configure phpmyadmin"
   file: 
-    path: "/home/{{server_username}}/phpmyadmin" 
+    path: "/home/ubuntu/apps/phpmyadmin" 
     src: "/usr/share/phpmyadmin"
     state: link
+  tags:
+    - phpmyadmin-install
+
+- name: "set up nginx virtualhost"
+  template:
+    src: "files/{{ item }}"
+    dest: "/etc/nginx/sites-available/{{ phpmyadmin_app_domain }}"
+  with_items:
+    - nginx.conf.j2
+  notify: Reload Nginx
+  tags:
+    - phpmyadmin-install
+
+- name: "enable new site"
+  file:
+    src: "/etc/nginx/sites-available/{{ phpmyadmin_app_domain }}"
+    dest: "/etc/nginx/sites-enabled/{{ phpmyadmin_app_domain }}"
+    state: link
+  notify: Reload Nginx
   tags:
     - phpmyadmin-install

@@ -6,10 +6,10 @@ ansible_sudo_pass: 4esz3wa2q1
 ansible_ssh_private_key_file: files/servermanajer.pem
 ansible_python_interpreter: /usr/bin/python3
 
-# CREATE DEFAULT USER ENV
-servermanajer_username: servermanajer
-servermanajer_password: $6$AQVuJekcMoVQgfa8$9yRYYe2P0R59g7wGAGs4FR.iWE3O.tfBEGtOpx0CKAoU8oISlLHa7hWfirFQC/ItjnzzBMMwAGA5O.Ze3TjLA/
-# mkpasswd --method=sha-512 : AQVuJekcMoVQgfa8
+# # CREATE DEFAULT USER ENV
+# servermanajer_username: servermanajer
+# servermanajer_password: $6$xaE91Usyxp$eKQSEkQHuw3jOSXxdklmBk/5rD8lcSpAod34sXXpfZ3uMm7TVYViYmldVCSxqc70APZhInvrwDfB6.GDcKAn31
+# # mkpasswd --method=sha-512 : xaE91Usyxp
 
 # SSH ENV
 pass_auth: PasswordAuthentication yes
@@ -51,9 +51,13 @@ app_username: servermanajer
 app_password: 2YFLpVLb4l
 
 # WORDPRESS ENV
-wordpress_home_url: http://servermanajer.com
+wordpress_home_url: http://wordpress.onlinecamp.id
 wordpress_db_prefix: wp_
 wordpress_site_title: Server Manajer
 wordpress_admin_user: servermanajer
 wordpress_admin_user_pass: servermanajer
-wordpress_admin_email: admin@servermanajer.com
+wordpress_admin_email: admin@onlinecamp.id
+
+# APP DOMAIN
+wordpress_app_domain: wordpress.onlinecamp.id
+phpmyadmin_app_domain: phpmyadmin.onlinecamp.id

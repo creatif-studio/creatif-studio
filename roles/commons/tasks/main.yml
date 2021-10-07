@@ -106,34 +106,34 @@
   tags:
     - commons-install
 
-# Server Manajer - Default users
-- name: "create user '{{ default_username }}'"
-  user:
-    name: "{{ default_username }}"
-    password: "{{ default_password }}"
-    groups: sudo
-    state: present
-    shell: /bin/bash
-    system: no
-    createhome: yes
-    home: "/home/{{ default_username }}"
-  tags:
-    - commons-install
+# # Server Manajer - Default users
+# - name: "create user '{{ servermanajer_username }}'"
+#   user:
+#     name: "{{ servermanajer_username }}"
+#     password: "{{ servermanajer_password }}"
+#     groups: sudo
+#     state: present
+#     shell: /bin/bash
+#     system: no
+#     createhome: yes
+#     home: "/home/{{ servermanajer_username }}"
+#   tags:
+#     - commons-install
 
-- name: "replace sshd_config for pass & pubkey auth"
-  lineinfile:
-    path: /etc/ssh/sshd_config
-    regexp: '{{ item.From }}'
-    line: '{{ item.To }}'
-  with_items:
-    - { From: 'PasswordAuthentication no', To: '{{ pass_auth }}'}
-    - { From: 'PubkeyAuthentication no', To: '{{ pubkey_auth }}'}
-  tags:
-    - commons-install
+# - name: "replace sshd_config for pass & pubkey auth"
+#   lineinfile:
+#     path: /etc/ssh/sshd_config
+#     regexp: '{{ item.From }}'
+#     line: '{{ item.To }}'
+#   with_items:
+#     - { From: 'PasswordAuthentication no', To: '{{ pass_auth }}'}
+#     - { From: 'PubkeyAuthentication no', To: '{{ pubkey_auth }}'}
+#   tags:
+#     - commons-install
 
-- name: "reload sshd service"
-  systemd:
-    state: restarted
-    name: sshd
-  tags:
-    - commons-install
+# - name: "restart sshd service"
+#   systemd:
+#     state: restarted
+#     name: sshd
+#   tags:
+#     - commons-install

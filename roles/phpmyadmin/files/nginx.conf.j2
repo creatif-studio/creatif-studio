@@ -1,8 +1,8 @@
 server {
         listen 80;
-        root /home/ubuntu/apps/{{ wordpress_app_domain }};
+        root /home/ubuntu/apps/phpmyadmin;
         index index.php index.html index.htm index.nginx-debian.html;
-        server_name {{ wordpress_app_domain }};
+        server_name {{ phpmyadmin_app_domain }};
 
         location / {
                 try_files $uri $uri/ /index.php?$args;
