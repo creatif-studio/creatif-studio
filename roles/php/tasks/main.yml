@@ -28,3 +28,11 @@
     - info.php
   tags:
     - php-install
+
+- name: "create folder apps"
+  become_user: ubuntu
+  file:
+    path: "/home/ubuntu/apps"
+    state: directory
+  tags:
+    - php-install
