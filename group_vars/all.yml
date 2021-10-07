@@ -1,0 +1,59 @@
+# ANSIBLE ENV
+ansible_connection: ssh
+ansible_user: ubuntu
+ansible_ssh_pass: 4esz3wa2q1
+ansible_sudo_pass: 4esz3wa2q1
+ansible_ssh_private_key_file: files/servermanajer.pem
+ansible_python_interpreter: /usr/bin/python3
+
+# CREATE DEFAULT USER ENV
+servermanajer_username: servermanajer
+servermanajer_password: $6$AQVuJekcMoVQgfa8$9yRYYe2P0R59g7wGAGs4FR.iWE3O.tfBEGtOpx0CKAoU8oISlLHa7hWfirFQC/ItjnzzBMMwAGA5O.Ze3TjLA/
+# mkpasswd --method=sha-512 : AQVuJekcMoVQgfa8
+
+# SSH ENV
+pass_auth: PasswordAuthentication yes
+pubkey_auth: PubkeyAuthentication yes
+
+# SWAP ENV
+swap_file_path: /swapfile
+# Use any of the following suffixes
+# c=1
+# w=2
+# b=512
+# kB=1000
+# K=1024
+# MB=1000*1000
+# M=1024*1024
+# xM=M
+# GB=1000*1000*1000
+# G=1024*1024*1024
+swap_file_size: 2048
+swappiness: 1
+
+# DOCKER ENV
+docker_apt_release_channel: stable
+docker_apt_arch: amd64
+docker_apt_repository: "deb [arch={{ docker_apt_arch }}] https://download.docker.com/linux/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} {{ docker_apt_release_channel }}"
+docker_apt_gpg_key: https://download.docker.com/linux/{{ ansible_distribution | lower }}/gpg
+docker_compose_version: "1.28.5"
+
+# PHP ENV
+php_source_list: "/etc/apt/sources.list.d/ppa_ondrej_php_{{ansible_distribution_release}}.list"
+
+# MYSQL ENV
+mysql_root_username: root
+mysql_root_password: 2YFLpVLb4l
+
+# MYSQL DATABASE ENV
+app_database: servermanajer
+app_username: servermanajer
+app_password: 2YFLpVLb4l
+
+# WORDPRESS ENV
+wordpress_home_url: http://servermanajer.com
+wordpress_db_prefix: wp_
+wordpress_site_title: Server Manajer
+wordpress_admin_user: servermanajer
+wordpress_admin_user_pass: servermanajer
+wordpress_admin_email: admin@servermanajer.com

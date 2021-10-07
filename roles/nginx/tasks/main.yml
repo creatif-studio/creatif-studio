@@ -1,0 +1,17 @@
+---
+# Server Manajer - Install Nginx PHP
+- name: "install requirements"
+  apt: name={{ item }}
+  loop:
+    - nginx
+  tags:
+    - nginx-install
+
+- name: "copy index.html"
+  copy: 
+    src: "{{ item }}"
+    dest: "/var/www/"
+  with_items:
+    - index.html
+  tags:
+    - nginx-install

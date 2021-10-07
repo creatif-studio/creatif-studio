@@ -1,0 +1,80 @@
+---
+# Server Manajer - Config PhpMyAdmin
+- name: "debconf for webserver"
+  debconf: 
+    name: phpmyadmin 
+    question: phpmyadmin/reconfigure-webserver 
+    vtype: multiselect
+    value:
+  tags:
+    - phpmyadmin-install
+
+- name: "debconf for webserver"
+  debconf: 
+    name: phpmyadmin 
+    question: phpmyadmin/dbconfig-install
+    vtype: boolean
+    value: true
+  tags:
+    - phpmyadmin-install
+
+- name: "debconf for webserver"
+  debconf: 
+    name: phpmyadmin 
+    question: phpmyadmin/dbconfig-install
+    vtype: boolean
+    value: true
+  tags:
+    - phpmyadmin-install
+
+- name: "debconf for admin username"
+  debconf: 
+    name: phpmyadmin 
+    question: phpmyadmin/mysql/admin-user
+    vtype: string
+    value: "{{mysql_root_username}}"
+  tags:
+    - phpmyadmin-install
+
+- name: "debconf for admin password"
+  debconf: 
+    name: phpmyadmin 
+    question: phpmyadmin/mysql/admin-pass
+    vtype: password
+    value: "{{mysql_root_password}}"
+  tags:
+    - phpmyadmin-install
+
+- name: "debconf for app password"
+  debconf: 
+    name: phpmyadmin 
+    question: phpmyadmin/mysql/app-pass
+    vtype: password
+    value: "{{mysql_root_password}}"
+  tags:
+    - phpmyadmin-install
+
+- name: "debconf for app password confirm"
+  debconf: 
+    name: phpmyadmin 
+    question: phpmyadmin/app-password-confirm
+    vtype: password
+    value: "{{mysql_root_password}}"
+  tags:
+    - phpmyadmin-install
+
+# Server Manajer - Install PhpMyAdmin
+- name: "install requirements"
+  apt: name={{ item }}
+  loop:
+    - phpmyadmin
+  tags:
+    - phpmyadmin-install
+
+- name: "configure phpmyadmin"
+  file: 
+    path: "/home/{{server_username}}/phpmyadmin" 
+    src: "/usr/share/phpmyadmin"
+    state: link
+  tags:
+    - phpmyadmin-install

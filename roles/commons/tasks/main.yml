@@ -1,0 +1,139 @@
+---
+# Server Manajer - Update & upgrade systems
+- name: "update and upgrade systems"
+  apt:
+    update_cache: yes
+    upgrade: dist
+    autoremove: yes
+  tags:
+    - commons-install
+
+# Server Manajer - Install recommended apps
+- name: "install systems dependencies"
+  apt:
+    name:
+      - apt-transport-https
+      - gnupg
+      - gnupg-agent
+      - ca-certificates
+      - openssl
+      - curl
+      - software-properties-common
+      - build-essential
+      - net-tools
+      - htop
+      - ncdu
+      - vim
+      - nano
+      - ufw
+      - git
+      - zip
+      - unzip
+      - rsync
+      - sshpass
+      - whois
+      - snapd
+    state: present
+  tags:
+    - commons-install
+
+# Server Manajer - Kernel optimization
+- name: "config kernel at /etc/sysctl.conf"
+  copy: 
+    src: "{{ item }}"
+    dest: /etc/sysctl.conf
+  with_items:
+    - sm-sysctl.conf
+  tags:
+    - commons-install
+
+- name: "reload kernel at /etc/sysctl.conf"
+  shell: sysctl -p
+  args:
+    executable: /bin/bash
+  tags:
+    - commons-install
+
+- name: "config ulimit at /etc/security/limits.conf"
+  copy: 
+    src: "{{ item }}"
+    dest: /etc/security/limits.conf
+  with_items:
+    - sm-limits.conf
+  tags:
+    - commons-install
+
+# Server Manajer - Swap memory
+- name: "create swap at /swapfile"
+  command: dd if=/dev/zero of={{ swap_file_path }} bs=1024 count={{ swap_file_size }} creates="{{ swap_file_path }}"
+  tags:
+    - commons-install
+
+- name: "change permissions at /swapfile"
+  file: path="{{ swap_file_path }}"
+        owner=root
+        group=root
+        mode=0600
+  tags:
+    - commons-install
+
+- name: "checking type at /swapfile"
+  command: file {{ swap_file_path }}
+  register: swapfile
+  tags:
+    - commons-install
+
+- name: "make swap at /swapfile"
+  command: "sudo mkswap {{ swap_file_path }}"
+  when: swapfile.stdout.find('swap file') == -1
+  tags:
+    - commons-install
+
+- name: "write swap entry in fstab"
+  mount: name=none
+         src={{ swap_file_path }}
+         fstype=swap
+         opts=sw
+         passno=0
+         dump=0
+         state=present
+  tags:
+    - commons-install
+
+- name: "mount /swapfile"
+  command: "swapon {{ swap_file_path }}"
+  when: ansible_swaptotal_mb < 1
+  tags:
+    - commons-install
+
+# Server Manajer - Default users
+- name: "create user '{{ default_username }}'"
+  user:
+    name: "{{ default_username }}"
+    password: "{{ default_password }}"
+    groups: sudo
+    state: present
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: "/home/{{ default_username }}"
+  tags:
+    - commons-install
+
+- name: "replace sshd_config for pass & pubkey auth"
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: '{{ item.From }}'
+    line: '{{ item.To }}'
+  with_items:
+    - { From: 'PasswordAuthentication no', To: '{{ pass_auth }}'}
+    - { From: 'PubkeyAuthentication no', To: '{{ pubkey_auth }}'}
+  tags:
+    - commons-install
+
+- name: "reload sshd service"
+  systemd:
+    state: restarted
+    name: sshd
+  tags:
+    - commons-install

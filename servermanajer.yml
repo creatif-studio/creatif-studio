@@ -1,0 +1,24 @@
+- hosts: all
+  become: true
+  gather_facts: yes
+
+  roles:
+    - commons
+    - nginx
+    - mysql
+    - php
+    - phpmyadmin
+    - wordpress
+
+  handlers:
+  - name: Reload Nginx
+    service:
+      name: nginx
+      state: reloaded
+  - name: Restart Nginx
+    service:
+      name: nginx
+      state: restarted
+  - name: Autoremove
+    apt:
+      autoremove: yes

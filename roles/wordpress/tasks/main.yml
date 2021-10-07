@@ -1,0 +1,143 @@
+# Server Manajer - Install WordPress CLI
+---
+- name: "check if wp-cli exists"
+  stat: path="/usr/bin/wp"
+  register: wpcli_exist
+  tags:
+    - wordpress-install
+
+- name: "updating wp-cli"
+  shell: "/usr/bin/wp cli update --yes"
+  when: wpcli_exist.stat.exists
+  tags:
+    - wordpress-install
+
+- name: "install wp-cli"
+  get_url:
+    url="https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar"
+    dest="/usr/bin/wp"
+    force_basic_auth=yes
+    mode=0755
+  when: not wpcli_exist.stat.exists
+  tags:
+    - wordpress-install
+
+- name: "set up nginx virtualhost"
+  template:
+    src: "{{ item }}"
+    dest: "/etc/nginx/sites-available/{{ app_config }}"
+  with_items:
+    - nginx.conf.j2
+  notify: Reload Nginx
+  tags:
+    - wordpress-install
+
+- name: "enable new site"
+  file:
+    src: "/etc/nginx/sites-available/{{ app_config }}"
+    dest: "/etc/nginx/sites-enabled/{{ app_config }}"
+    state: link
+  notify: Reload Nginx
+  tags:
+    - wordpress-install
+
+- name: "disable default nginx site"
+  file:
+    path: "/etc/nginx/sites-enabled/default"
+    state: absent
+  notify: Reload Nginx
+  tags:
+    - wordpress-install
+
+- name: "create folder {{ app_domain }}"
+  stat:
+    path: "/home/{{servermanajer_username}}/apps/{{ app_domain }}"
+  register: wpapp
+  tags:
+    - wordpress-install
+
+- name: "directory is already existed"
+  shell: "rm -fr /home/{{servermanajer_username}}/apps/{{ app_domain }}"
+  args:
+    warn: false
+  when: wpapp.stat.exists
+  tags:
+    - wordpress-install
+
+- name: Wait until deleted
+  wait_for:
+    path: "/home/{{servermanajer_username}}/apps/{{ app_domain }}"
+    state: absent
+  tags:
+    - wordpress-install
+
+- name: "download and unpack latest WordPress"
+  unarchive:
+    src: https://wordpress.org/latest.tar.gz
+    dest: "/home/{{servermanajer_username}}/apps/wp"
+    remote_src: yes
+    creates: "/home/{{servermanajer_username}}/apps/wp"
+    owner: www-data
+    group: www-data
+    mode: "755"
+  tags:
+    - wordpress-install
+
+- name: "rename wordpress folder"
+  shell: "mv /var/www/wordpress /var/www/{{ app_domain }}"
+  # when: wpapp.stat.exists == false
+  # shell: "rsync -a /var/www/wordpress /var/www/{{ app_domain }}"
+  tags:
+    - wordpress-install
+
+- name: Wait until moved
+  wait_for:
+    path: "/home/{{servermanajer_username}}/apps/{{ app_domain }}"
+    state: present
+  tags:
+    - wordpress-install
+
+- name: "configure wordpress"
+  command: wp core config
+            --allow-root
+            --path="/home/{{servermanajer_username}}/apps/{{ app_domain }}"
+            --dbname="{{ app_database }}"
+            --dbuser="{{ app_username }}"
+            --dbpass="{{ app_password }}"
+            --dbprefix="{{ app_dbprefix }}"
+  tags:
+    - wordpress-install
+
+- name: "install wordpress tables"
+  command: wp core install
+            --allow-root
+            --path="/home/{{servermanajer_username}}/apps/{{ app_domain }}"
+            --url="{{ wordpress_home_url }}"
+            --title="{{ wordpress_site_title }}"
+            --admin_user="{{ wordpress_admin_user }}"
+            --admin_password="{{ wordpress_admin_user_pass }}"
+            --admin_email="{{ wordpress_admin_email }}"
+  tags:
+    - wordpress-install
+
+- name: "set ownership"
+  file:
+    path: "/home/{{servermanajer_username}}/apps/{{ app_domain }}"
+    state: directory
+    recurse: yes
+    owner: www-data
+    group: www-data
+    mode: "755"
+  tags:
+    - wordpress-install
+
+- name: "set permissions for directories"
+  shell: "/usr/bin/find /home/{{servermanajer_username}}/apps/{{ app_domain }}/ -type d -exec chmod 755 {} \\;"
+  tags:
+    - wordpress-install
+
+- name: "set permissions for files"
+  shell: "/usr/bin/find /home/{{servermanajer_username}}/apps/{{ app_domain }}/ -type f -exec chmod 640 {} \\;"
+  notify: Reload Nginx
+  tags:
+    - wordpress-install
