@@ -1,2 +1,2 @@
-# servermanajer-core
-Server Manajer Core
+# CloudBoz Core
+CloudBoz Core
