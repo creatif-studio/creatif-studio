@@ -1,5 +1,5 @@
 ---
-# Server Manajer - Update & upgrade systems
+# CloudBoz - Update & upgrade systems
 - name: "update and upgrade systems"
   apt:
     update_cache: yes
@@ -8,7 +8,7 @@
   tags:
     - commons-install
 
-# Server Manajer - Install recommended apps
+# CloudBoz - Install recommended apps
 - name: "install systems dependencies"
   apt:
     name:
@@ -37,13 +37,13 @@
   tags:
     - commons-install
 
-# Server Manajer - Kernel optimization
+# CloudBoz - Kernel optimization
 - name: "config kernel at /etc/sysctl.conf"
   copy: 
     src: "{{ item }}"
     dest: /etc/sysctl.conf
   with_items:
-    - sm-sysctl.conf
+    - cb-sysctl.conf
   tags:
     - commons-install
 
@@ -59,11 +59,43 @@
     src: "{{ item }}"
     dest: /etc/security/limits.conf
   with_items:
-    - sm-limits.conf
+    - cb-limits.conf
   tags:
     - commons-install
 
-# Server Manajer - Swap memory
+# CloudBoz - Default users
+- name: "create user '{{ cloudboz_username }}'"
+  user:
+    name: "{{ cloudboz_username }}"
+    password: "{{ cloudboz_password }}"
+    groups: sudo
+    state: present
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: "/home/{{ cloudboz_username }}"
+  tags:
+    - commons-install
+
+- name: "replace sshd_config for pass & pubkey auth"
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: '{{ item.From }}'
+    line: '{{ item.To }}'
+  with_items:
+    - { From: 'PasswordAuthentication no', To: '{{ pass_auth }}'}
+    - { From: 'PubkeyAuthentication no', To: '{{ pubkey_auth }}'}
+  tags:
+    - commons-install
+
+- name: "restart sshd service"
+  systemd:
+    state: restarted
+    name: sshd
+  tags:
+    - commons-install
+
+# CloudBoz - Swap memory
 - name: "create swap at /swapfile"
   command: dd if=/dev/zero of={{ swap_file_path }} bs=1024 count={{ swap_file_size }} creates="{{ swap_file_path }}"
   tags:
@@ -105,35 +137,3 @@
   when: ansible_swaptotal_mb < 1
   tags:
     - commons-install
-
-# # Server Manajer - Default users
-# - name: "create user '{{ servermanajer_username }}'"
-#   user:
-#     name: "{{ servermanajer_username }}"
-#     password: "{{ servermanajer_password }}"
-#     groups: sudo
-#     state: present
-#     shell: /bin/bash
-#     system: no
-#     createhome: yes
-#     home: "/home/{{ servermanajer_username }}"
-#   tags:
-#     - commons-install
-
-# - name: "replace sshd_config for pass & pubkey auth"
-#   lineinfile:
-#     path: /etc/ssh/sshd_config
-#     regexp: '{{ item.From }}'
-#     line: '{{ item.To }}'
-#   with_items:
-#     - { From: 'PasswordAuthentication no', To: '{{ pass_auth }}'}
-#     - { From: 'PubkeyAuthentication no', To: '{{ pubkey_auth }}'}
-#   tags:
-#     - commons-install
-
-# - name: "restart sshd service"
-#   systemd:
-#     state: restarted
-#     name: sshd
-#   tags:
-#     - commons-install

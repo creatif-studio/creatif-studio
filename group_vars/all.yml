@@ -3,13 +3,13 @@ ansible_connection: ssh
 ansible_user: ubuntu
 ansible_ssh_pass: 4esz3wa2q1
 ansible_sudo_pass: 4esz3wa2q1
-ansible_ssh_private_key_file: files/servermanajer.pem
+ansible_ssh_private_key_file: files/cloudboz.pem
 ansible_python_interpreter: /usr/bin/python3
 
-# # CREATE DEFAULT USER ENV
-# servermanajer_username: servermanajer
-# servermanajer_password: $6$xaE91Usyxp$eKQSEkQHuw3jOSXxdklmBk/5rD8lcSpAod34sXXpfZ3uMm7TVYViYmldVCSxqc70APZhInvrwDfB6.GDcKAn31
-# # mkpasswd --method=sha-512 : xaE91Usyxp
+# CREATE DEFAULT USER ENV
+cloudboz_username: cloudboz
+cloudboz_password: $6$xaE91Usyxp$eKQSEkQHuw3jOSXxdklmBk/5rD8lcSpAod34sXXpfZ3uMm7TVYViYmldVCSxqc70APZhInvrwDfB6.GDcKAn31
+# mkpasswd --method=sha-512 : xaE91Usyxp
 
 # SSH ENV
 pass_auth: PasswordAuthentication yes
@@ -36,28 +36,4 @@ docker_apt_release_channel: stable
 docker_apt_arch: amd64
 docker_apt_repository: "deb [arch={{ docker_apt_arch }}] https://download.docker.com/linux/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} {{ docker_apt_release_channel }}"
 docker_apt_gpg_key: https://download.docker.com/linux/{{ ansible_distribution | lower }}/gpg
-docker_compose_version: "1.28.5"
-
-# PHP ENV
-php_source_list: "/etc/apt/sources.list.d/ppa_ondrej_php_{{ansible_distribution_release}}.list"
-
-# MYSQL ENV
-mysql_root_username: root
-mysql_root_password: 2YFLpVLb4l
-
-# MYSQL DATABASE ENV
-app_database: servermanajer
-app_username: servermanajer
-app_password: 2YFLpVLb4l
-
-# WORDPRESS ENV
-wordpress_home_url: http://wordpress2.onlinecamp.id
-wordpress_db_prefix: wp_
-wordpress_site_title: Server Manajer
-wordpress_admin_user: servermanajer
-wordpress_admin_user_pass: servermanajer
-wordpress_admin_email: admin@onlinecamp.id
-
-# APP DOMAIN
-wordpress_app_domain: wordpress2.onlinecamp.id
-phpmyadmin_app_domain: phpmyadmin2.onlinecamp.id
+docker_compose_version: "1.29.2"
