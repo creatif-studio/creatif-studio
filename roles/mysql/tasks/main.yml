@@ -1,5 +1,6 @@
 # CloudBoz - MySQL Install
 - name: "install mysql database"
+  become_user: "{{ ansible_user }}"
   community.docker.docker_container:
     name: "{{ mysql_app_name }}"
     image: "{{ mysql_docker_image }}:{{ mysql_docker_tag }}"
@@ -18,13 +19,11 @@
 
 # CloudBoz - PhpMyAdmin Install
 - name: "install phpmyadmin"
+  become_user: "{{ ansible_user }}"
   community.docker.docker_container:
     name: "{{ phpmyadmin_app_name }}"
     image: "{{ phpmyadmin_docker_image }}:{{ phpmyadmin_docker_tag }}"
-    networks:
-      links:
-        - "{{ mysql_app_name }}"
-    restart-policy: always
+    restart_policy: always
     ports:
       - "{{ phpmyadmin_docker_ports }}:80"
   tags:

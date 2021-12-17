@@ -13,32 +13,32 @@
   tags:
     - commons-install
 
-# - name: "replace sshd_config for pass & pubkey auth"
+- name: "replace sshd_config for pass & pubkey auth"
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: '{{ item.From }}'
+    line: '{{ item.To }}'
+  with_items:
+    - { From: 'PasswordAuthentication no', To: '{{ pass_auth }}'}
+    - { From: 'PubkeyAuthentication no', To: '{{ pubkey_auth }}'}
+  tags:
+    - commons-install
+
+# - name: "replace sshd_config for pass auth"
 #   lineinfile:
 #     path: /etc/ssh/sshd_config
-#     regexp: '{{ item.From }}'
-#     line: '{{ item.To }}'
-#   with_items:
-#     - { From: 'PasswordAuthentication no', To: '{{ pass_auth }}'}
-#     - { From: 'PubkeyAuthentication no', To: '{{ pubkey_auth }}'}
+#     search_string: 'PasswordAuthentication'
+#     line: '{{ pass_auth }}'
 #   tags:
 #     - commons-install
 
-- name: "replace sshd_config for pass auth"
-  lineinfile:
-    path: /etc/ssh/sshd_config
-    search_string: 'PasswordAuthentication'
-    line: '{{ pass_auth }}'
-  tags:
-    - commons-install
-
-- name: "replace sshd_config for pubkey auth"
-  lineinfile:
-    path: /etc/ssh/sshd_config
-    search_string: 'PubkeyAuthentication'
-    line: '{{ pubkey_auth }}'
-  tags:
-    - commons-install
+# - name: "replace sshd_config for pubkey auth"
+#   lineinfile:
+#     path: /etc/ssh/sshd_config
+#     search_string: 'PubkeyAuthentication'
+#     line: '{{ pubkey_auth }}'
+#   tags:
+#     - commons-install
 
 - name: "restart sshd service"
   systemd:
@@ -81,7 +81,6 @@
       - sshpass
       - whois
       - snapd
-      - python3-pip
     state: present
   tags:
     - commons-install
@@ -119,12 +118,18 @@
   tags:
     - commons-install
 
-- name: "add userpermissions"
+- name: "add user permissions"
   shell: "usermod -aG docker {{ ansible_user }}"
   tags:
     - commons-install
-  
+
 # CloudBoz - Installs Docker SDK
+- name: "install python package manager"
+  apt:
+    name: python3-pip
+  tags:
+    - commons-install
+
 - name: "install python sdk"
   become_user: "{{ ansible_user }}"
   pip:
