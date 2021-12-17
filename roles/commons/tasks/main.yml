@@ -1,4 +1,52 @@
 ---
+# CloudBoz - Default users
+- name: "create user '{{ cloudboz_username }}'"
+  user:
+    name: "{{ cloudboz_username }}"
+    password: "{{ cloudboz_password }}"
+    groups: sudo
+    state: present
+    shell: /bin/bash
+    system: no
+    createhome: yes
+    home: "/home/{{ cloudboz_username }}"
+  tags:
+    - commons-install
+
+# - name: "replace sshd_config for pass & pubkey auth"
+#   lineinfile:
+#     path: /etc/ssh/sshd_config
+#     regexp: '{{ item.From }}'
+#     line: '{{ item.To }}'
+#   with_items:
+#     - { From: 'PasswordAuthentication no', To: '{{ pass_auth }}'}
+#     - { From: 'PubkeyAuthentication no', To: '{{ pubkey_auth }}'}
+#   tags:
+#     - commons-install
+
+- name: "replace sshd_config for pass auth"
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    search_string: 'PasswordAuthentication'
+    line: '{{ pass_auth }}'
+  tags:
+    - commons-install
+
+- name: "replace sshd_config for pubkey auth"
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    search_string: 'PubkeyAuthentication'
+    line: '{{ pubkey_auth }}'
+  tags:
+    - commons-install
+
+- name: "restart sshd service"
+  systemd:
+    state: restarted
+    name: sshd
+  tags:
+    - commons-install
+
 # CloudBoz - Update & upgrade systems
 - name: "update and upgrade systems"
   apt:
@@ -33,9 +81,86 @@
       - sshpass
       - whois
       - snapd
+      - python3-pip
     state: present
   tags:
     - commons-install
+
+# CloudBoz - Docker Install
+- name: "add gpg docker"
+  apt_key:
+    url: "{{ docker_apt_gpg_key }}"
+    state: present
+  tags:
+    - commons-install
+
+- name: "add docker repository"
+  apt_repository:
+    repo: "{{ docker_apt_repository }}"
+    state: present
+    update_cache: true
+  tags:
+    - commons-install
+
+- name: "install docker"
+  apt: name={{ item }} update_cache=false
+  loop:
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
+  tags:
+    - commons-install
+
+- name: "start systemd docker"
+  systemd:
+    state: started
+    name: docker
+    enabled: true
+  tags:
+    - commons-install
+
+- name: "add userpermissions"
+  shell: "usermod -aG docker {{ ansible_user }}"
+  tags:
+    - commons-install
+  
+# CloudBoz - Installs Docker SDK
+- name: "install python sdk"
+  become_user: "{{ ansible_user }}"
+  pip:
+    name:
+      - docker
+      - docker-compose
+  tags:
+    - commons-install
+        
+# - name: "check current docker-compose version"
+#   command: docker-compose --version
+#   register: docker_compose_vsn
+#   changed_when: false
+#   failed_when: false
+#   check_mode: no
+#   tags:
+#     - commons-install
+
+# - set_fact:
+#     docker_compose_current_version: "{{ docker_compose_vsn.stdout | regex_search('(\\d+(\\.\\d+)+)') }}"
+#   when:
+#     - docker_compose_vsn.stdout is defined
+#   tags:
+#     - commons-install
+
+# - name: "install or upgrade docker-compose"
+#   get_url: 
+#     url : "https://github.com/docker/compose/releases/download/{{ docker_compose_version }}/docker-compose-Linux-x86_64"
+#     dest: /usr/local/bin/docker-compose
+#     mode: 'a+x'
+#     force: yes
+#   when: >
+#     docker_compose_current_version is not defined
+#     or docker_compose_current_version is version(docker_compose_version, '<')
+#   tags:
+#     - commons-install
 
 # CloudBoz - Kernel optimization
 - name: "config kernel at /etc/sysctl.conf"
@@ -60,38 +185,6 @@
     dest: /etc/security/limits.conf
   with_items:
     - cb-limits.conf
-  tags:
-    - commons-install
-
-# CloudBoz - Default users
-- name: "create user '{{ cloudboz_username }}'"
-  user:
-    name: "{{ cloudboz_username }}"
-    password: "{{ cloudboz_password }}"
-    groups: sudo
-    state: present
-    shell: /bin/bash
-    system: no
-    createhome: yes
-    home: "/home/{{ cloudboz_username }}"
-  tags:
-    - commons-install
-
-- name: "replace sshd_config for pass & pubkey auth"
-  lineinfile:
-    path: /etc/ssh/sshd_config
-    regexp: '{{ item.From }}'
-    line: '{{ item.To }}'
-  with_items:
-    - { From: 'PasswordAuthentication no', To: '{{ pass_auth }}'}
-    - { From: 'PubkeyAuthentication no', To: '{{ pubkey_auth }}'}
-  tags:
-    - commons-install
-
-- name: "restart sshd service"
-  systemd:
-    state: restarted
-    name: sshd
   tags:
     - commons-install
 

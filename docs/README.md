@@ -1,2 +1,0 @@
-# CloudBoz Core
-CloudBoz Core

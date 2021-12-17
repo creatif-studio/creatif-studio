@@ -1,14 +1,14 @@
 # ANSIBLE ENV
 ansible_connection: ssh
 ansible_user: ubuntu
-ansible_ssh_pass: 4esz3wa2q1
-ansible_sudo_pass: 4esz3wa2q1
+ansible_ssh_pass: 
+ansible_sudo_pass: 
 ansible_ssh_private_key_file: files/cloudboz.pem
 ansible_python_interpreter: /usr/bin/python3
 
 # CREATE DEFAULT USER ENV
 cloudboz_username: cloudboz
-cloudboz_password: $6$xaE91Usyxp$eKQSEkQHuw3jOSXxdklmBk/5rD8lcSpAod34sXXpfZ3uMm7TVYViYmldVCSxqc70APZhInvrwDfB6.GDcKAn31
+cloudboz_password: $6$yIdSN45lwnmoA$loJJ6h03.FLDWYZP4E0D6.efR27CeDNwNbkmq2P/JfFQEbDc5sOcWjGXmUYPIZolWwwqA.fhFK6TrWGZL1oGc0
 # mkpasswd --method=sha-512 : xaE91Usyxp
 
 # SSH ENV
@@ -17,17 +17,6 @@ pubkey_auth: PubkeyAuthentication yes
 
 # SWAP ENV
 swap_file_path: /swapfile
-# Use any of the following suffixes
-# c=1
-# w=2
-# b=512
-# kB=1000
-# K=1024
-# MB=1000*1000
-# M=1024*1024
-# xM=M
-# GB=1000*1000*1000
-# G=1024*1024*1024
 swap_file_size: 2048
 swappiness: 1
 
@@ -36,4 +25,21 @@ docker_apt_release_channel: stable
 docker_apt_arch: amd64
 docker_apt_repository: "deb [arch={{ docker_apt_arch }}] https://download.docker.com/linux/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} {{ docker_apt_release_channel }}"
 docker_apt_gpg_key: https://download.docker.com/linux/{{ ansible_distribution | lower }}/gpg
-docker_compose_version: "1.29.2"
+# docker_compose_version: "1.29.2"
+
+# MYSQL ENV
+mysql_app_name: mysql
+mysql_docker_image: mysql
+mysql_docker_tag: latest
+mysql_docker_volume: mysql-data
+mysql_docker_ports: 3306
+mysql_docker_env_root_password: 2wsx1qaz
+mysql_docker_env_database: 2wsx1qaz
+mysql_docker_env_user: 2wsx1qaz
+mysql_docker_env_password: 2wsx1qaz
+
+# PHPMYADMIN ENV
+phpmyadmin_app_name: phpmyadmin
+phpmyadmin_docker_image: phpmyadmin/phpmyadmin
+phpmyadmin_docker_tag: latest
+phpmyadmin_docker_ports: 3307
