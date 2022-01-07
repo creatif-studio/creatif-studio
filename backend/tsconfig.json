@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    // "strict": true,
+    "noUnusedLocals": false,
+    "lib": ["es5", "es2015.promise", "es6", "es2017"],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "inlineSourceMap": true,
+    "noImplicitAny": false,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "src/**/*",
+  ],
+
+  "exclude": [
+    "node_modules",
+    "config/**/*",
+  ]
+}
