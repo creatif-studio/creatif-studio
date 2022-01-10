@@ -1,3 +1,0 @@
-- ansible-playbook cloudboz.yml --tags "default-users"
-- ansible-playbook cloudboz.yml --tags "commons-install"
-- ansible-playbook cloudboz.yml --tags "mysql-install"

@@ -1,6 +1,0 @@
-- hosts: ubuntu18
-  become: true
-  gather_facts: yes
-  roles:
-    - commons
-    - mysql

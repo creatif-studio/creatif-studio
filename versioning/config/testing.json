@@ -1,3 +1,0 @@
-{
-  "mongodb": "mongodb://localhost:27017/cloudboz-backend?authSource=admin"
-}
