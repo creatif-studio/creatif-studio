@@ -15,7 +15,7 @@ const UseCaseContent = () => {
               {content.heading}
             </h4>
             <p className="text-sm text-neutral-500 leading-loose">
-              {content.subHeading}
+              {content.description}
             </p>
           </div>
           <div className="flex items-center justify-between">
