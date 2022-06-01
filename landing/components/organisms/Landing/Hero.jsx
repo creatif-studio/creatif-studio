@@ -7,7 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="pt-32 pb-28 mx-40 bg-hero-pattern bg-no-repeat bg-right-top">
-      <Container className="mx-auto flex gap-8">
+      <Container className="mx-auto flex gap-12">
         <div className="flex-shrink-0 max-w-lg ">
           <h1 className="font-display text-5xl font-semibold leading-tight mb-2">
             Automate Infrastructure on Any Cloud
@@ -16,7 +16,7 @@ const Hero = () => {
             Provision, change, and version resources on any environment.
           </p>
           <Link href="/">
-            <a className="text-sm font-medium flex items-center gap-3 group my-8">
+            <a className="text-sm font-medium flex items-center gap-3 group my-8 max-w-fit">
               View tutorials
               <BsArrowRight
                 size={18}
@@ -25,7 +25,7 @@ const Hero = () => {
             </a>
           </Link>
           <Link href="/">
-            <a className="text-sm font-medium flex items-center gap-3 group my-8">
+            <a className="text-sm font-medium flex items-center gap-3 group my-8 max-w-fit">
               View documentation
               <BsArrowRight
                 size={18}
@@ -34,7 +34,7 @@ const Hero = () => {
             </a>
           </Link>
         </div>
-        <div className="grid grid-flow-col gap-10 flex-grow mr-10 h-86">
+        <div className="grid grid-flow-col gap-8 flex-grow h-86">
           <OpenSourceCard />
           <TerraformCloudCard />
         </div>
