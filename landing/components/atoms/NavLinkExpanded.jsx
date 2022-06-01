@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+import { BsChevronDown } from "react-icons/bs";
 
 const NavLinkExpanded = ({ children }) => {
   const [expand, setExpand] = useState(false);

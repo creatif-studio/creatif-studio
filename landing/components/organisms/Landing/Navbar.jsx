@@ -1,6 +1,6 @@
 import { Brand, Container } from "components/atoms";
-import { NavLinks } from "components/molecules";
-import NavActions from "components/molecules/NavActions";
+import { NavLinks, NavActions } from "components/molecules";
+
 import React from "react";
 
 const Navbar = () => {
