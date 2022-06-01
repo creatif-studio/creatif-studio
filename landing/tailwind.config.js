@@ -26,7 +26,6 @@ module.exports = {
       },
       animation: {
         "move-right": "move-to-right 0.2s forwards",
-        "move-top": "move-to-top 0.5s forwards",
       },
       keyframes: {
         "move-to-right": {
