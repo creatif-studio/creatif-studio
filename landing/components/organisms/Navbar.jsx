@@ -5,7 +5,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className=" flex justify-center h-16 sticky top-0 ">
+    <div className="bg-white flex justify-center h-16 sticky top-0 z-10 ">
       <Container className="flex items-center justify-between gap-3">
         <Brand />
         <NavLinks />

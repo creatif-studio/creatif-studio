@@ -4,10 +4,10 @@ import React from "react";
 const TerraformCloudCard = () => {
   return (
     <Card className="shadow bg-white border-neutral-200 h-full py-10 px-8 max-w-sm cursor-default opacity-0 animate-[move-to-top_0.5s_forwards_1s]">
-      <h2 className="font-semibold font-display text-2xl">Terraform Cloud</h2>
-      <h3 className="text-sm font-semibold font-display my-3">
+      <h3 className="font-semibold font-display text-2xl">Terraform Cloud</h3>
+      <h4 className="text-sm font-semibold font-display my-3">
         Managed Terraform
-      </h3>
+      </h4>
       <Button className="mt-5" mode="primary" buttonSize="md">
         Try Terraform Cloud
       </Button>

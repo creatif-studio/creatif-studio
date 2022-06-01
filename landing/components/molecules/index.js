@@ -3,3 +3,4 @@ export { default as NavActions } from "./NavActions";
 
 export { default as OpenSourceCard } from "./Landing/OpenSourceCard";
 export { default as TerraformCloudCard } from "./Landing/TerraformCloudCard";
+export { default as DeliverContent } from "./Landing/DeliverContent";

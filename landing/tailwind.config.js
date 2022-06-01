@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('/images/hero-pattern.svg')",
+        "deliver-gradient":
+          "radial-gradient(circle farthest-side at 50% -90%, #f2f2f2 ,#f2f2f2, #f7f7f7, white)",
       },
       colors: {
         primary: {
