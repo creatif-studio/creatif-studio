@@ -20,7 +20,7 @@ const Hero = () => {
               View tutorials
               <BsArrowRight
                 size={18}
-                className="group-hover:animate-arrow-right"
+                className="group-hover:animate-move-right"
               />
             </a>
           </Link>
@@ -29,7 +29,7 @@ const Hero = () => {
               View documentation
               <BsArrowRight
                 size={18}
-                className="group-hover:animate-arrow-right"
+                className="group-hover:animate-move-right"
               />
             </a>
           </Link>

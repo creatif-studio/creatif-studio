@@ -25,10 +25,10 @@ module.exports = {
         86: "21.5rem",
       },
       animation: {
-        "arrow-right": "move-arrow-right 0.2s forwards",
+        "move-right": "move-to-right 0.2s forwards",
       },
       keyframes: {
-        "move-arrow-right": {
+        "move-to-right": {
           "0%": {
             transform: "translateX(0%)",
           },
