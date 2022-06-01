@@ -1,18 +1,13 @@
+import Link from "next/link";
 import React from "react";
-import { BsChevronDown } from "react-icons/bs";
-import Button from "./Button";
 
-const NavLink = ({ children, canExpand }) => {
+const NavLink = ({ children, href = "" }) => {
   return (
-    <Button
-      className="text-sm font-medium w-24 py-2 flex items-center gap-2 justify-center outline-none"
-      icon={canExpand ? BsChevronDown : undefined}
-      neutral
-      iconPosition="right"
-      iconSize={8}
-    >
-      {children}
-    </Button>
+    <Link href={href}>
+      <a className="text-sm font-medium w-24 py-2 flex items-center gap-2 justify-center outline-none">
+        {children}
+      </a>
+    </Link>
   );
 };
 
