@@ -37,7 +37,7 @@ const Button = ({
     if (neutral) return "";
     const style = {
       base: "px-4 py-2",
-      md: "px-4 py-3",
+      md: "px-5 py-3",
     };
 
     return style[buttonSize];

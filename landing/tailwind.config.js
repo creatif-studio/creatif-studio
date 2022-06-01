@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/images/hero-pattern.svg')",
+      },
       colors: {
         primary: {
           100: "#e6dcf1",
@@ -16,6 +19,22 @@ module.exports = {
           700: "#4f2f70",
           800: "#35204a",
           900: "#1a1025",
+        },
+      },
+      spacing: {
+        86: "21.5rem",
+      },
+      animation: {
+        "arrow-right": "move-arrow-right 0.2s forwards",
+      },
+      keyframes: {
+        "move-arrow-right": {
+          "0%": {
+            transform: "translateX(0%)",
+          },
+          "100%": {
+            transform: "translateX(30%)",
+          },
         },
       },
     },
