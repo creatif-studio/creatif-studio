@@ -5,7 +5,7 @@ import React from "react";
 const Practice = () => {
   return (
     <div className="py-5 xl:py-10 cursor-default">
-      <div className="max-w-practice py-16 xl:py-20 bg-black rounded-md mx-auto bg-scroll  bg-practice-pattern bg-no-repeat bg-left xl:bg-pos-pattern bg-size-pattern">
+      <div className="max-w-practice py-16 xl:py-20 bg-black xl:rounded-md mx-auto bg-scroll  bg-practice-pattern bg-no-repeat bg-left xl:bg-pos-pattern bg-size-pattern">
         <Container className="mx-auto ">
           <h2 className="text-3xl xl:text-4xl font-semibold font-display text-center mb-4 text-white">
             Terraform in practice
