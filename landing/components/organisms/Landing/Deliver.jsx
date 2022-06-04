@@ -17,7 +17,7 @@ const Deliver = () => {
           Terraform codifies cloud APIs into declarative configuration files.
         </p>
         <div className="grid grid-cols-2 gap-8">
-          <div className="pr-28">
+          <div className="pr-20">
             <Image src={assets.images.DELIVER_IMAGE} alt="deliver image" />
           </div>
           <DeliverContent />
