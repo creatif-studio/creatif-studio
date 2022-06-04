@@ -6,7 +6,7 @@ import { Button } from "components/atoms";
 
 const NavActions = () => {
   return (
-    <div className="flex-shrink-0 flex items-center gap-4">
+    <div className="flex-shrink-0 hidden xl:flex items-center gap-4">
       <Button
         neutral
         icon={BsGithub}
