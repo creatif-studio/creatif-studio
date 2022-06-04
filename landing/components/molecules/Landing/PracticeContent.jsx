@@ -21,7 +21,7 @@ const PracticeContent = () => {
               {content.description}
             </p>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between mt-8">
             <div className="flex items-center gap-2">
               {content.icons.includes("TERRAFORM_WHITE") && (
                 <Image
