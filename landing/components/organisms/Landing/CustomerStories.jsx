@@ -4,9 +4,9 @@ import React from "react";
 
 const CustomerStories = () => {
   return (
-    <div className="py-10 xl:py-20 cursor-default">
-      <Container className="mx-auto px-5 xl:px-0">
-        <h2 className="text-2xl xl:text-4xl font-semibold font-display mb-4">
+    <div className="py-10 md:py-20 cursor-default">
+      <Container className="mx-auto px-5 md:px-0">
+        <h2 className="text-2xl md:text-4xl font-semibold font-display mb-4">
           Customer Stories
         </h2>
         <p className="text-neutral-500 mb-10 max-w-lg leading-relaxed">

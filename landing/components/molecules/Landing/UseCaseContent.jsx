@@ -7,7 +7,7 @@ import UseCaseCard from "./UseCaseCard";
 
 const UseCaseContent = () => {
   return (
-    <ul className="flex pb-1 px-4 xl:px-0 xl:pb-0 xl:grid xl:grid-cols-4 gap-8 overflow-auto xl:overflow-visible">
+    <ul className="flex pb-1 px-4 md:px-0 md:pb-0 md:grid md:grid-cols-4 gap-8 overflow-auto md:overflow-visible">
       {USE_CASE_CONTENT.map((content) => (
         <UseCaseCard key={content.id} href={content.href}>
           <div>

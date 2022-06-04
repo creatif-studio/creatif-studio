@@ -6,9 +6,9 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="pt-20 px-5 lg:px-0 lg:pt-32 pb-16 lg:pb-28 lg:mx-40 xl:bg-hero-pattern bg-no-repeat bg-right-top cursor-default">
-      <Container className="mx-auto flex flex-col xl:px-0 xl:flex-row gap-4 xl:gap-8">
-        <div className="flex-shrink-0 max-w-lg">
+    <div className="pt-20 px-5 md:px-10 xl:px-0 md:pt-32 pb-16 lg:pb-28 lg:mx-40 md:bg-hero-pattern bg-no-repeat bg-right-top cursor-default">
+      <Container className="mx-auto flex flex-col md:px-0 md:flex-row gap-4 md:gap-20 xl:gap-8">
+        <div className="max-w-lg">
           <h1 className="font-display text-4xl lg:text-5xl font-semibold leading-tight mb-2">
             Automate Infrastructure on Any Cloud
           </h1>
@@ -34,7 +34,7 @@ const Hero = () => {
             </a>
           </Link>
         </div>
-        <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 flex-grow xl:h-86">
+        <div className="flex-shrink-0 grid grid-cols-1 xl:grid-cols-2 gap-8 flex-grow xl:h-86">
           <OpenSourceCard />
           <TerraformCloudCard />
         </div>

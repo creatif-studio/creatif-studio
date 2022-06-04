@@ -7,7 +7,7 @@ import PracticeCard from "./PracticeCard";
 
 const PracticeContent = () => {
   return (
-    <ul className="flex pb-1 px-4 xl:px-0 xl:pb-0 xl:grid xl:grid-cols-3 gap-8 overflow-auto xl:overflow-visible h-96 xl:h-auto">
+    <ul className="flex pb-1 px-4 md:px-0 md:pb-0 md:grid md:grid-cols-3 gap-8 overflow-auto md:overflow-visible h-96 md:h-auto">
       {PRACTICE_CONTENT.map((content) => (
         <PracticeCard key={content.id} href={content.href}>
           <div>
