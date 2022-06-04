@@ -8,7 +8,7 @@ const StoriesListItem = ({ heading = "", href = "/" }) => {
     <li>
       <Link href={href}>
         <a>
-          <div className="flex items-start gap-2 py-8 hover:animate-[move-little-to-right_0.4s_forwards]">
+          <div className="flex items-start gap-8 xl:gap-2 py-8 hover:animate-[move-little-to-right_0.4s_forwards]">
             <h4 className="font-semibold font-display">{heading}</h4>
             <BiLinkExternal size={18} className="flex-shrink-0" />
           </div>

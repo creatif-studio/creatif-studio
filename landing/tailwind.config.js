@@ -40,6 +40,7 @@ module.exports = {
       },
       spacing: {
         86: "21.5rem",
+        76: "18.5rem",
       },
       animation: {
         "move-right": "move-to-right 0.2s forwards",
