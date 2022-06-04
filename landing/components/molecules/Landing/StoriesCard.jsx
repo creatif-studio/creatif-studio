@@ -5,8 +5,8 @@ import React from "react";
 const StoriesCard = ({ href = "/", src = "", header = "Header" }) => {
   return (
     <Link href={href}>
-      <a>
-        <Card className="col-span-1 border-0 h-76 md:h-96 rounded-md bg-white relative overflow-hidden group">
+      <a className="col-span-1 md:col-span-2 xl:col-span-1">
+        <Card className="border-0 h-76 md:h-96 rounded-md bg-white relative overflow-hidden group">
           <img
             src={src}
             alt="stories"
