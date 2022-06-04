@@ -45,7 +45,7 @@ const Button = ({
 
   const baseStyle = useMemo(() => {
     if (neutral) return "";
-    return "flex items-center justify-center gap-3 font-medium text-sm outline-none";
+    return "flex items-center justify-center gap-3 font-medium text-sm outline-none transition-colors ease-in";
   }, [neutral]);
 
   return (
