@@ -9,7 +9,7 @@ import { DeliverContent } from "components/molecules";
 const Deliver = () => {
   return (
     <div className="bg-deliver-gradient cursor-default">
-      <Container className="mx-auto pt-20 pb-20 px-5 xl:px-0">
+      <Container className="mx-auto pt-16 xl:pt-20 pb-10 xl:pb-20 px-5 xl:px-0">
         <h2 className="text-3xl xl:text-4xl font-semibold font-display text-center mb-6">
           Deliver infrastructure as code
         </h2>
