@@ -14,7 +14,7 @@ const UseCaseContent = () => {
             <h4 className="font-semibold font-display mb-3">
               {content.heading}
             </h4>
-            <p className="text-sm text-neutral-500 leading-loose">
+            <p className="text-sm text-neutral-500 leading-relaxed">
               {content.description}
             </p>
           </div>

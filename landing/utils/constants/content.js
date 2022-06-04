@@ -94,3 +94,54 @@ export const DELIVER_CONTENT = [
     with VCS, ITSM, CI/CD.`,
   },
 ];
+
+export const PRACTICE_CONTENT = [
+  {
+    id: 1,
+    heading: "Codify and deploy infrastructure",
+    description:
+      "Build, change, and destroy AWS infrastructure using Terraform. Step-by-step, command-line tutorials will walk you through the Terraform basics for the first time.",
+    href: "",
+    icons: ["TERRAFORM_WHITE"],
+  },
+  {
+    id: 2,
+    heading: "Codify existing infrastructure",
+    description:
+      "Import an existing infrastructure into an empty Terraform workspace. ",
+    href: "",
+    icons: ["TERRAFORM_WHITE"],
+  },
+  {
+    id: 3,
+    heading: "Provision a Kubernetes cluster",
+    description:
+      "Deploy a ready to use Amazon Elastic Kubernetes Service (EKS) cluster using Terraform.",
+    href: "",
+    icons: ["TERRAFORM_WHITE"],
+  },
+  {
+    id: 4,
+    heading: "Inject secrets into Terraform",
+    description:
+      "Avoid managing static, long-lived secrets with varying scope and provision resources without having direct access to the secrets.",
+    href: "",
+    icons: ["TERRAFORM_WHITE", "TERRAFORM_SECRETS_WHITE"],
+  },
+  {
+    id: 5,
+    heading: "Migrate state to Terraform Cloud",
+    description:
+      "Keep your state file secure and share it with collaborators by migrating it to Terraform Cloud.",
+    href: "",
+    icons: ["TERRAFORM_WHITE"],
+  },
+  {
+    id: 6,
+    heading: "Manage infrastructure with programming lanuages",
+    description:
+      "Manage infrastructure programming languages such as TypeScript, Python, Java, C#, and Go with the Cloud Development Kit for Terraform (CDKTF).",
+    href: "",
+    icons: ["TERRAFORM_WHITE"],
+  },
+];

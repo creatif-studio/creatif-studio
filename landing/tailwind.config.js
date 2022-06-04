@@ -7,9 +7,20 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('/images/hero-pattern.svg')",
+        "practice-pattern": "url('/images/practice-pattern.svg')",
         "deliver-gradient":
           "radial-gradient(circle farthest-side at 50% -90%, #f2f2f2 ,#f2f2f2, #f7f7f7, white)",
       },
+      backgroundPosition: {
+        "pos-pattern": "left top 2rem",
+      },
+      backgroundSize: {
+        "size-pattern": "35%",
+      },
+      fontSize: {
+        xxs: ["10px", "12px"],
+      },
+
       colors: {
         primary: {
           100: "#e6dcf1",
@@ -22,6 +33,8 @@ module.exports = {
           800: "#35204a",
           900: "#1a1025",
         },
+        "custom-gray-1": "#1D1E1F",
+        "custom-gray-2": "#343536",
       },
       spacing: {
         86: "21.5rem",
@@ -51,6 +64,7 @@ module.exports = {
       },
       maxWidth: {
         container: "76rem",
+        practice: "97rem",
       },
     },
     fontFamily: {
