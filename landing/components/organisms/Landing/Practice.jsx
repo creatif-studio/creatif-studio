@@ -4,9 +4,9 @@ import React from "react";
 
 const Practice = () => {
   return (
-    <div className="py-10">
+    <div className="py-10 cursor-default">
       <div className="max-w-practice py-20 bg-black rounded-md mx-auto xl:bg-practice-pattern bg-no-repeat bg-pos-pattern bg-size-pattern">
-        <Container className="mx-auto">
+        <Container className="mx-auto ">
           <h2 className="text-4xl font-semibold font-display text-center mb-4 text-white">
             Terraform in practice
           </h2>

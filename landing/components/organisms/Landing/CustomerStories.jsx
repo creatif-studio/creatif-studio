@@ -4,8 +4,8 @@ import React from "react";
 
 const CustomerStories = () => {
   return (
-    <div className="py-20">
-      <Container className="mx-auto">
+    <div className="py-20 cursor-default">
+      <Container className="mx-auto ">
         <h2 className="text-4xl font-semibold font-display mb-4">
           Customer Stories
         </h2>

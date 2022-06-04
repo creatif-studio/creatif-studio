@@ -7,7 +7,7 @@ const UseCaseCard = ({ children, href = "/" }) => {
     <li className="col-span-1">
       <Link href={href}>
         <a>
-          <Card className="shadow-md border-neutral-200 px-7 py-8 h-80 flex flex-col justify-between hover:shadow-lg hover:ring-2 hover:ring-neutral-200">
+          <Card className="shadow-md border-neutral-200 px-7 py-8 h-80 flex flex-col justify-between hover:shadow-lg hover:ring-2 hover:ring-neutral-200 transition-shadow">
             {children}
           </Card>
         </a>
