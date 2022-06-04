@@ -11,7 +11,7 @@ const NavActions = () => {
         neutral
         icon={BsGithub}
         iconSize={24}
-        className="p-1.5 border border-gray-300 hover:bg-gray-200 flex items-center justify-center"
+        className="p-1.5 border border-gray-300 hover:bg-gray-200 flex items-center justify-center transition-colors ease-in"
       />
       <Button mode="secondary">Terraform Cloud</Button>
       <Button icon={BsDownload} iconSize={16}>
