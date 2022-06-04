@@ -49,6 +49,9 @@ module.exports = {
           },
         },
       },
+      maxWidth: {
+        container: "76rem",
+      },
     },
     fontFamily: {
       sans: ["Inter", "system-ui"],

@@ -7,7 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="pt-32 pb-28 mx-40 xl:bg-hero-pattern bg-no-repeat bg-right-top">
-      <Container className="mx-auto flex gap-12">
+      <Container className="mx-auto flex gap-8">
         <div className="flex-shrink-0 max-w-lg ">
           <h1 className="font-display text-5xl font-semibold leading-tight mb-2">
             Automate Infrastructure on Any Cloud
