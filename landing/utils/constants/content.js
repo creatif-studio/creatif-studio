@@ -169,3 +169,29 @@ export const STORIES_CONTENT = [
     href: "",
   },
 ];
+export const NEXT_STEPS_CONTENT = [
+  {
+    id: 1,
+    heading: "Open source",
+    description: "Self-managed | always free",
+    className: "text-white bg-primary-500",
+    linkName: "Download",
+    href: "",
+  },
+  {
+    id: 2,
+    heading: "Terraform Cloud",
+    description: "Managed Terraform",
+    className: "bg-primary-100",
+    linkName: "Compare plans",
+    href: "",
+  },
+  {
+    id: 3,
+    heading: "Enterprise",
+    description: "Self-managed custom deployments",
+    className: "bg-neutral-100",
+    linkName: "Learn more",
+    href: "",
+  },
+];

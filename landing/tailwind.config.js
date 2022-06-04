@@ -2,6 +2,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./utils/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -19,6 +20,7 @@ module.exports = {
       },
       fontSize: {
         xxs: ["10px", "12px"],
+        "1.5xl": ["1.375rem", "1.875rem"],
       },
 
       colors: {

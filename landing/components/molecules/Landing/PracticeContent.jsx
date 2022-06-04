@@ -9,7 +9,7 @@ const PracticeContent = () => {
   return (
     <ul className="grid grid-cols-3 gap-8">
       {PRACTICE_CONTENT.map((content) => (
-        <PracticeCard href={content.href}>
+        <PracticeCard key={content.id} href={content.href}>
           <div>
             <p className="text-xxs tracking-widest uppercase text-neutral-300 mb-5">
               Tutorial

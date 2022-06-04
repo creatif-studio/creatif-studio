@@ -6,7 +6,11 @@ const StoriesList = () => {
   return (
     <ul className="col-span-1 divide-y divide-neutral-300 border-b border-neutral-300 -mt-8">
       {STORIES_CONTENT.map((content) => (
-        <StoriesListItem heading={content.heading} href={content.href} />
+        <StoriesListItem
+          key={content.id}
+          heading={content.heading}
+          href={content.href}
+        />
       ))}
     </ul>
   );
