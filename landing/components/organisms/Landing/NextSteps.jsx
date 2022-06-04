@@ -4,8 +4,8 @@ import React from "react";
 
 const NextSteps = () => {
   return (
-    <div className="md:py-20 my-16 md:my-10">
-      <Container className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 px-5 md:px-0">
+    <div className="xl:py-20 md:pt-20 my-16 xl:my-10">
+      <Container className="mx-auto grid grid-cols-1 xl:grid-cols-3 gap-4 md:gap-8 px-5 md:px-10 xl:px-0">
         <div className="col-span-1 cursor-default">
           <h2 className="text-4xl md:text-5xl font-semibold font-display mb-6">
             Next Steps

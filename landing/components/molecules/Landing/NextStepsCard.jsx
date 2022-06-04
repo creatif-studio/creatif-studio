@@ -15,7 +15,7 @@ const NextStepsCard = ({
       <Link href={href}>
         <a>
           <Card
-            className={`border-0 rounded-md px-5 py-8 h-48 md:h-full flex flex-col justify-between transition-shadow ease-in hover:shadow-lg ${className}`}
+            className={`border-0 rounded-md px-5 py-8 h-48 md:h-56 xl:h-full flex flex-col justify-between transition-shadow ease-in hover:shadow-lg ${className}`}
           >
             <div>
               <h3 className="font-semibold font-display text-1.5xl">
