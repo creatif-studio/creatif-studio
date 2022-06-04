@@ -5,7 +5,7 @@ import React from "react";
 const Certified = () => {
   return (
     <div className="mt-5 md:mt-10 py-10 md:py-20 bg-gradient-to-r from-[#2C2D2F] to-[#606062] cursor-default">
-      <Container className="mx-auto grid grid-cols-1 px-5 md:px-0 md:grid-cols-3 gap-4 md:gap-8">
+      <Container className="mx-auto grid grid-cols-1 px-5 md:px-10 xl:px-0 md:grid-cols-3 gap-4 md:gap-8">
         <h2 className="col-span-1 text-3xl md:text-4xl font-semibold font-display text-white leading-normal">
           Get HashiCorp Certified
         </h2>
