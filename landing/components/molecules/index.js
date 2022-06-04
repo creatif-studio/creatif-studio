@@ -6,3 +6,4 @@ export { default as TerraformCloudCard } from "./Landing/TerraformCloudCard";
 export { default as DeliverContent } from "./Landing/DeliverContent";
 export { default as UseCaseContent } from "./Landing/UseCaseContent";
 export { default as PracticeContent } from "./Landing/PracticeContent";
+export { default as StoriesContent } from "./Landing/StoriesContent";

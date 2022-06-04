@@ -51,6 +51,14 @@ module.exports = {
             transform: "translateX(30%)",
           },
         },
+        "move-little-to-right": {
+          "0%": {
+            transform: "translateX(0%)",
+          },
+          "100%": {
+            transform: "translateX(1%)",
+          },
+        },
         "move-to-top": {
           "0%": {
             transform: "translateY(10%)",

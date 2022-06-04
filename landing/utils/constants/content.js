@@ -145,3 +145,27 @@ export const PRACTICE_CONTENT = [
     icons: ["TERRAFORM_WHITE"],
   },
 ];
+
+export const STORIES_CONTENT = [
+  {
+    id: 1,
+    heading: "Multi-Cloud DevOps at PETRONAS with Terraform",
+    href: "",
+  },
+  {
+    id: 2,
+    heading: "Consistent Development and Deployment at Comcast with Terraform",
+    href: "",
+  },
+  {
+    id: 3,
+    heading: "Terraform at Decathlon: From On-Premises to 100% Cloud",
+    href: "",
+  },
+  {
+    id: 4,
+    heading:
+      "CDK for Terraform with Python and its Operational Experience at ShopStyle",
+    href: "",
+  },
+];
