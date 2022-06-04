@@ -6,3 +6,4 @@ export { default as Deliver } from "./Landing/Deliver";
 export { default as NextSteps } from "./Landing/NextSteps";
 export { default as Practice } from "./Landing/Practice";
 export { default as UseCases } from "./Landing/UseCases";
+export { default as Footer } from "./Footer";

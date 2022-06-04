@@ -3,7 +3,7 @@ import React from "react";
 
 const NavLinks = () => {
   return (
-    <div className=" h-16 hidden xl:flex items-center justify-start flex-grow">
+    <div className="h-16 hidden xl:flex items-center justify-start flex-grow">
       <NavLink>Overview</NavLink>
       <NavLinkExpanded>Use Cases</NavLinkExpanded>
       <NavLinkExpanded>Editions</NavLinkExpanded>

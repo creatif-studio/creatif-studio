@@ -2,6 +2,7 @@ import {
   Certified,
   CustomerStories,
   Deliver,
+  Footer,
   Hero,
   Navbar,
   NextSteps,
@@ -20,6 +21,7 @@ export default function Landing() {
       <CustomerStories />
       <Certified />
       <NextSteps />
+      <Footer />
     </div>
   );
 }
