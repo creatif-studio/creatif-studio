@@ -5,7 +5,7 @@ import React from "react";
 const WhiteboardVideo = () => {
   return (
     <div className="mt-16 xl:mt-33 mb-16 px-6 xl:px-0">
-      <Container className="mx-auto rounded-md bg-black grid grid-cols-12 gap-8">
+      <Container className="mx-auto rounded-md bg-black grid grid-cols-12 gap-8 overflow-hidden xl:overflow-visible">
         <VideoPlay />
         <div className="col-span-12 xl:col-span-4 py-8 xl:py-24 px-8">
           <h3 className="text-xl xl:text-2xl font-display text-white font-semibold max-w-xs">
