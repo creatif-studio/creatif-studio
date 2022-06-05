@@ -195,3 +195,30 @@ export const NEXT_STEPS_CONTENT = [
     href: "",
   },
 ];
+
+export const USECASE_RESOURCES_CONTENT = [
+  {
+    id: 1,
+    heading: "Host a Static Website with S3 and Cloudflare",
+    description:
+      "Set up an S3-hosted static website with Cloudflare for DNS, SSL, and CDN.",
+    href: "",
+    icons: ["TERRAFORM"],
+  },
+  {
+    id: 2,
+    heading: "Manage Azure Active Directory Users and Groups",
+    description:
+      "Codify your Azure Active Directury (Azure AD) resources. Create and manage new users and assign them to groups.",
+    href: "",
+    icons: ["TERRAFORM"],
+  },
+  {
+    id: 3,
+    heading: "Create a Google Compute Engine VM",
+    description:
+      "Codify the end to end workflow of deploying a virtual machine in Google Cloud.",
+    href: "",
+    icons: ["TERRAFORM"],
+  },
+];

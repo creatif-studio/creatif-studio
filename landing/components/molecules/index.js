@@ -9,4 +9,6 @@ export { default as PracticeContent } from "./Landing/PracticeContent";
 export { default as StoriesContent } from "./Landing/StoriesContent";
 export { default as NextStepsContent } from "./Landing/NextStepsContent";
 
+export { default as ResourcesContent } from "./UseCase/ResourcesContent";
+
 export { default as FooterLinks } from "./FooterLinks";
