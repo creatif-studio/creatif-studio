@@ -4,11 +4,11 @@ import React from "react";
 
 const WhiteboardVideo = () => {
   return (
-    <div className="mt-16 xl:mt-33 mb-16 px-6 xl:px-0">
+    <div className="mt-16 xl:mt-33 mb-16 px-6 md:px-10 xl:px-0">
       <Container className="mx-auto rounded-md bg-black grid grid-cols-12 gap-8 overflow-hidden xl:overflow-visible">
         <VideoPlay />
-        <div className="col-span-12 xl:col-span-4 py-8 xl:py-24 px-8">
-          <h3 className="text-xl xl:text-2xl font-display text-white font-semibold max-w-xs">
+        <div className="col-span-12 md:col-span-6 xl:col-span-4 py-8 md:py-24 px-8">
+          <h3 className="text-xl md:text-2xl font-display text-white font-semibold max-w-xs">
             Challenges & Opportunities of Multi-Cloud Adoption
           </h3>
           <p className="text-sm mt-2 mb-16 xl:mb-0 text-white leading-relaxed">

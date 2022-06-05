@@ -8,9 +8,9 @@ const CustomerCaseStudy = () => {
         <img
           src="/images/usecase-customer-study.webp"
           alt="customer case study"
-          className="w-full object-fill col-span-12 xl:col-span-6 -mt-16"
+          className="w-full object-fill col-span-12 md:col-span-6 -mt-16"
         />
-        <div className="col-span-12 xl:col-span-5 xl:col-start-8 xl:py-16 mt-8 xl:mt-0">
+        <div className="col-span-12 md:col-span-5 md:col-start-8 md:py-16 mt-8 md:mt-0">
           <div className="flex items-center">
             <img
               src="/images/petronas_white.svg"
