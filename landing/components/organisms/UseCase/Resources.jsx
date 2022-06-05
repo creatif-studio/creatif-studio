@@ -6,9 +6,9 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Resources = () => {
   return (
-    <div className="py-33">
+    <div className="py-16 px-6 xl:px-0 xl:py-33">
       <Container className="mx-auto">
-        <h2 className="font-display text-4.5xl font-semibold text-center mb-16">
+        <h2 className="font-display text-2.5xl xl:text-4.5xl font-semibold text-center mb-16">
           Resources
         </h2>
         <div className="flex items-center justify-between mb-8">

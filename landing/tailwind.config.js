@@ -23,6 +23,8 @@ module.exports = {
       fontSize: {
         xxs: ["10px", "12px"],
         "1.5xl": ["1.375rem", "1.875rem"],
+        "2.5xl": ["1.75rem", "2.125rem"],
+        "3.5xl": ["2.125rem", "2.375rem"],
         "4.5xl": ["2.5rem", "2.625rem"],
         "3.5xl": ["2rem", "2.375rem"],
       },
@@ -43,9 +45,11 @@ module.exports = {
         "custom-gray-2": "#343536",
       },
       spacing: {
+        13: "3.25rem",
         22: "5.5rem",
         30: "7.5rem",
         33: "8.25rem",
+        41: "10.25rem",
         86: "21.5rem",
         76: "18.5rem",
       },

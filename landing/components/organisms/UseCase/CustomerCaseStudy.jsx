@@ -3,14 +3,14 @@ import { Button, Container } from "components/atoms";
 
 const CustomerCaseStudy = () => {
   return (
-    <div className="pb-33 bg-black">
+    <div className="pb-16 px-6 xl:px-0 xl:pb-33 bg-black">
       <Container className="mx-auto grid grid-cols-12 gap-8">
         <img
           src="/images/usecase-customer-study.webp"
           alt="customer case study"
-          className="w-full object-fill col-span-6 -mt-16"
+          className="w-full object-fill col-span-12 xl:col-span-6 -mt-16"
         />
-        <div className="col-span-5 col-start-8 py-16">
+        <div className="col-span-12 xl:col-span-5 xl:col-start-8 xl:py-16 mt-8 xl:mt-0">
           <div className="flex items-center">
             <img
               src="/images/petronas_white.svg"
@@ -21,7 +21,7 @@ const CustomerCaseStudy = () => {
               CUSTOMER CASE STUDY
             </p>
           </div>
-          <h2 className="text-4.5xl text-white leading-normal  font-semibold font-display mt-8 mb-6">
+          <h2 className="text-2.5xl xl:text-4.5xl text-white leading-normal  font-semibold font-display mt-8 mb-6">
             Multi-Cloud DevOps at PETRONAS with Terraform
           </h2>
           <p className="text-white leading-relaxed">

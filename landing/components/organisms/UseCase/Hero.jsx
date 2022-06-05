@@ -3,18 +3,18 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="max-w-practice mx-auto bg-usecase-hero-gradient py-33 relative z-0 rounded-b-md">
+    <div className="max-w-practice mx-auto bg-usecase-hero-gradient py-16 px-6 xl:px-0 xl:py-33 relative z-0 rounded-b-md">
       <img
         src="/images/usecase-hero-pattern.svg"
         alt="usecase hero pattern"
-        className="w-2/6 scale-95 absolute -bottom-10 left-0"
+        className="hidden xl:block w-2/6 scale-95 absolute -bottom-10 left-0"
       />
       <Container className="mx-auto">
         <div className="mx-auto max-w-fit">
           <p className="text-sm uppercase font-display mb-7 font-medium">
             Use Case
           </p>
-          <h1 className="font-display text-4xl lg:text-5xl lg:leading-tight font-semibold mb-6 max-w-sm">
+          <h1 className="font-display text-3.5xl lg:text-5xl lg:leading-tight font-semibold mb-6 max-w-sm">
             Multi Cloud Deployment
           </h1>
           <p className="text-neutral-600 text-lg max-w-md leading-8">
