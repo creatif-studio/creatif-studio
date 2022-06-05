@@ -3,7 +3,7 @@ import {
   CustomerStories,
   Deliver,
   Footer,
-  Hero,
+  LandingHero,
   Navbar,
   NextSteps,
   Practice,
@@ -14,7 +14,7 @@ export default function Landing() {
   return (
     <div className="">
       <Navbar />
-      <Hero />
+      <LandingHero />
       <Deliver />
       <UseCases />
       <Practice />

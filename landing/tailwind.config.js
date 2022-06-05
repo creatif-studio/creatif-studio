@@ -11,6 +11,8 @@ module.exports = {
         "practice-pattern": "url('/images/practice-pattern.svg')",
         "deliver-gradient":
           "radial-gradient(circle farthest-side at 50% -90%, #f2f2f2 ,#f2f2f2, #f7f7f7, white)",
+        "usecase-hero-gradient":
+          "radial-gradient(circle farthest-side at 50% 190%, #f2f2f2 ,#f2f2f2, #f7f7f7, white)",
       },
       backgroundPosition: {
         "pos-pattern": "left top 2rem",
