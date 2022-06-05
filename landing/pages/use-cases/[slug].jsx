@@ -3,6 +3,7 @@ import {
   CustomerCaseStudy,
   Footer,
   Navbar,
+  ReadyGetStarted,
   Resources,
   Solution,
   UseCaseHero,
@@ -19,6 +20,7 @@ const UseCasePage = () => {
       <Solution />
       <CustomerCaseStudy />
       <Resources />
+      <ReadyGetStarted />
       <WhiteboardVideo />
       <Footer />
     </div>
