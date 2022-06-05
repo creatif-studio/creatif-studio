@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="max-w-practice mx-auto bg-usecase-hero-gradient py-32 relative z-0 rounded-b-md">
+    <div className="max-w-practice mx-auto bg-usecase-hero-gradient py-33 relative z-0 rounded-b-md">
       <img
         src="/images/usecase-hero-pattern.svg"
         alt="usecase hero pattern"

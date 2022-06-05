@@ -41,6 +41,7 @@ module.exports = {
         "custom-gray-2": "#343536",
       },
       spacing: {
+        33: "8.25rem",
         86: "21.5rem",
         76: "18.5rem",
       },
