@@ -7,6 +7,8 @@ import TERRAFORM_SECRETS_WHITE from "./terraform-secrets-white.svg";
 import TERRAFORM from "./terraform.svg";
 import TERRAFORM_WHITE from "./terraform-white.svg";
 
+import VIDEO_PLAY from "./video-play.svg";
+
 export {
   CONSUL,
   PACKER,
@@ -14,4 +16,5 @@ export {
   TERRAFORM_SECRETS,
   TERRAFORM_SECRETS_WHITE,
   TERRAFORM_WHITE,
+  VIDEO_PLAY,
 };

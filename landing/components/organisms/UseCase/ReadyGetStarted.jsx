@@ -3,7 +3,7 @@ import React from "react";
 
 const ReadyGetStarted = () => {
   return (
-    <div className="pb-33">
+    <div className="">
       <Container className="mx-auto grid grid-cols-12 gap-8 rounded-md bg-primary-500 overflow-hidden relative z-0">
         <h2 className="col-span-5 mb-4 font-semibold font-display text-3.5xl text-white py-22 pl-16 pr-8">
           Ready to get started?

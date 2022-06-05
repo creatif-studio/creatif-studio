@@ -10,5 +10,6 @@ export { default as StoriesContent } from "./Landing/StoriesContent";
 export { default as NextStepsContent } from "./Landing/NextStepsContent";
 
 export { default as ResourcesContent } from "./UseCase/ResourcesContent";
+export { default as VideoPlay } from "./UseCase/VideoPlay";
 
 export { default as FooterLinks } from "./FooterLinks";
