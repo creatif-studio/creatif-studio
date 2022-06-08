@@ -3,3 +3,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-products-terraform-hero {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.63%, rgba(209, 235, 255, 0.54) 100%), 
+          url(/images/products-terraform-hero-background.svg) left bottom no-repeat, 
+          url(/images/products-terraform-hero-background.svg) right bottom no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+    .bg-products-terraform-hero {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.63%, rgba(209, 235, 255, 0.54) 100%);
+    }
+}
