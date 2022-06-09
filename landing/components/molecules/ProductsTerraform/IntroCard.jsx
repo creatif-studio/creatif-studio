@@ -12,13 +12,19 @@ const IntroCard = ({ className, children }) => {
     const icon = getChildrenByType(children, IntroCardIcon)
     const title = getChildrenByType(children, IntroCardTitle)
     const description = getChildrenByType(children, IntroCardDescription)
-
+    
     return (
         <div className={clsx(className, 'mt-5 flex h-fit md:mr-14 lg:mr-36 xl:mr-14')}>
-            <section className="w-6">
-                { icon }
-            </section>
-            <section className="flex flex-col items-start ml-5">
+            {
+                icon.length 
+                ? (
+                    <section className="w-6">
+                        { icon }
+                    </section>
+                )
+                : null
+            }
+            <section className={clsx('flex flex-col items-start', icon.length && 'ml-5')}>
                 { title }
                 { description }
             </section>

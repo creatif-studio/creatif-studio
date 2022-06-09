@@ -1,9 +1,9 @@
 // internal modules
 import ProductsSectionSubtitle from 'components/atoms/ProductsSectionSubtitle'
 
-const IntroCardTitle = ({ children, className }) => {
+const IntroCardTitle = ({ children, className, baseFontSizeClassName }) => {
     return (
-        <ProductsSectionSubtitle className={className}>{children}</ProductsSectionSubtitle>
+        <ProductsSectionSubtitle baseFontSizeClassName={baseFontSizeClassName} className={className}>{children}</ProductsSectionSubtitle>
     )
 }
 

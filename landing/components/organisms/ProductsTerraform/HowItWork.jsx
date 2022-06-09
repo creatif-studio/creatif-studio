@@ -13,7 +13,7 @@ import { PRODUCTS_TERRAFORM_INFRASTRUCTURE, PRODUCTS_TERRAFORM_ENVIRONMENT, PROD
 const HowItWork = () => {
     return (
         <section className="mt-32">
-            <section className="mt-24 bg-sky-50 pt-22 rounded-xl container md:pr-0 md:pl-8 lg:px-10 xl:pt-32">
+            <section className="mt-24 bg-sky-50 pt-22 pb-22 rounded-xl container md:pr-0 md:pl-8 lg:px-10 xl:pt-32">
                 <ProductsSectionTitle className="md:text-5xl">
                     <strong className="font-bold">How It Works</strong>
                 </ProductsSectionTitle>

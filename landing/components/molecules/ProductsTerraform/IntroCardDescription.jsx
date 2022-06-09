@@ -1,6 +1,9 @@
-const IntroCardDescription = ({ children }) => {
+// third party modules
+import clsx from 'clsx'
+
+const IntroCardDescription = ({ children, className }) => {
     return (
-        <p className='text-sm text-gray-700 mt-4 leading-loose'>{children}</p>
+        <p className={clsx(className, 'text-sm text-gray-700 mt-4 leading-loose')}>{children}</p>
     )
 }
 
