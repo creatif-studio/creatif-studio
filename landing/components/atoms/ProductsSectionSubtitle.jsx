@@ -5,7 +5,7 @@ import clsx from 'clsx'
 
 const ProductsSectionSubtitle = ({ className, children }) => {
     return (
-        <h2 className={clsx(className, 'font-bold text-xl leading-relaxed lg:text-2xl')}>{ children }</h2>
+        <h2 className={clsx(className, 'font-semibold text-xl leading-relaxed lg:text-2xl')}>{ children }</h2>
     )
 }
 

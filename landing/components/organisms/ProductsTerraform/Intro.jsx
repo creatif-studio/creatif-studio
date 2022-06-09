@@ -8,7 +8,7 @@ import IntroCard from 'components/molecules/ProductsTerraform/IntroCard'
 
 const Intro = () => {
     return (
-        <div className="max-w-container mx-auto mt-24 grid gap-4 px-10 sm:px-16 md:grid-rows-2 md:grid-flow-col md:px-10 lg:px-14 xl:px-5">
+        <div className="mt-24 grid gap-4 container md:grid-rows-2 md:grid-flow-col">
             <IntroMain />
             <IntroCard className="row-start-2 md:row-start-1 md:col-span-2">
                 <IntroCard.Icon>
