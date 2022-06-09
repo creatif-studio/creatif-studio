@@ -1,6 +1,7 @@
 // internal modules
 import ProductsNavbar from 'components/organisms/ProductsNavbar'
 import ProductsHero from 'components/organisms/ProductsTerraform/Hero'
+import ProductsIntro from 'components/organisms/ProductsTerraform/Intro'
 
 const ProductsTerraform = () => {
 
@@ -8,6 +9,7 @@ const ProductsTerraform = () => {
         <main>
             <ProductsNavbar />
             <ProductsHero />
+            <ProductsIntro />
         </main>
     )
 }
