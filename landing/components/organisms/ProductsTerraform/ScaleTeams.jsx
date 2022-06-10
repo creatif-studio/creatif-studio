@@ -1,10 +1,11 @@
 // core modules
-import ProductsSectionDescription from 'components/atoms/ProductsSectionDescription'
-import ProductsSectionTitle from 'components/atoms/ProductsSectionTitle'
 import { memo } from 'react'
 import Image from 'next/image'
-import { PRODUCTS_SCALE_TEAMS_INFRASTRUCTURE, PRODUCTS_SCALE_TEAMS_INTEGRATIONS, PRODUCTS_SCALE_TEAMS_ORGANIZATION } from 'assets/images'
+// internal modules
 import ScaleTeamWork from './ScaleTeamWork'
+import ProductsSectionTitle from 'components/atoms/ProductsSectionTitle'
+import ProductsSectionDescription from 'components/atoms/ProductsSectionDescription'
+import { PRODUCTS_SCALE_TEAMS_INFRASTRUCTURE, PRODUCTS_SCALE_TEAMS_INTEGRATIONS, PRODUCTS_SCALE_TEAMS_ORGANIZATION } from 'assets/images'
 import { teamWorkInfrastructureData, teamWorkIntegrationsData, teamWorkOrganizationData } from 'utils/constants/products/terraform-content'
 
 const ScaleTeams = () => {

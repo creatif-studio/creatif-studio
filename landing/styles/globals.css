@@ -8,6 +8,12 @@
     .container {
         @apply mx-auto px-7 sm:px-16 md:w-[95vw] md:max-w-[95vw] lg:px-10 2xl:max-w-container;
     }
+
+    .animate-button-icon:hover > .icon,
+    .animate-button-icon:focus > .icon,
+    .animate-button-icon:active > .icon {
+        @apply translate-x-1 !important;
+    }
 }
 
 .bg-products-terraform-hero {
