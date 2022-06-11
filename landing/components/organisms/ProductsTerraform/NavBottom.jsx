@@ -55,8 +55,8 @@ const NavBottom = () => {
                     },
                 ]}
             />
-            <section className="flex items-center">
-                <ProductsNavLink className='mx-3'>
+            <section className="flex items-center mt-12 md:mt-0">
+                <ProductsNavLink className='mr-3'>
                     <BsTwitter size={30} />
                 </ProductsNavLink>
                 <ProductsNavLink className='mx-3'>
