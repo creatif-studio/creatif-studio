@@ -2,10 +2,13 @@
 import { memo } from 'react'
 // internal modules
 import ProductsNavLinkButton from 'components/atoms/ProductsNavLinkButton'
+import { useNavbarTrigger } from 'context/NavbarTriggerProvider'
 
 const Hero = () => {
+    const { triggerElementRef } = useNavbarTrigger()
+
     return (
-        <section className="mt-16 px-6 mx-auto sm:w-[600px] md:w-11/12 lg:w-[870px]">
+        <section className="mt-16 px-6 mx-auto sm:w-[600px] md:w-11/12 lg:w-[870px]" ref={triggerElementRef}>
             <h1 className='text-4xl font-semibold text-center leading-tight md:font-bold lg:text-5xl lg:font-bold lg:leading-snug'>Automate infrastructure provisioning at any scale.</h1>
             <p className='mt-7 text-center text-base leading-loose text-gray-800'>Terraform Cloud enables infrastructure automation for provisioning, compliance, and management of any cloud, data center, and service.</p>
             <section className="flex mt-7 flex-col w-full sm:flex-row sm:justify-center">

@@ -7,22 +7,25 @@ import ProductsScaleTeams from 'components/organisms/ProductsTerraform/ScaleTeam
 import ProductsGetStarted from 'components/organisms/ProductsTerraform/GetStarted'
 import ProductsNavBottom from 'components/organisms/ProductsTerraform/NavBottom'
 import ProductsFooter from 'components/organisms/ProductsTerraform/Footer'
+import NavbarTriggerProvider from 'context/NavbarTriggerProvider'
 
 const ProductsTerraform = () => {
 
     return (
-        <main>
-            <ProductsNavbar />
-            <ProductsHero />
-            <ProductsIntro />
-            <ProductsHowItWork />
-            <ProductsScaleTeams />
-            <ProductsGetStarted />
-            <hr className="divider-y mt-22 mb-10 border-gray-300 w-full container" />
-            <ProductsNavBottom />
-            <hr className="divider-y mt-22 mb-10 border-gray-300 w-full container" />
-            <ProductsFooter />
-        </main>
+        <NavbarTriggerProvider>
+            <main>
+                <ProductsNavbar />
+                <ProductsHero />
+                <ProductsIntro />
+                <ProductsHowItWork />
+                <ProductsScaleTeams />
+                <ProductsGetStarted />
+                <hr className="divider-y mt-22 mb-10 border-gray-300 w-full container" />
+                <ProductsNavBottom />
+                <hr className="divider-y mt-22 mb-10 border-gray-300 w-full container" />
+                <ProductsFooter />
+            </main>
+        </NavbarTriggerProvider>
     )
 }
 
