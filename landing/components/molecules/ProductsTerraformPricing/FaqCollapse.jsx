@@ -2,7 +2,7 @@
 import { memo } from 'react'
 // internal modules
 import CollapseGroup from 'components/atoms/collapse/Group'
-import { FAQ_COLLAPSE_DATA } from 'utils/constants/products/terraform-pricing'
+import { FAQ_COLLAPSE_DATA } from 'utils/constants/products/terraform-pricing.jsx'
 
 const FaqCollapse = () => {
     return (
