@@ -15,11 +15,13 @@ const Item = ({ id, Title, withArrow, Section, isShow, onShow }) => {
         <section className='flex flex-col overflow-hidden border-b border-gray-300'>
             <Button neutral className='px-5 py-7 flex justify-between items-center' iconPosition="right" onClick={handleShow}>
                 <span className='pr-3 text-left leading-relaxed'>{ Title }</span>
-                {
-                    withArrow && (
-                        <BsArrowUp size={20} className={clsx(!isShow ? 'text-gray-400 rotate-180' : 'text-gray-900 rotate-0', 'transition-all duration-500')} />
-                    )
-                }
+                <div className="min-h-[20px]">
+                    {
+                        withArrow && (
+                            <BsArrowUp size={20} className={clsx(!isShow ? 'text-gray-400 rotate-180' : 'text-gray-900 rotate-0', 'transition-all duration-500')} />
+                        )
+                    }
+                </div>
             </Button>
             <container className="grid">
                 <section className={clsx(isShow ? 'max-h-screen opacity-100' : 'opacity-0 max-h-0','transition-all duration-500 px-5 overflow-hidden')}>

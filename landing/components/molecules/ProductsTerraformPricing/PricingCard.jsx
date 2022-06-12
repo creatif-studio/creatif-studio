@@ -11,15 +11,16 @@ const PricingCard = ({
     Title,
     Pricing,
     Support,
+    className,
     featuresItems,
     isForBusiness,
     FeaturesTitle,
     buttonHref = "#",
 }) => {
     return (
-        <section className="border bg-white border-gray-200 py-6 px-8 pb-12">
+        <section className={clsx(className, "border bg-white border-gray-200 py-6 px-8 pb-12")}>
             <section className="max-w-[260px] w-fit mx-auto">
-                <section className='md:min-h-[110px]'>
+                <section className='md:min-h-[140px] lg:min-h-[110px]'>
                     <ProductsSectionSubtitle>{ Title }</ProductsSectionSubtitle>
                     <ProductsSectionDescription 
                         classNameOverrideMargin="mt-4"
@@ -28,7 +29,7 @@ const PricingCard = ({
                         className={clsx(!Pricing && 'hidden md:block',"tracking-widest font-normal")}
                     >{Pricing}</ProductsSectionDescription>
                 </section>
-                <section className="md:min-h-[230px]">
+                <section className="md:min-h-[260px] lg:min-h-[230px]">
                     <ProductsSectionDescription 
                         classNameOverrideMargin='mt-12'
                         classNameOverrideSize="text-xs"

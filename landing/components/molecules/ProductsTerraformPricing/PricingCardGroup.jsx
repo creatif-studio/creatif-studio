@@ -18,6 +18,7 @@ const PricingCardGroup = () => {
                 ]}
             />
             <PricingCard 
+                className="border-t-0 border-b-0 md:border-t md:border-b md:border-l-0 md:border-r-0"
                 Title={<>Team & Governance</>}
                 FeaturesTitle={<>Everything in Free, with options to add:</>}
                 Pricing={<>STARTING AT <strong className='text-sm tracking-normal'>$20/user</strong></>}
