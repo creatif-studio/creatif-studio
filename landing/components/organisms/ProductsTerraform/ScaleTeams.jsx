@@ -18,22 +18,23 @@ const ScaleTeams = () => {
             <ScaleTeamWork
                 Title={<><span className="text-purple-400">Build</span> infrastructure remotely with your team</>}
                 Description="Collaborate in a remote and SOC2 compliant environment."
-                Image={<Image src={PRODUCTS_SCALE_TEAMS_INFRASTRUCTURE} className="xl:-mb-3 block" />}
+                Image={<Image src={PRODUCTS_SCALE_TEAMS_INFRASTRUCTURE} alt="PRODUCTS_SCALE_TEAMS_INFRASTRUCTURE" className="xl:-mb-3 block" />}
                 cardData={teamWorkInfrastructureData}
+                imageClassName="xl:-mt-40"
             />
             <ScaleTeamWork
                 Title={<><span className="text-purple-400">Standardize</span> best practices across your organization.</>}
                 Description="Help your team remain secure and compliant every time they make a change to infrastructure."
-                Image={<Image src={PRODUCTS_SCALE_TEAMS_ORGANIZATION} className="xl:-mb-3 block" />}
+                Image={<Image src={PRODUCTS_SCALE_TEAMS_ORGANIZATION} alt="PRODUCTS_SCALE_TEAMS_ORGANIZATION" className="xl:-mb-3 block" />}
                 cardData={teamWorkOrganizationData}
-                imageClassName="xl:-mt-80"
+                imageClassName="xl:-mt-72"
             />
             <ScaleTeamWork
                 Title={<><span className="text-purple-400">Innovate</span> by integrating Terraform into your existing CI/CD pipeline.</>}
                 Description="Automate Terraform Cloud functionality into the workflows your team uses everyday."
-                Image={<Image src={PRODUCTS_SCALE_TEAMS_INTEGRATIONS} className="xl:-mb-3 block" />}
+                Image={<Image src={PRODUCTS_SCALE_TEAMS_INTEGRATIONS} alt="PRODUCTS_SCALE_TEAMS_ORGANIZATION" className="xl:-mb-3 block" />}
                 cardData={teamWorkIntegrationsData}
-                imageClassName="xl:-mt-60"
+                imageClassName="xl:-mt-40"
             />
         </section>
     )

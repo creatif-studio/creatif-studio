@@ -1,30 +1,42 @@
 // core modules
 import { memo } from 'react'
+import { useRouter } from 'next/router'
 // third part modules
 import clsx from 'clsx'
 // internal modules
-import ProductsNavLink from 'components/atoms/ProductsNavLink'
-import ProductsNavLinkButton from 'components/atoms/ProductsNavLinkButton'
+import ProductsLink from 'components/atoms/ProductsLink'
+import ProductsLinkButton from 'components/atoms/ProductsLinkButton'
 
 const ProductsNavLinksMobile = ({ shouldBeShow = false, className }) => {
+    const { pathname } = useRouter()
+
     return (
         <section className={clsx(shouldBeShow ? 'flex' : 'hidden', className, 'flex-col fixed inset-0 bg-white z-40 pt-16 px-6 md:items-center lg:hidden')}>
-            <ProductsNavLink href="/" className="mt-7">
+            <ProductsLink 
+                href="/products/terraform/pricing" 
+                className="mt-7 pb-1" 
+                classNameActive={pathname === '/products/terraform/pricing' && 'border-b-[2px] border-black'}
+            >
                 Pricing
-            </ProductsNavLink>
-            <ProductsNavLink href="/" className="mt-6">
+            </ProductsLink>
+            <ProductsLink href="/" className="mt-6 pb-1">
                 Documentation
-            </ProductsNavLink>
-            <ProductsNavLink href="/" className="mt-6">
+            </ProductsLink>
+            <ProductsLink href="/" className="mt-6 pb-1">
                 Business
-            </ProductsNavLink>
+            </ProductsLink>
             <hr className='w-full divide-y border-gray-300 mt-6' />
-            <ProductsNavLink href="/" className="text-base mt-5">
+            <ProductsLink href="/" className="text-base mt-5">
                 Sign In
-            </ProductsNavLink>
-            <ProductsNavLinkButton variant="primary" href="/">
+            </ProductsLink>
+            <ProductsLinkButton 
+                href="/" 
+                classNameOverridePadding="px-6 py-2"
+                className="mt-5 rounded" 
+                variant="primary"
+            >
                 Try Terraform Cloud
-            </ProductsNavLinkButton>
+            </ProductsLinkButton>
         </section>
     )
 }

@@ -14,7 +14,7 @@ const IntroCard = ({ className, children }) => {
     const description = getChildrenByType(children, IntroCardDescription)
     
     return (
-        <div className={clsx(className, 'mt-5 flex h-fit md:mr-14 lg:mr-36 xl:mr-14')}>
+        <div className={clsx(className, 'flex h-fit')}>
             {
                 icon.length 
                 ? (

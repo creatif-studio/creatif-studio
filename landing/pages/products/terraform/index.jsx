@@ -1,13 +1,15 @@
 // internal modules
+import ProductsDivider from 'components/atoms/Divider'
 import ProductsNavbar from 'components/organisms/ProductsNavbar'
+import NavbarTriggerProvider from 'context/NavbarTriggerProvider'
+import ProductsContainer from 'components/atoms/ProductsContainer'
 import ProductsHero from 'components/organisms/ProductsTerraform/Hero'
 import ProductsIntro from 'components/organisms/ProductsTerraform/Intro'
-import ProductsHowItWork from 'components/organisms/ProductsTerraform/HowItWork'
-import ProductsScaleTeams from 'components/organisms/ProductsTerraform/ScaleTeams'
-import ProductsGetStarted from 'components/organisms/ProductsTerraform/GetStarted'
-import ProductsNavBottom from 'components/organisms/ProductsTerraform/NavBottom'
 import ProductsFooter from 'components/organisms/ProductsTerraform/Footer'
-import NavbarTriggerProvider from 'context/NavbarTriggerProvider'
+import ProductsHowItWork from 'components/organisms/ProductsTerraform/HowItWork'
+import ProductsNavBottom from 'components/organisms/ProductsTerraform/NavBottom'
+import ProductsGetStarted from 'components/organisms/ProductsTerraform/GetStarted'
+import ProductsScaleTeams from 'components/organisms/ProductsTerraform/ScaleTeams'
 
 const ProductsTerraform = () => {
 
@@ -17,12 +19,13 @@ const ProductsTerraform = () => {
                 <ProductsNavbar />
                 <ProductsHero />
                 <ProductsIntro />
+                <ProductsContainer />
                 <ProductsHowItWork />
                 <ProductsScaleTeams />
                 <ProductsGetStarted />
-                <hr className="divider-y mt-22 mb-10 border-gray-300 w-full container" />
+                <ProductsDivider />
                 <ProductsNavBottom />
-                <hr className="divider-y mt-22 mb-10 border-gray-300 w-full container" />
+                <ProductsDivider />
                 <ProductsFooter />
             </main>
         </NavbarTriggerProvider>

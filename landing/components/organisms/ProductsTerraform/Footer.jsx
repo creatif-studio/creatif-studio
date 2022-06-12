@@ -1,9 +1,10 @@
+import ProductsContainer from 'components/atoms/ProductsContainer'
 import ProductsNavLink from 'components/atoms/ProductsNavLink'
 import { memo } from 'react'
 
 const Footer = () => {
     return (
-        <section className='container mb-12 sm:px-5 lg:px-10 grid grid-cols-1 md:grid-cols-3'>
+        <ProductsContainer classNameCard="mb-12 grid grid-cols-1 md:grid-cols-3">
             <div className="flex flex-wrap md:col-span-2">
                 <ProductsNavLink className="mr-3 mt-3 text-gray-500 font-normal text-xs">
                     Terms of Service
@@ -31,7 +32,7 @@ const Footer = () => {
                 </ProductsNavLink>
             </div>
             <p className="m-0 p-0 mt-12 text-xs text-gray-500 md:mt-3 md:ml-auto">©2021 HashiCorp, Inc. All rights reserved</p>
-        </section>
+        </ProductsContainer>
     )
 }
 

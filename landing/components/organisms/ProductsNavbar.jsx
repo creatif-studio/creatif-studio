@@ -5,7 +5,7 @@ import { useState, useCallback, useEffect, useRef } from 'react'
 import { BsList, BsXLg } from 'react-icons/bs/index'
 // internal modules
 import useObserver from 'hooks/useIntersectionObserver'
-import ProductsNavLink from 'components/atoms/ProductsNavLink'
+import ProductsLink from 'components/atoms/ProductsLink'
 import { useNavbarTrigger } from 'context/NavbarTriggerProvider'
 import ProductsNavLinksMobile from 'components/molecules/ProductsNavLinksMobile'
 import ProductsNavLinksDesktop from 'components/molecules/ProductsNavLinksDesktop'
@@ -56,9 +56,9 @@ const ProductsNavbar = () => {
                     )
                 }
             >
-                <ProductsNavLink href="/" className="z-50">
-                    <Image src={assets.images.TERRAFORM_CLOUD} />
-                </ProductsNavLink>
+                <ProductsLink href="/" className="z-50">
+                    <Image src={assets.images.TERRAFORM_CLOUD} alt="Logo" />
+                </ProductsLink>
                 <ProductsNavLinksDesktop />
                 <button onClick={handleShowMobileNav} className="lg:hidden">
                     {

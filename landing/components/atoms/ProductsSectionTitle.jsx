@@ -3,9 +3,26 @@ import {memo} from 'react'
 // third party modules
 import clsx from 'clsx'
 
-const ProductsSectionTitle = ({ children, className }) => {
+const ProductsSectionTitle = ({ 
+    children, 
+    className, 
+    classNameOverrideBaseSize ,
+    classNameOverrideBaseWeight, 
+    classNameOverrideLineHeight, 
+    classNameOverrideResponsiveSize ,
+    classNameOverrideResponsiveWeight, 
+}) => {
     return (
-        <h1 className={clsx(className, 'font-semibold text-3xl leading-snug md:text-4xl lg:font-bold xl:font-4.5xl')}>{children}</h1>
+        <h1 
+            className={clsx(
+                className,
+                classNameOverrideBaseSize ?? "text-3xl",
+                classNameOverrideLineHeight ?? 'leading-snug',
+                classNameOverrideBaseWeight ?? "font-semibold",
+                classNameOverrideResponsiveWeight ?? "lg:font-bold",
+                classNameOverrideResponsiveSize ?? "md:text-4xl xl:text-4.5xl"
+            )}
+        >{children}</h1>
     )
 }
 

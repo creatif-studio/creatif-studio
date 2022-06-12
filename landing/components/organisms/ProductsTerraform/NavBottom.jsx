@@ -4,10 +4,11 @@ import { memo } from 'react'
 import NavBottomCard from 'components/molecules/ProductsTerraform/NavBottomCard'
 import ProductsNavLink from 'components/atoms/ProductsNavLink'
 import { BsLinkedin, BsTwitter, BsYoutube } from 'react-icons/bs'
+import ProductsContainer from 'components/atoms/ProductsContainer'
 
 const NavBottom = () => {
     return (
-        <section className="container grid grid-cols-1 items-start justify-between sm:px-5 lg:px-10 md:grid-cols-4 md:mt-22 md:gap-4">
+        <ProductsContainer classNameCard="grid grid-cols-1 items-start justify-between md:grid-cols-4 md:gap-4">
             <NavBottomCard
                 Title="Learn about HCP"
                 marginClassName="mt-12 md:mt-0"
@@ -66,7 +67,7 @@ const NavBottom = () => {
                     <BsYoutube size={30} />
                 </ProductsNavLink>
             </section>
-        </section>
+        </ProductsContainer>
     )
 }
 
