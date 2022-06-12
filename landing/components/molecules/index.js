@@ -1,4 +1,5 @@
 export { default as NavLinks } from "./NavLinks";
+export { default as NavMobile } from "./NavMobile";
 export { default as NavActions } from "./NavActions";
 
 export { default as OpenSourceCard } from "./Landing/OpenSourceCard";

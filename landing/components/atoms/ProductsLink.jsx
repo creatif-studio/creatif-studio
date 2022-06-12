@@ -7,7 +7,7 @@ import clsx from 'clsx'
 const ProductsLink = ({ 
     children,
     className, 
-    href = "#", 
+    href = "/#", 
     classNameActive,
     classNameOverrideSize,
     classNameOverrideWidth,

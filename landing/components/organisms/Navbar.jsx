@@ -1,5 +1,5 @@
 import { Brand, Container } from "components/atoms";
-import { NavLinks, NavActions } from "components/molecules";
+import { NavLinks, NavActions, NavMobile } from "components/molecules";
 
 import React from "react";
 
@@ -10,6 +10,7 @@ const Navbar = () => {
         <Brand />
         <NavLinks />
         <NavActions />
+        <NavMobile />
       </Container>
     </div>
   );
