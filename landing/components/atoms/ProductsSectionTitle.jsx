@@ -20,7 +20,8 @@ const ProductsSectionTitle = ({
                 classNameOverrideLineHeight ?? 'leading-snug',
                 classNameOverrideBaseWeight ?? "font-semibold",
                 classNameOverrideResponsiveWeight ?? "lg:font-bold",
-                classNameOverrideResponsiveSize ?? "md:text-4xl xl:text-4.5xl"
+                classNameOverrideResponsiveSize ?? "md:text-4xl xl:text-4.5xl",
+                "font-display"
             )}
         >{children}</h1>
     )

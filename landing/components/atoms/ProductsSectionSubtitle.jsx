@@ -20,7 +20,8 @@ const ProductsSectionSubtitle = ({
                 classNameOverrideLineHeight ?? 'leading-relaxed',
                 classNameOverrideBaseWeight ?? "font-semibold",
                 classNameOverrideResponsiveWeight ?? "lg:font-bold",
-                classNameOverrideResponsiveSize ?? "lg:text-2xl"
+                classNameOverrideResponsiveSize ?? "lg:text-2xl",
+                "font-display"
             )}
         >{children}</h1>
     )
