@@ -2,13 +2,16 @@ import {
   Certified,
   CustomerStories,
   Deliver,
-  Footer,
   LandingHero,
   Navbar,
   NextSteps,
   Practice,
   UseCases,
 } from "components/organisms";
+
+import Divider from 'components/atoms/Divider'
+import Footer from 'components/organisms/ProductsTerraform/Footer'
+import NavBottom from 'components/organisms/ProductsTerraform/NavBottom'
 
 export default function Landing() {
   return (
@@ -21,6 +24,9 @@ export default function Landing() {
       <CustomerStories />
       <Certified />
       <NextSteps />
+      <Divider />
+      <NavBottom />
+      <Divider />
       <Footer />
     </div>
   );

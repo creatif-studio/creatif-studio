@@ -1,7 +1,6 @@
 import {
   Challenge,
   CustomerCaseStudy,
-  Footer,
   Navbar,
   ReadyGetStarted,
   Resources,
@@ -9,7 +8,10 @@ import {
   UseCaseHero,
   WhiteboardVideo,
 } from "components/organisms";
-import React from "react";
+
+import Divider from 'components/atoms/Divider'
+import Footer from 'components/organisms/ProductsTerraform/Footer'
+import NavBottom from 'components/organisms/ProductsTerraform/NavBottom'
 
 const UseCasePage = () => {
   return (
@@ -22,6 +24,9 @@ const UseCasePage = () => {
       <Resources />
       <ReadyGetStarted />
       <WhiteboardVideo />
+      <Divider />
+      <NavBottom />
+      <Divider />
       <Footer />
     </div>
   );
