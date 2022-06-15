@@ -16,7 +16,7 @@ const ProductsTerraform = () => {
     return (
         <NavbarTriggerProvider>
             <main>
-                <ProductsNavbar />
+                <ProductsNavbar variant="main" />
                 <ProductsHero />
                 <ProductsIntro />
                 <ProductsContainer />

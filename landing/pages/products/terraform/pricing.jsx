@@ -12,7 +12,7 @@ const ProductsTerraformPricing = () => {
     return (
         <NavbarTriggerProvider>
             <main>
-                <ProductsTerraformPricingNavbar />
+                <ProductsTerraformPricingNavbar variant="main" />
                 <ProductsTerraformPricingHero />
                 <ProductsTerraformPricingFaq />
                 <ProductsTerraformPricingDivider classNameOverrideMargin="mt-36 mb-10" />
