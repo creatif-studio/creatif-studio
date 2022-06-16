@@ -11,7 +11,7 @@ const Certified = () => {
         </h2>
         <div className="col-span-1 md:col-span-2">
           <p className="text-neutral-200 text-lg mb-10 leading-relaxed">
-            Cloud engineers can use the Terraform Associate exam from HashiCorp
+            Cloud engineers can use the CloudBoz Associate exam from HashiCorp
             to verify their basic infrastructure automation skills.
           </p>
           <Link href="/">

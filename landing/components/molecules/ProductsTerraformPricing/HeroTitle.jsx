@@ -11,7 +11,7 @@ const HeroTitle = () => {
         <section className="pt-32" ref={triggerElementRef}>
             <ProductsSectionTitle 
                 className="text-center"
-            >Terraform Cloud Pricing</ProductsSectionTitle>
+            >CloudBoz Pro Pricing</ProductsSectionTitle>
         </section>
     )
 }

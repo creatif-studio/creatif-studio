@@ -9,11 +9,11 @@ import ProductsSectionDescription from 'components/atoms/ProductsSectionDescript
 const Intro = () => {
     return (
         <div className="md:max-w-[280px] md:mr-auto lg:max-w-[400px] xl:max-w-[480px]">
-            <ProductsSectionTitle classNameOverrideLineHeight="leading-[1.4_!important]">What is Terraform Cloud?</ProductsSectionTitle>
-            <ProductsSectionDescription>Terraform Cloud is HashiCorp&apos;s managed service offering. It eliminates the need for unnecessary tooling and documentation for practitioners, teams, and organizations to use Terraform in production.</ProductsSectionDescription>
-            <ProductsSectionDescription>Provision infrastructure in a remote environment that is optimized for the Terraform workflow.</ProductsSectionDescription>
+            <ProductsSectionTitle classNameOverrideLineHeight="leading-[1.4_!important]">What is CloudBoz Pro?</ProductsSectionTitle>
+            <ProductsSectionDescription>CloudBoz Pro is HashiCorp&apos;s managed service offering. It eliminates the need for unnecessary tooling and documentation for practitioners, teams, and organizations to use CloudBoz in production.</ProductsSectionDescription>
+            <ProductsSectionDescription>Provision infrastructure in a remote environment that is optimized for the CloudBoz workflow.</ProductsSectionDescription>
             <ProductsNavLink className="mt-8 block flex items-center justify-start transition-all group">
-                Learn how to use Terraform Cloud
+                Learn how to use CloudBoz Pro
                 <BsArrowRightShort size={26} className="ml-3 transition-all group-hover:ml-4" />
             </ProductsNavLink>
         </div>

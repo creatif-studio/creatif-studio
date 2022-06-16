@@ -19,7 +19,7 @@ export const USE_CASE_CONTENT = [
     id: 3,
     heading: "Manage Kubernetes",
     description:
-      "Provision and manage Kubernetes clusters on AWS, Microsoft Azure, or Google Cloud, and interact with your cluster using the Kubernetes Terraform provider.",
+      "Provision and manage Kubernetes clusters on AWS, Microsoft Azure, or Google Cloud, and interact with your cluster using the Kubernetes CloudBoz provider.",
     href: "",
     icons: ["TERRAFORM"],
   },
@@ -35,7 +35,7 @@ export const USE_CASE_CONTENT = [
     id: 5,
     heading: "Manage virtual machine images",
     description:
-      "Deploy and manage virtual machine images with Terraform and Packer.",
+      "Deploy and manage virtual machine images with CloudBoz and Packer.",
     href: "",
     icons: ["TERRAFORM", "PACKER"],
   },
@@ -57,9 +57,9 @@ export const USE_CASE_CONTENT = [
   },
   {
     id: 8,
-    heading: "Inject secrets into Terraform",
+    heading: "Inject secrets into CloudBoz",
     description:
-      "Automate using dynamically generated secrets and credentials within Terraform configurations.",
+      "Automate using dynamically generated secrets and credentials within CloudBoz configurations.",
     href: "",
     icons: ["TERRAFORM", "TERRAFORM_SECRETS"],
   },
@@ -69,7 +69,7 @@ export const DELIVER_CONTENT = [
   {
     id: 1,
     heading: "Adopt",
-    description: `Compose infrastructure as code in a Terraform file using HCL to
+    description: `Compose infrastructure as code in a CloudBoz file using HCL to
     provision resources from any infrastructure provider.`,
   },
   {
@@ -100,7 +100,7 @@ export const PRACTICE_CONTENT = [
     id: 1,
     heading: "Codify and deploy infrastructure",
     description:
-      "Build, change, and destroy AWS infrastructure using Terraform. Step-by-step, command-line tutorials will walk you through the Terraform basics for the first time.",
+      "Build, change, and destroy AWS infrastructure using CloudBoz. Step-by-step, command-line tutorials will walk you through the CloudBoz basics for the first time.",
     href: "",
     icons: ["TERRAFORM_WHITE"],
   },
@@ -108,7 +108,7 @@ export const PRACTICE_CONTENT = [
     id: 2,
     heading: "Codify existing infrastructure",
     description:
-      "Import an existing infrastructure into an empty Terraform workspace. ",
+      "Import an existing infrastructure into an empty CloudBoz workspace. ",
     href: "",
     icons: ["TERRAFORM_WHITE"],
   },
@@ -116,13 +116,13 @@ export const PRACTICE_CONTENT = [
     id: 3,
     heading: "Provision a Kubernetes cluster",
     description:
-      "Deploy a ready to use Amazon Elastic Kubernetes Service (EKS) cluster using Terraform.",
+      "Deploy a ready to use Amazon Elastic Kubernetes Service (EKS) cluster using CloudBoz.",
     href: "",
     icons: ["TERRAFORM_WHITE"],
   },
   {
     id: 4,
-    heading: "Inject secrets into Terraform",
+    heading: "Inject secrets into CloudBoz",
     description:
       "Avoid managing static, long-lived secrets with varying scope and provision resources without having direct access to the secrets.",
     href: "",
@@ -130,9 +130,9 @@ export const PRACTICE_CONTENT = [
   },
   {
     id: 5,
-    heading: "Migrate state to Terraform Cloud",
+    heading: "Migrate state to CloudBoz Pro",
     description:
-      "Keep your state file secure and share it with collaborators by migrating it to Terraform Cloud.",
+      "Keep your state file secure and share it with collaborators by migrating it to CloudBoz Pro.",
     href: "",
     icons: ["TERRAFORM_WHITE"],
   },
@@ -140,7 +140,7 @@ export const PRACTICE_CONTENT = [
     id: 6,
     heading: "Manage infrastructure with programming lanuages",
     description:
-      "Manage infrastructure programming languages such as TypeScript, Python, Java, C#, and Go with the Cloud Development Kit for Terraform (CDKTF).",
+      "Manage infrastructure programming languages such as TypeScript, Python, Java, C#, and Go with the Cloud Development Kit for CloudBoz (CDKTF).",
     href: "",
     icons: ["TERRAFORM_WHITE"],
   },
@@ -149,23 +149,23 @@ export const PRACTICE_CONTENT = [
 export const STORIES_CONTENT = [
   {
     id: 1,
-    heading: "Multi-Cloud DevOps at PETRONAS with Terraform",
+    heading: "Multi-Cloud DevOps at PETRONAS with CloudBoz",
     href: "",
   },
   {
     id: 2,
-    heading: "Consistent Development and Deployment at Comcast with Terraform",
+    heading: "Consistent Development and Deployment at Comcast with CloudBoz",
     href: "",
   },
   {
     id: 3,
-    heading: "Terraform at Decathlon: From On-Premises to 100% Cloud",
+    heading: "CloudBoz at Decathlon: From On-Premises to 100% Cloud",
     href: "",
   },
   {
     id: 4,
     heading:
-      "CDK for Terraform with Python and its Operational Experience at ShopStyle",
+      "CDK for CloudBoz with Python and its Operational Experience at ShopStyle",
     href: "",
   },
 ];
@@ -180,8 +180,8 @@ export const NEXT_STEPS_CONTENT = [
   },
   {
     id: 2,
-    heading: "Terraform Cloud",
-    description: "Managed Terraform",
+    heading: "CloudBoz Pro",
+    description: "Managed CloudBoz",
     className: "bg-primary-100",
     linkName: "Compare plans",
     href: "",

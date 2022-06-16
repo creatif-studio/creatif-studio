@@ -30,8 +30,8 @@ const ScaleTeams = () => {
                 imageClassName="xl:-mt-72"
             />
             <ScaleTeamWork
-                Title={<><span className="text-purple-400">Innovate</span> by integrating Terraform into your existing CI/CD pipeline.</>}
-                Description="Automate Terraform Cloud functionality into the workflows your team uses everyday."
+                Title={<><span className="text-purple-400">Innovate</span> by integrating CloudBoz into your existing CI/CD pipeline.</>}
+                Description="Automate CloudBoz Pro functionality into the workflows your team uses everyday."
                 Image={<Image src={PRODUCTS_SCALE_TEAMS_INTEGRATIONS} alt="PRODUCTS_SCALE_TEAMS_ORGANIZATION" className="xl:-mb-3 block" />}
                 cardData={teamWorkIntegrationsData}
                 imageClassName="xl:-mt-40"

@@ -35,7 +35,7 @@ const ProductsNavLinksMobile = ({ shouldBeShow = false, className }) => {
                 className="mt-5 rounded" 
                 variant="primary"
             >
-                Try Terraform Cloud
+                Try CloudBoz Pro
             </ProductsLinkButton>
         </section>
     )

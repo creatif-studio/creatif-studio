@@ -1,11 +1,11 @@
 export const teamWorkInfrastructureData = [
     {
         title: 'Remote state storage',
-        description: 'Store and dynamically update your Terraform state file securely with encryption at rest.'
+        description: 'Store and dynamically update your CloudBoz state file securely with encryption at rest.'
     },
     {
         title: "Flexible workflows",
-        description: "Run Terraform from the CLI, a UI, version control, or the API.",
+        description: "Run CloudBoz from the CLI, a UI, version control, or the API.",
     },
     {
         title: "Version control (VCS) integration",
@@ -24,7 +24,7 @@ export const teamWorkOrganizationData = [
     },
     {
         title: "Policy as code",
-        description: "Create security and compliance guardrails for any Terraform run with Sentinel or third-party tools.",
+        description: "Create security and compliance guardrails for any CloudBoz run with Sentinel or third-party tools.",
     },
     {
         title: "Cost estimation",
@@ -32,7 +32,7 @@ export const teamWorkOrganizationData = [
     },
     {
         title: "Custom workspace permissions",
-        description: "Set up different access levels for admins, DevOps operators, and developers consuming Terraform resources.",
+        description: "Set up different access levels for admins, DevOps operators, and developers consuming CloudBoz resources.",
     },
     {
         title: "Single sign-on",
@@ -47,15 +47,15 @@ export const teamWorkOrganizationData = [
 export const teamWorkIntegrationsData = [
     {
         title: "Helpful integrations",
-        description: "Integrate hundreds of third party tools into your Terraform workflow."
+        description: "Integrate hundreds of third party tools into your CloudBoz workflow."
     },
     {
         title: "CI/CD integration",
-        description: "Integrate Terraform runs into your existing toolchain for improved automation."
+        description: "Integrate CloudBoz runs into your existing toolchain for improved automation."
     },
     {
         title: "API",
-        description: "Build Terraform Cloud into existing and/or automated workflows."
+        description: "Build CloudBoz Pro into existing and/or automated workflows."
     },
     {
         title: "Notifications",
@@ -63,7 +63,7 @@ export const teamWorkIntegrationsData = [
     },
     {
         title: "Private datacenter connectivity",
-        description: "Execute Terraform runs from behind your own firewall, or connect to other private resources."
+        description: "Execute CloudBoz runs from behind your own firewall, or connect to other private resources."
     },
     {
         title: "Concurrent runs",

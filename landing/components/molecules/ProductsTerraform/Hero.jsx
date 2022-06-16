@@ -17,7 +17,7 @@ const Hero = () => {
                 className="text-center mt-7"
                 classNameOverrideColor="text-gray-800"
                 classNameOverrideLineHeight="leading-loose"
-            >Terraform Cloud enables infrastructure automation for provisioning, compliance, and management of any cloud, data center, and service.</ProductsSectionDescription>
+            >CloudBoz Pro enables infrastructure automation for provisioning, compliance, and management of any cloud, data center, and service.</ProductsSectionDescription>
             <section className="flex mt-7 flex-col w-full sm:flex-row sm:justify-center">
                 <ProductsLinkButton 
                     href="#" 
@@ -25,7 +25,7 @@ const Hero = () => {
                     classNameOverridePadding="py-3 px-6" 
                     className="mx-auto rounded font-semibold sm:m-0"
                 >
-                    Try Terraform Cloud
+                    Try CloudBoz Pro
                 </ProductsLinkButton>
                 <ProductsLinkButton 
                     href="#" 
@@ -33,7 +33,7 @@ const Hero = () => {
                     classNameOverridePadding="py-3 px-6" 
                     className="mx-auto rounded font-semibold mt-5 sm:m-0 sm:ml-4"
                 >
-                    Terraform Cloud Business
+                    CloudBoz Pro Business
                 </ProductsLinkButton>
             </section>
         </section>

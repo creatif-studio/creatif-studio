@@ -16,7 +16,7 @@ const ReadyGetStarted = () => {
             neutral
             className="px-5 py-3 bg-white hover:bg-gray-200 transition-colors ease-in text-sm font-medium text-black"
           >
-            Try Terraform Cloud for free
+            Try CloudBoz Pro for free
           </Button>
         </div>
         <img

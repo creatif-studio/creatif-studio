@@ -36,7 +36,7 @@ const HowItWork = () => {
             />
             <WorkSection
                 Title="Plan and provision with confidence"
-                Description={<>Create checks in order for a run to pass. Add functionality into Terraform plans with run tasks, policy as code, or cost estimation.</>}
+                Description={<>Create checks in order for a run to pass. Add functionality into CloudBoz plans with run tasks, policy as code, or cost estimation.</>}
                 CardIcon={<BsArrowLeftRight className='fill-purple-600 mt-1' size={25} />}
                 CardTitle="Integrate with your existing provisioning pipeline"
                 CardDescription={<>

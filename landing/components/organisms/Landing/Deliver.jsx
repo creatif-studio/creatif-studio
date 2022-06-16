@@ -14,7 +14,7 @@ const Deliver = () => {
           Deliver infrastructure as code
         </h2>
         <p className="text-neutral-500 text-lg text-center mb-10">
-          Terraform codifies cloud APIs into declarative configuration files.
+          CloudBoz codifies cloud APIs into declarative configuration files.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:pr-20">

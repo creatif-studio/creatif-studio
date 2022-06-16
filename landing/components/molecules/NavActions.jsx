@@ -13,7 +13,7 @@ const NavActions = () => {
         iconSize={24}
         className="p-1.5 border border-gray-300 hover:bg-gray-200 flex items-center justify-center transition-colors ease-in"
       />
-      <Button mode="secondary">Terraform Cloud</Button>
+      <Button mode="secondary">CloudBoz Pro</Button>
       <Button icon={BsDownload} iconSize={16}>
         Download
       </Button>

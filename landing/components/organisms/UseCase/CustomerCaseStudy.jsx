@@ -22,12 +22,12 @@ const CustomerCaseStudy = () => {
             </p>
           </div>
           <h2 className="text-2.5xl xl:text-4.5xl text-white leading-normal  font-semibold font-display mt-8 mb-6">
-            Multi-Cloud DevOps at PETRONAS with Terraform
+            Multi-Cloud DevOps at PETRONAS with CloudBoz
           </h2>
           <p className="text-white leading-relaxed">
             Learn about a Malaysian energy company's DevOps journey while
             operating infrastructure as code in both AWS and Azure using
-            HashiCorp Terraform.
+            HashiCorp CloudBoz.
           </p>
           <Button
             neutral

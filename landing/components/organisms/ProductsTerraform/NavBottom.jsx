@@ -10,7 +10,7 @@ const NavBottom = () => {
     return (
         <ProductsContainer classNameCard="grid grid-cols-1 items-start justify-between md:grid-cols-4 md:gap-4">
             <NavBottomCard
-                Title="Learn about HCP"
+                Title="Learn about CloudBoz"
                 marginClassName="mt-12 md:mt-0"
                 Items={[
                     {

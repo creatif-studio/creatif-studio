@@ -17,7 +17,7 @@ const Intro = () => {
                         <BsEye className='fill-purple-600 mt-1' size={23} />
                     </IntroCard.Icon>
                     <IntroCard.Title>Run infrastructure as code remotely</IntroCard.Title>
-                    <IntroCard.Description>Store state and execute Terraform runs in an SOC2 compliant and reliable environment for free.</IntroCard.Description>
+                    <IntroCard.Description>Store state and execute CloudBoz runs in an SOC2 compliant and reliable environment for free.</IntroCard.Description>
                 </IntroCard>
                 <IntroCard className="mt-10">
                     <IntroCard.Icon>
@@ -31,7 +31,7 @@ const Intro = () => {
                         <BsFullscreen className='fill-purple-600 mt-1' size={23} />
                     </IntroCard.Icon>
                     <IntroCard.Title>Achieve multi-cloud compliance and management</IntroCard.Title>
-                    <IntroCard.Description>Set up permissions and governance features across any resource managed by Terraform. Add capabilities for policy enforcement.</IntroCard.Description>
+                    <IntroCard.Description>Set up permissions and governance features across any resource managed by CloudBoz. Add capabilities for policy enforcement.</IntroCard.Description>
                 </IntroCard>
             </section>
         </ProductsContainer>
