@@ -4,26 +4,36 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .container {
-        @apply mx-auto px-7 sm:px-16 md:w-[95vw] md:max-w-[95vw] lg:px-10 2xl:max-w-container;
-    }
+@import "./component.css";
 
-    .animate-button-icon:hover > .icon,
-    .animate-button-icon:focus > .icon,
-    .animate-button-icon:active > .icon {
-        @apply translate-x-1 !important;
-    }
+@layer components {
+  .container {
+    @apply mx-auto px-7 sm:px-16 md:w-[95vw] md:max-w-[95vw] lg:px-10 2xl:max-w-container;
+  }
+
+  .animate-button-icon:hover > .icon,
+  .animate-button-icon:focus > .icon,
+  .animate-button-icon:active > .icon {
+    @apply translate-x-1 !important;
+  }
 }
 
 .bg-products-terraform-hero {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.63%, rgba(209, 235, 255, 0.54) 100%), 
-          url(/images/products-terraform-hero-background.svg) left bottom no-repeat, 
-          url(/images/products-terraform-hero-background.svg) right bottom no-repeat;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 40.63%,
+      rgba(209, 235, 255, 0.54) 100%
+    ),
+    url(/images/products-terraform-hero-background.svg) left bottom no-repeat,
+    url(/images/products-terraform-hero-background.svg) right bottom no-repeat;
 }
 
 @media screen and (max-width: 800px) {
-    .bg-products-terraform-hero {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.63%, rgba(209, 235, 255, 0.54) 100%);
-    }
+  .bg-products-terraform-hero {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 40.63%,
+      rgba(209, 235, 255, 0.54) 100%
+    );
+  }
 }

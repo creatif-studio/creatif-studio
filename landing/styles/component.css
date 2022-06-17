@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .popup-container {
+    @apply bg-white rounded-sm drop-shadow-xl flex flex-col overflow-hidden;
+  }
+}
