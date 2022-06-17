@@ -9,7 +9,8 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/images/hero-pattern.svg')",
         "practice-pattern": "url('/images/practice-pattern.svg')",
-        "products-terraform-pricing-hero": "url(/images/products-terraform-pricing-hero-background.svg)",
+        "products-terraform-pricing-hero":
+          "url(/images/products-terraform-pricing-hero-background.svg)",
         "deliver-gradient":
           "radial-gradient(circle farthest-side at 50% -90%, #f2f2f2 ,#f2f2f2, #f7f7f7, white)",
         "usecase-hero-gradient":
@@ -56,8 +57,13 @@ module.exports = {
       },
       animation: {
         "move-right": "move-to-right 0.2s forwards",
+        fade: "fadeIn 0.1s ease-in",
       },
       keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
         "move-to-right": {
           "0%": {
             transform: "translateX(0%)",

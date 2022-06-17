@@ -222,3 +222,132 @@ export const USECASE_RESOURCES_CONTENT = [
     icons: ["TERRAFORM"],
   },
 ];
+
+export const USECASE_LINK_CONTENT = [
+  {
+    id: 1,
+    label: "Enforce Policy as Code",
+    href: "/use-cases/enforce-policy-as-code",
+  },
+  {
+    id: 2,
+    label: "Infrastructure as Code",
+    href: "/use-cases/infrastructure-as-code",
+  },
+  {
+    id: 3,
+    label: "Inject Secrets into Terraform",
+    href: "/use-cases/inject-secrets-into-terraform",
+  },
+  {
+    id: 4,
+    label: "Integrate with Existing Workflows",
+    href: "/use-cases/integrate-with-existing-workflows",
+  },
+  {
+    id: 5,
+    label: "Manage Kubernetes",
+    href: "/use-cases/manage-kubernetes",
+  },
+  {
+    id: 6,
+    label: "Manage Virtual Machine Images",
+    href: "/use-cases/manage-virtual-machine-images",
+  },
+  {
+    id: 7,
+    label: "Multi-Cloud Deployment",
+    href: "/use-cases/multi-cloud-deployment",
+  },
+  {
+    id: 8,
+    label: "Network Infrastructure Automation",
+    href: "/use-cases/manage-network-infrastructure",
+  },
+];
+
+export const EDITIONS_LINK_CONTENT = [
+  {
+    id: 1,
+    label: "CloudBoz CLI",
+    href: "/",
+  },
+  {
+    id: 2,
+    label: "CloudBoz Cloud",
+    href: "/products/terraform",
+  },
+  {
+    id: 3,
+    label: "CloudBoz Enterprise",
+    href: "/products/terraform",
+  },
+];
+
+export const DOCS_LINK_CONTENT = [
+  {
+    id: 1,
+    label: "About the Docs",
+    href: "/docs",
+  },
+  {
+    id: 2,
+    label: "Intro to CloudBoz",
+    href: "/intro",
+  },
+  {
+    id: 3,
+    label: "Configuration Language",
+    href: "/language",
+  },
+  {
+    id: 4,
+    label: "CloudBoz CLI",
+    href: "/cli",
+  },
+  {
+    id: 5,
+    label: "CloudBoz Cloud",
+    href: "/cloud-docs",
+  },
+  {
+    id: 6,
+    label: "CloudBoz Enterprise",
+    href: "/enterprise",
+  },
+  {
+    id: 7,
+    label: "Provider Use",
+    href: "/language/providers",
+  },
+  {
+    id: 8,
+    label: "Plugin Development",
+    href: "/plugin",
+  },
+  {
+    id: 9,
+    label: "Registry Publishing",
+    href: "/registry",
+  },
+  {
+    id: 10,
+    label: "Integration Program",
+    href: "/docs/partnerships",
+  },
+  {
+    id: 11,
+    label: "CloudBoz Tools",
+    href: "/docs/terraform-tools",
+  },
+  {
+    id: 12,
+    label: "CDK for CloudBoz",
+    href: "/cdktf",
+  },
+  {
+    id: 13,
+    label: "Glossary",
+    href: "/docs/glossary",
+  },
+];
