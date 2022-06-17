@@ -1,16 +1,39 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./component.css";
+
+@layer components {
+  .container {
+    @apply mx-auto px-7 sm:px-16 md:w-[95vw] md:max-w-[95vw] lg:px-10 2xl:max-w-container;
+  }
+
+  .animate-button-icon:hover > .icon,
+  .animate-button-icon:focus > .icon,
+  .animate-button-icon:active > .icon {
+    @apply translate-x-1 !important;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.bg-products-terraform-hero {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 40.63%,
+      rgba(209, 235, 255, 0.54) 100%
+    ),
+    url(/images/products-terraform-hero-background.svg) left bottom no-repeat,
+    url(/images/products-terraform-hero-background.svg) right bottom no-repeat;
 }
 
-* {
-  box-sizing: border-box;
+@media screen and (max-width: 800px) {
+  .bg-products-terraform-hero {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 40.63%,
+      rgba(209, 235, 255, 0.54) 100%
+    );
+  }
 }

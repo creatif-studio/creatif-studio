@@ -1,9 +1,11 @@
-const path = require("path");
-
-module.exports = {
-  webpack: (config) => {
-    config.resolve.modules.push(path.resolve("./"));
-
-    return config;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
   },
-};
+}
+
+module.exports = nextConfig
