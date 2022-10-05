@@ -1,4 +1,4 @@
-# CloudBoz Core
+# CloudBoz API
 This is monorepo for CloudBoz.
 
 ## Contributors
