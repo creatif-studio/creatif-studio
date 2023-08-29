@@ -19,7 +19,7 @@ const NavMobileLinks = ({ show }, ref) => {
         <ProductsLink>Enforce Policy as Code</ProductsLink>
         <ProductsLink className="mt-4">Infrastructure as Code</ProductsLink>
         <ProductsLink className="mt-4">
-          Inject Secrets into CloudBoz
+          Inject Secrets into Creatif Studio
         </ProductsLink>
         <ProductsLink className="mt-4">
           Integrate with Existing Workflows
@@ -37,9 +37,9 @@ const NavMobileLinks = ({ show }, ref) => {
           editions
         </p>
         <hr className="divide-x mb-6 mt-3 border-gray-300" />
-        <ProductsLink>CloudBoz CLI</ProductsLink>
-        <ProductsLink className="mt-4">CloudBoz Pro</ProductsLink>
-        <ProductsLink className="mt-4">CloudBoz Enterprise</ProductsLink>
+        <ProductsLink>Creatif Studio CLI</ProductsLink>
+        <ProductsLink className="mt-4">Creatif Studio Pro</ProductsLink>
+        <ProductsLink className="mt-4">Creatif Studio Enterprise</ProductsLink>
         <hr className="divide-x mb-3 mt-6 border-gray-300" />
         <ProductsLink className="mt-4">Registry</ProductsLink>
         <ProductsLink className="mt-4">Tutorials</ProductsLink>
@@ -48,17 +48,17 @@ const NavMobileLinks = ({ show }, ref) => {
         </p>
         <hr className="divide-x mb-6 mt-3 border-gray-300" />
         <ProductsLink>About the Docs</ProductsLink>
-        <ProductsLink className="mt-4">Intro to CloudBoz</ProductsLink>
+        <ProductsLink className="mt-4">Intro to Creatif Studio</ProductsLink>
         <ProductsLink className="mt-4">Configuration Language</ProductsLink>
-        <ProductsLink className="mt-4">CloudBoz CLI</ProductsLink>
-        <ProductsLink className="mt-4">CloudBoz Pro</ProductsLink>
-        <ProductsLink className="mt-4">CloudBoz Enterprise</ProductsLink>
+        <ProductsLink className="mt-4">Creatif Studio CLI</ProductsLink>
+        <ProductsLink className="mt-4">Creatif Studio Pro</ProductsLink>
+        <ProductsLink className="mt-4">Creatif Studio Enterprise</ProductsLink>
         <ProductsLink className="mt-4">Provider Use</ProductsLink>
         <ProductsLink className="mt-4">Plugin Development</ProductsLink>
         <ProductsLink className="mt-4">Registry Publishing</ProductsLink>
         <ProductsLink className="mt-4">Integration Program</ProductsLink>
-        <ProductsLink className="mt-4">CloudBoz Tools</ProductsLink>
-        <ProductsLink className="mt-4">CDK for CloudBoz</ProductsLink>
+        <ProductsLink className="mt-4">Creatif Studio Tools</ProductsLink>
+        <ProductsLink className="mt-4">CDK for Creatif Studio</ProductsLink>
         <ProductsLink className="mt-4">Glossary</ProductsLink>
         <hr className="divide-x mb-6 mt-6 border-gray-300" />
         <ProductsLink>Community</ProductsLink>
@@ -71,7 +71,7 @@ const NavMobileLinks = ({ show }, ref) => {
           <span className="font-medium text-black text-sm ml-3">GitHub</span>
         </Button>
         <Button mode="secondary" className="mt-4">
-          CloudBoz Pro
+          Creatif Studio Pro
         </Button>
         <Button icon={BsDownload} iconSize={16} className="mt-4">
           Download

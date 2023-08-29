@@ -7,7 +7,7 @@ const UseCases = () => {
     <div className="cursor-default">
       <Container className="mx-auto pt-10 md:pt-20 pb-10 md:pb-20 md:px-10 xl:px-0">
         <h2 className="mx-auto max-w-md md:max-w-none text-3xl md:text-4xl font-semibold font-display text-center mb-14">
-          Common use cases for CloudBoz
+          Common use cases for Creatif Studio
         </h2>
         <UseCaseContent />
       </Container>

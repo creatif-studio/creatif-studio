@@ -12,8 +12,8 @@ const OpenSourceCard = () => {
         Download
       </Button>
       <p className="text-sm text-neutral-500 mt-8 leading-relaxed">
-        Download the open source CloudBoz binary and run locally or within your
-        environments.
+        Download the open source Creatif Studio binary and run locally or within
+        your environments.
       </p>
     </Card>
   );

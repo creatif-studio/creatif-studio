@@ -19,7 +19,7 @@ export const USE_CASE_CONTENT = [
     id: 3,
     heading: "Manage Kubernetes",
     description:
-      "Provision and manage Kubernetes clusters on AWS, Microsoft Azure, or Google Cloud, and interact with your cluster using the Kubernetes CloudBoz provider.",
+      "Provision and manage Kubernetes clusters on AWS, Microsoft Azure, or Google Cloud, and interact with your cluster using the Kubernetes Creatif Studio provider.",
     href: "",
     icons: ["TERRAFORM"],
   },
@@ -35,7 +35,7 @@ export const USE_CASE_CONTENT = [
     id: 5,
     heading: "Manage virtual machine images",
     description:
-      "Deploy and manage virtual machine images with CloudBoz and Packer.",
+      "Deploy and manage virtual machine images with Creatif Studio and Packer.",
     href: "",
     icons: ["TERRAFORM", "PACKER"],
   },
@@ -57,9 +57,9 @@ export const USE_CASE_CONTENT = [
   },
   {
     id: 8,
-    heading: "Inject secrets into CloudBoz",
+    heading: "Inject secrets into Creatif Studio",
     description:
-      "Automate using dynamically generated secrets and credentials within CloudBoz configurations.",
+      "Automate using dynamically generated secrets and credentials within Creatif Studio configurations.",
     href: "",
     icons: ["TERRAFORM", "TERRAFORM_SECRETS"],
   },
@@ -69,7 +69,7 @@ export const DELIVER_CONTENT = [
   {
     id: 1,
     heading: "Adopt",
-    description: `Compose infrastructure as code in a CloudBoz file using HCL to
+    description: `Compose infrastructure as code in a Creatif Studio file using HCL to
     provision resources from any infrastructure provider.`,
   },
   {
@@ -100,7 +100,7 @@ export const PRACTICE_CONTENT = [
     id: 1,
     heading: "Codify and deploy infrastructure",
     description:
-      "Build, change, and destroy AWS infrastructure using CloudBoz. Step-by-step, command-line tutorials will walk you through the CloudBoz basics for the first time.",
+      "Build, change, and destroy AWS infrastructure using Creatif Studio. Step-by-step, command-line tutorials will walk you through the Creatif Studio basics for the first time.",
     href: "",
     icons: ["TERRAFORM_WHITE"],
   },
@@ -108,7 +108,7 @@ export const PRACTICE_CONTENT = [
     id: 2,
     heading: "Codify existing infrastructure",
     description:
-      "Import an existing infrastructure into an empty CloudBoz workspace. ",
+      "Import an existing infrastructure into an empty Creatif Studio workspace. ",
     href: "",
     icons: ["TERRAFORM_WHITE"],
   },
@@ -116,13 +116,13 @@ export const PRACTICE_CONTENT = [
     id: 3,
     heading: "Provision a Kubernetes cluster",
     description:
-      "Deploy a ready to use Amazon Elastic Kubernetes Service (EKS) cluster using CloudBoz.",
+      "Deploy a ready to use Amazon Elastic Kubernetes Service (EKS) cluster using Creatif Studio.",
     href: "",
     icons: ["TERRAFORM_WHITE"],
   },
   {
     id: 4,
-    heading: "Inject secrets into CloudBoz",
+    heading: "Inject secrets into Creatif Studio",
     description:
       "Avoid managing static, long-lived secrets with varying scope and provision resources without having direct access to the secrets.",
     href: "",
@@ -130,9 +130,9 @@ export const PRACTICE_CONTENT = [
   },
   {
     id: 5,
-    heading: "Migrate state to CloudBoz Pro",
+    heading: "Migrate state to Creatif Studio Pro",
     description:
-      "Keep your state file secure and share it with collaborators by migrating it to CloudBoz Pro.",
+      "Keep your state file secure and share it with collaborators by migrating it to Creatif Studio Pro.",
     href: "",
     icons: ["TERRAFORM_WHITE"],
   },
@@ -140,7 +140,7 @@ export const PRACTICE_CONTENT = [
     id: 6,
     heading: "Manage infrastructure with programming lanuages",
     description:
-      "Manage infrastructure programming languages such as TypeScript, Python, Java, C#, and Go with the Cloud Development Kit for CloudBoz (CDKTF).",
+      "Manage infrastructure programming languages such as TypeScript, Python, Java, C#, and Go with the Cloud Development Kit for Creatif Studio (CDKTF).",
     href: "",
     icons: ["TERRAFORM_WHITE"],
   },
@@ -149,23 +149,24 @@ export const PRACTICE_CONTENT = [
 export const STORIES_CONTENT = [
   {
     id: 1,
-    heading: "Multi-Cloud DevOps at PETRONAS with CloudBoz",
+    heading: "Multi-Cloud DevOps at PETRONAS with Creatif Studio",
     href: "",
   },
   {
     id: 2,
-    heading: "Consistent Development and Deployment at Comcast with CloudBoz",
+    heading:
+      "Consistent Development and Deployment at Comcast with Creatif Studio",
     href: "",
   },
   {
     id: 3,
-    heading: "CloudBoz at Decathlon: From On-Premises to 100% Cloud",
+    heading: "Creatif Studio at Decathlon: From On-Premises to 100% Cloud",
     href: "",
   },
   {
     id: 4,
     heading:
-      "CDK for CloudBoz with Python and its Operational Experience at ShopStyle",
+      "CDK for Creatif Studio with Python and its Operational Experience at ShopStyle",
     href: "",
   },
 ];
@@ -180,8 +181,8 @@ export const NEXT_STEPS_CONTENT = [
   },
   {
     id: 2,
-    heading: "CloudBoz Pro",
-    description: "Managed CloudBoz",
+    heading: "Creatif Studio Pro",
+    description: "Managed Creatif Studio",
     className: "bg-primary-100",
     linkName: "Compare plans",
     href: "",
@@ -269,17 +270,17 @@ export const USECASE_LINK_CONTENT = [
 export const EDITIONS_LINK_CONTENT = [
   {
     id: 1,
-    label: "CloudBoz CLI",
+    label: "Creatif Studio CLI",
     href: "/",
   },
   {
     id: 2,
-    label: "CloudBoz Cloud",
+    label: "Creatif Studio Cloud",
     href: "/products/terraform",
   },
   {
     id: 3,
-    label: "CloudBoz Enterprise",
+    label: "Creatif Studio Enterprise",
     href: "/products/terraform",
   },
 ];
@@ -292,7 +293,7 @@ export const DOCS_LINK_CONTENT = [
   },
   {
     id: 2,
-    label: "Intro to CloudBoz",
+    label: "Intro to Creatif Studio",
     href: "/intro",
   },
   {
@@ -302,17 +303,17 @@ export const DOCS_LINK_CONTENT = [
   },
   {
     id: 4,
-    label: "CloudBoz CLI",
+    label: "Creatif Studio CLI",
     href: "/cli",
   },
   {
     id: 5,
-    label: "CloudBoz Cloud",
+    label: "Creatif Studio Cloud",
     href: "/cloud-docs",
   },
   {
     id: 6,
-    label: "CloudBoz Enterprise",
+    label: "Creatif Studio Enterprise",
     href: "/enterprise",
   },
   {
@@ -337,12 +338,12 @@ export const DOCS_LINK_CONTENT = [
   },
   {
     id: 11,
-    label: "CloudBoz Tools",
+    label: "Creatif Studio Tools",
     href: "/docs/terraform-tools",
   },
   {
     id: 12,
-    label: "CDK for CloudBoz",
+    label: "CDK for Creatif Studio",
     href: "/cdktf",
   },
   {

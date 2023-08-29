@@ -11,8 +11,8 @@ const NextSteps = () => {
             Next Steps
           </h2>
           <p className="text-neutral-500 mb-6 max-w-[15rem] leading-relaxed">
-            CloudBoz Pro provides infrastructure automation as a service, is
-            free to get started, and has an in-place upgrade to paid option.
+            Creatif Studio Pro provides infrastructure automation as a service,
+            is free to get started, and has an in-place upgrade to paid option.
           </p>
         </div>
         <NextStepsContent />

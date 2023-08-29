@@ -9,7 +9,7 @@ const Solution = () => {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 md:col-span-6 mb-8 ">
             <h3 className="font-semibold font-display pb-8 border-b border-black text-2xl md:text-2.5xl xl:text-3xl leading-normal mt-4">
-              Consistently deploy across multiple clouds with CloudBoz
+              Consistently deploy across multiple clouds with Creatif Studio
             </h3>
           </div>
           <div className="col-span-12 md:col-span-5 md:col-start-8">
@@ -18,7 +18,7 @@ const Solution = () => {
               tolerance, allowing for more graceful recovery from cloud provider
               outages. However, multi-cloud deployments add complexity because
               each provider has its own interfaces, tools, and workflows.
-              CloudBoz lets you use the same workflow to manage multiple
+              Creatif Studio lets you use the same workflow to manage multiple
               providers and handle cross-cloud dependencies. This simplifies
               management and orchestration for large-scale, multi-cloud
               infrastructures.

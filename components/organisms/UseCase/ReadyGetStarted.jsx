@@ -16,7 +16,7 @@ const ReadyGetStarted = () => {
             neutral
             className="px-5 py-3 bg-white hover:bg-gray-200 transition-colors ease-in text-sm font-medium text-black"
           >
-            Try CloudBoz Pro for free
+            Try Creatif Studio Pro for free
           </Button>
         </div>
         <img

@@ -1,19 +1,19 @@
 // core modules
-import { memo } from 'react'
+import { memo } from "react";
 // internal modules
-import ProductsSectionTitle from 'components/atoms/ProductsSectionTitle'
-import { useNavbarTrigger } from 'context/NavbarTriggerProvider'
+import ProductsSectionTitle from "components/atoms/ProductsSectionTitle";
+import { useNavbarTrigger } from "context/NavbarTriggerProvider";
 
 const HeroTitle = () => {
-    const { triggerElementRef } = useNavbarTrigger()
+  const { triggerElementRef } = useNavbarTrigger();
 
-    return (
-        <section className="pt-32" ref={triggerElementRef}>
-            <ProductsSectionTitle 
-                className="text-center"
-            >CloudBoz Pro Pricing</ProductsSectionTitle>
-        </section>
-    )
-}
+  return (
+    <section className="pt-32" ref={triggerElementRef}>
+      <ProductsSectionTitle className="text-center">
+        Creatif Studio Pro Pricing
+      </ProductsSectionTitle>
+    </section>
+  );
+};
 
-export default memo(HeroTitle)
+export default memo(HeroTitle);
