@@ -227,43 +227,28 @@ export const USECASE_RESOURCES_CONTENT = [
 export const USECASE_LINK_CONTENT = [
   {
     id: 1,
-    label: "Enforce Policy as Code",
+    label: "CloudBozz - cPanel Alternative",
     href: "/use-cases/enforce-policy-as-code",
   },
   {
     id: 2,
-    label: "Infrastructure as Code",
+    label: "Practiz - Education Marketplace",
     href: "/use-cases/infrastructure-as-code",
   },
   {
     id: 3,
-    label: "Inject Secrets into Terraform",
+    label: "Binakonten - Free Media Sharing",
     href: "/use-cases/inject-secrets-into-terraform",
   },
   {
     id: 4,
-    label: "Integrate with Existing Workflows",
+    label: "Binaminat - Interactive Learning",
     href: "/use-cases/integrate-with-existing-workflows",
   },
   {
     id: 5,
-    label: "Manage Kubernetes",
+    label: "Binakerja - Work from Anywhere",
     href: "/use-cases/manage-kubernetes",
-  },
-  {
-    id: 6,
-    label: "Manage Virtual Machine Images",
-    href: "/use-cases/manage-virtual-machine-images",
-  },
-  {
-    id: 7,
-    label: "Multi-Cloud Deployment",
-    href: "/use-cases/multi-cloud-deployment",
-  },
-  {
-    id: 8,
-    label: "Network Infrastructure Automation",
-    href: "/use-cases/manage-network-infrastructure",
   },
 ];
 

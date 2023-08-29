@@ -4,8 +4,8 @@ import PACKER from "./packer.svg";
 import TERRAFORM_SECRETS from "./terraform-secrets.svg";
 import TERRAFORM_SECRETS_WHITE from "./terraform-secrets-white.svg";
 
-import TERRAFORM from "./terraform.svg";
-import TERRAFORM_WHITE from "./terraform-white.svg";
+import TERRAFORM from "./creatif.svg";
+import TERRAFORM_WHITE from "./creatif.svg";
 
 import VIDEO_PLAY from "./video-play.svg";
 

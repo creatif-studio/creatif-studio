@@ -2,25 +2,25 @@ import { NavLink, NavLinkExpanded } from "components/atoms";
 import React from "react";
 
 import {
-  DOCS_LINK_CONTENT,
-  EDITIONS_LINK_CONTENT,
+  // DOCS_LINK_CONTENT,
+  // EDITIONS_LINK_CONTENT,
   USECASE_LINK_CONTENT,
 } from "utils/constants";
 
 const NavLinks = () => {
   return (
     <div className="h-16 hidden xl:flex items-center justify-start flex-grow">
-      <NavLink>Overview</NavLink>
+      <NavLink>Home</NavLink>
       <NavLinkExpanded dataSource={USECASE_LINK_CONTENT}>
-        Use Cases
+        Products
       </NavLinkExpanded>
-      <NavLinkExpanded dataSource={EDITIONS_LINK_CONTENT}>
+      <NavLink>Works</NavLink>
+      <NavLink>Careers</NavLink>
+      <NavLink>Contact</NavLink>
+      {/* <NavLinkExpanded dataSource={EDITIONS_LINK_CONTENT}>
         Editions
-      </NavLinkExpanded>
-      <NavLink>Registry</NavLink>
-      <NavLink>Tutorials</NavLink>
-      <NavLinkExpanded dataSource={DOCS_LINK_CONTENT}>Docs</NavLinkExpanded>
-      <NavLink>Community</NavLink>
+      </NavLinkExpanded> */}
+      {/* <NavLinkExpanded dataSource={DOCS_LINK_CONTENT}>Docs</NavLinkExpanded> */}
     </div>
   );
 };

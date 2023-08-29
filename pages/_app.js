@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Creatif Studio</title>
+        <title>Creatif Studio - Expertly crafted software solutions</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
