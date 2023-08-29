@@ -20,8 +20,8 @@ const UseCaseContent = () => {
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              {content.icons.includes("TERRAFORM") && (
-                <Image src={assets.icons.TERRAFORM} width={32} height={32} />
+              {content.icons.includes("CREATIF") && (
+                <Image src={assets.icons.CREATIF} width={32} height={32} />
               )}
               {content.icons.includes("CONSUL") && (
                 <Image src={assets.icons.CONSUL} width={32} height={32} />
@@ -29,9 +29,9 @@ const UseCaseContent = () => {
               {content.icons.includes("PACKER") && (
                 <Image src={assets.icons.PACKER} width={32} height={32} />
               )}
-              {content.icons.includes("TERRAFORM_SECRETS") && (
+              {content.icons.includes("CREATIF_SECRETS") && (
                 <Image
-                  src={assets.icons.TERRAFORM_SECRETS}
+                  src={assets.icons.CREATIF_SECRETS}
                   width={32}
                   height={32}
                 />

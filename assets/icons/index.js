@@ -1,20 +1,20 @@
 import CONSUL from "./consul.svg";
 import PACKER from "./packer.svg";
 
-import TERRAFORM_SECRETS from "./terraform-secrets.svg";
-import TERRAFORM_SECRETS_WHITE from "./terraform-secrets-white.svg";
+import CREATIF_SECRETS from "./terraform-secrets.svg";
+import CREATIF_SECRETS_WHITE from "./terraform-secrets-white.svg";
 
-import TERRAFORM from "./creatif.svg";
-import TERRAFORM_WHITE from "./creatif.svg";
+import CREATIF from "./creatif.svg";
+import CREATIF_WHITE from "./creatif.svg";
 
 import VIDEO_PLAY from "./video-play.svg";
 
 export {
   CONSUL,
   PACKER,
-  TERRAFORM,
-  TERRAFORM_SECRETS,
-  TERRAFORM_SECRETS_WHITE,
-  TERRAFORM_WHITE,
+  CREATIF,
+  CREATIF_SECRETS,
+  CREATIF_SECRETS_WHITE,
+  CREATIF_WHITE,
   VIDEO_PLAY,
 };

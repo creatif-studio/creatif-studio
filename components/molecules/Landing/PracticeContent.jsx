@@ -23,17 +23,17 @@ const PracticeContent = () => {
           </div>
           <div className="flex items-center justify-between mt-8">
             <div className="flex items-center gap-2">
-              {content.icons.includes("TERRAFORM_WHITE") && (
+              {content.icons.includes("CREATIF_WHITE") && (
                 <Image
-                  src={assets.icons.TERRAFORM_WHITE}
+                  src={assets.icons.CREATIF_WHITE}
                   width={32}
                   height={32}
                 />
               )}
 
-              {content.icons.includes("TERRAFORM_SECRETS_WHITE") && (
+              {content.icons.includes("CREATIF_SECRETS_WHITE") && (
                 <Image
-                  src={assets.icons.TERRAFORM_SECRETS_WHITE}
+                  src={assets.icons.CREATIF_SECRETS_WHITE}
                   width={32}
                   height={32}
                 />

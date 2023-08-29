@@ -9,9 +9,9 @@ import Title from "components/molecules/ProductsTerraform/Title";
 import WorkSection from "components/molecules/ProductsTerraform/WorkSection";
 // assets
 import {
-  PRODUCTS_TERRAFORM_INFRASTRUCTURE,
-  PRODUCTS_TERRAFORM_ENVIRONMENT,
-  PRODUCTS_TERRAFORM_PLAN,
+  PRODUCTS_CREATIF_INFRASTRUCTURE,
+  PRODUCTS_CREATIF_ENVIRONMENT,
+  PRODUCTS_CREATIF_PLAN,
 } from "assets/images";
 import ProductsContainer from "components/atoms/ProductsContainer";
 
@@ -44,7 +44,7 @@ const HowItWork = () => {
           </>
         }
         Image={
-          <Image src={PRODUCTS_TERRAFORM_INFRASTRUCTURE} alt="infrastructure" />
+          <Image src={PRODUCTS_CREATIF_INFRASTRUCTURE} alt="infrastructure" />
         }
       />
       <WorkSection
@@ -66,7 +66,7 @@ const HowItWork = () => {
             can safely provision infrastructure in automation.
           </>
         }
-        Image={<Image src={PRODUCTS_TERRAFORM_ENVIRONMENT} alt="environment" />}
+        Image={<Image src={PRODUCTS_CREATIF_ENVIRONMENT} alt="environment" />}
       />
       <WorkSection
         Title="Plan and provision with confidence"
@@ -93,7 +93,7 @@ const HowItWork = () => {
             </span>
           </>
         }
-        Image={<Image src={PRODUCTS_TERRAFORM_PLAN} alt="plan" />}
+        Image={<Image src={PRODUCTS_CREATIF_PLAN} alt="plan" />}
       />
     </ProductsContainer>
   );
