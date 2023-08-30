@@ -14,7 +14,7 @@ import {
   teamWorkInfrastructureData,
   teamWorkIntegrationsData,
   teamWorkOrganizationData,
-} from "utils/constants/products/terraform-content";
+} from "utils/constants/products/creatif-content";
 
 const ScaleTeams = () => {
   return (
