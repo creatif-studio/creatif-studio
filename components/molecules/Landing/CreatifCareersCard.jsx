@@ -1,5 +1,6 @@
 import { Button, Card } from "components/atoms";
 import React from "react";
+import { BsMailbox2 } from "react-icons/bs";
 
 const CreatifCareersCard = () => {
   return (
@@ -10,8 +11,13 @@ const CreatifCareersCard = () => {
       <h4 className="text-sm font-semibold font-display my-3">
         Unlock Exciting Prospects
       </h4>
-      <Button className="mt-5" mode="primary" buttonSize="md">
-        Start Your Journey
+      <Button
+        className="mt-5"
+        icon={BsMailbox2}
+        mode="tertiary"
+        buttonSize="md"
+      >
+        Apply Now
       </Button>
       <p className="text-sm text-neutral-500 mt-8 leading-relaxed">
         We offers an opportunity to contribute in designing products, software
