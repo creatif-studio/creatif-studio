@@ -17,7 +17,7 @@ const CreatifCareersCard = () => {
         mode="tertiary"
         buttonSize="md"
       >
-        Apply Now
+        Apply
       </Button>
       <p className="text-sm text-neutral-500 mt-8 leading-relaxed">
         We offers an opportunity to contribute in designing products, software
