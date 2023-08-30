@@ -238,7 +238,7 @@ export const USECASE_LINK_CONTENT = [
   {
     id: 3,
     label: "Binakonten - Free Media Sharing",
-    href: "/use-cases/inject-secrets-into-terraform",
+    href: "/use-cases/inject-secrets-into-creatif",
   },
   {
     id: 4,
@@ -261,12 +261,12 @@ export const EDITIONS_LINK_CONTENT = [
   {
     id: 2,
     label: "Creatif Studio Cloud",
-    href: "/products/terraform",
+    href: "/products/creatif",
   },
   {
     id: 3,
     label: "Creatif Studio Enterprise",
-    href: "/products/terraform",
+    href: "/products/creatif",
   },
 ];
 
@@ -324,7 +324,7 @@ export const DOCS_LINK_CONTENT = [
   {
     id: 11,
     label: "Creatif Studio Tools",
-    href: "/docs/terraform-tools",
+    href: "/docs/creatif-tools",
   },
   {
     id: 12,

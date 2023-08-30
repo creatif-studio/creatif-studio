@@ -5,8 +5,8 @@ import Image from "next/image";
 import { BsArrowLeftRight, BsLock, BsWatch } from "react-icons/bs";
 // internal modules
 import ProductsNavLink from "components/atoms/ProductsNavLink";
-import Title from "components/molecules/ProductsTerraform/Title";
-import WorkSection from "components/molecules/ProductsTerraform/WorkSection";
+import Title from "components/molecules/ProductsCreatif/Title";
+import WorkSection from "components/molecules/ProductsCreatif/WorkSection";
 // assets
 import {
   PRODUCTS_CREATIF_INFRASTRUCTURE,

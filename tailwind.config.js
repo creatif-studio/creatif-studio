@@ -9,8 +9,8 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/images/hero-pattern.svg')",
         "practice-pattern": "url('/images/practice-pattern.svg')",
-        "products-terraform-pricing-hero":
-          "url(/images/products-terraform-pricing-hero-background.svg)",
+        "products-creatif-pricing-hero":
+          "url(/images/products-creatif-pricing-hero-background.svg)",
         "deliver-gradient":
           "radial-gradient(circle farthest-side at 50% -90%, #f2f2f2 ,#f2f2f2, #f7f7f7, white)",
         "usecase-hero-gradient":

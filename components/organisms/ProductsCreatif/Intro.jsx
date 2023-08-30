@@ -3,8 +3,8 @@ import { memo } from "react";
 // third party modules
 import { BsEye, BsFullscreen, BsLock } from "react-icons/bs";
 // internal modules
-import IntroMain from "components/molecules/ProductsTerraform/Intro";
-import IntroCard from "components/molecules/ProductsTerraform/IntroCard";
+import IntroMain from "components/molecules/ProductsCreatif/Intro";
+import IntroCard from "components/molecules/ProductsCreatif/IntroCard";
 import ProductsContainer from "components/atoms/ProductsContainer";
 
 const Intro = () => {

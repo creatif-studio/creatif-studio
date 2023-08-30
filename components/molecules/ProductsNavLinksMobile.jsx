@@ -19,10 +19,10 @@ const ProductsNavLinksMobile = ({ shouldBeShow = false, className }) => {
       )}
     >
       <ProductsLink
-        href="/products/terraform/pricing"
+        href="/products/creatif/pricing"
         className="mt-7 pb-1"
         classNameActive={
-          pathname === "/products/terraform/pricing" &&
+          pathname === "/products/creatif/pricing" &&
           "border-b-[2px] border-black"
         }
       >

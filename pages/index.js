@@ -9,9 +9,9 @@ import {
   UseCases,
 } from "components/organisms";
 
-import Divider from 'components/atoms/Divider'
-import Footer from 'components/organisms/ProductsTerraform/Footer'
-import NavBottom from 'components/organisms/ProductsTerraform/NavBottom'
+import Divider from "components/atoms/Divider";
+import Footer from "components/organisms/ProductsCreatif/Footer";
+import NavBottom from "components/organisms/ProductsCreatif/NavBottom";
 
 export default function Landing() {
   return (

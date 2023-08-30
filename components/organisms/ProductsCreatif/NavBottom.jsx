@@ -1,7 +1,7 @@
 // core modules
 import { memo } from "react";
 // internal modules
-import NavBottomCard from "components/molecules/ProductsTerraform/NavBottomCard";
+import NavBottomCard from "components/molecules/ProductsCreatif/NavBottomCard";
 import ProductsNavLink from "components/atoms/ProductsNavLink";
 import { BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
 import ProductsContainer from "components/atoms/ProductsContainer";

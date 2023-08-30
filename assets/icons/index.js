@@ -1,8 +1,8 @@
 import CONSUL from "./consul.svg";
 import PACKER from "./packer.svg";
 
-import CREATIF_SECRETS from "./terraform-secrets.svg";
-import CREATIF_SECRETS_WHITE from "./terraform-secrets-white.svg";
+import CREATIF_SECRETS from "./creatif-secrets.svg";
+import CREATIF_SECRETS_WHITE from "./creatif-secrets-white.svg";
 
 import CREATIF from "./creatif.svg";
 import CREATIF_WHITE from "./creatif.svg";

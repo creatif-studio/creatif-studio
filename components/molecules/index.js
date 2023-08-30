@@ -3,7 +3,7 @@ export { default as NavMobile } from "./NavMobile";
 export { default as NavActions } from "./NavActions";
 
 export { default as OpenSourceCard } from "./Landing/OpenSourceCard";
-export { default as TerraformCloudCard } from "./Landing/TerraformCloudCard";
+export { default as CreatifCloudCard } from "./Landing/CreatifCloudCard";
 export { default as DeliverContent } from "./Landing/DeliverContent";
 export { default as UseCaseContent } from "./Landing/UseCaseContent";
 export { default as PracticeContent } from "./Landing/PracticeContent";
