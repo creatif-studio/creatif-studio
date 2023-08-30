@@ -19,7 +19,7 @@ export default function Landing() {
       <Navbar />
       <LandingHero />
       <Deliver />
-      <UseCases />
+      {/* <UseCases /> */}
       <Practice />
       <CustomerStories />
       <Certified />

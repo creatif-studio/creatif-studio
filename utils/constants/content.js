@@ -68,30 +68,33 @@ export const USE_CASE_CONTENT = [
 export const DELIVER_CONTENT = [
   {
     id: 1,
-    heading: "Adopt",
-    description: `Compose infrastructure as code in a Creatif Studio file using HCL to
-    provision resources from any infrastructure provider.`,
+    heading: "UI/UX Design",
+    description: `Crafting intuitive, visually stunning interfaces that enhance user experiences.`,
   },
   {
     id: 2,
-    heading: "Build",
-    description: `Infrastructure automation workflow used to compose, collaborate,
-    reuse, and provision infrastructure as code across IT operations and
-    teams of developers.`,
+    heading: "Web/Mobile Dev",
+    description: `Transforming your concepts into fully functional web and mobile applications.`,
   },
   {
     id: 3,
-    heading: "Standardize",
-    description: `Infrastructure automation workflow featuring security, compliance, and
-    cost management capabilities while using access controls, policy
-    enforcement, and audit.`,
+    heading: "Blockchain/Web3 Dev",
+    description: `Pioneering the future of decentralized applications and technologies.`,
   },
   {
     id: 4,
-    heading: "Innovate",
-    description: `Infrastructure automation workflow extending to all teams in the
-    organization with self-service infrastructure as code and integrates
-    with VCS, ITSM, CI/CD.`,
+    heading: "Manual/Auto Testing",
+    description: `Ensuring your products meet the highest standards of functionality and reliability.`,
+  },
+  {
+    id: 5,
+    heading: "DevOps/Cloud Architecture",
+    description: `Building the backbone of scalable and efficient digital systems.`,
+  },
+  {
+    id: 6,
+    heading: "Technical Writing and Documentation",
+    description: `Detailed documentation that helps users understand your product effectively.`,
   },
 ];
 
