@@ -1,5 +1,5 @@
 import { Button, Card, Container } from "components/atoms";
-import { OpenSourceCard, CreatifCloudCard } from "components/molecules";
+import { OpenSourceCard, CreatifCareersCard } from "components/molecules";
 import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
         <div className="flex-shrink-0 grid grid-cols-1 xl:grid-cols-2 gap-4 flex-grow xl:h-86">
           <OpenSourceCard />
-          <CreatifCloudCard />
+          <CreatifCareersCard />
         </div>
       </Container>
     </div>
