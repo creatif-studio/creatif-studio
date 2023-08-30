@@ -1,5 +1,6 @@
 import { Button, Card } from "components/atoms";
 import React from "react";
+import { BsGithub } from "react-icons/bs";
 
 const OpenSourceCard = () => {
   return (
@@ -8,12 +9,13 @@ const OpenSourceCard = () => {
       <h4 className="text-sm font-semibold font-display my-3">
         Self-managed | always free
       </h4>
-      <Button className="mt-5" mode="tertiary" buttonSize="md">
-        Download
+      <Button className="mt-5" icon={BsGithub} mode="tertiary" buttonSize="md">
+        GitHub
       </Button>
       <p className="text-sm text-neutral-500 mt-8 leading-relaxed">
-        Download the open source Creatif Studio binary and run locally or within
-        your environments.
+        Discover our custom open-source applications crafted to simplify your
+        business operations and streamline processes, aligned with the latest
+        industry demands.
       </p>
     </Card>
   );

@@ -15,7 +15,7 @@ const NavActions = () => {
       /> */}
       {/* <Button mode="secondary">Creatif Studio Pro</Button> */}
       {/* <Button icon={BsDownload} iconSize={16}> */}
-      <Button icon={BsGithub}>Open-source</Button>
+      {/* <Button icon={BsGithub}>Open Source</Button> */}
     </div>
   );
 };

@@ -10,14 +10,15 @@ const Hero = () => {
       <Container className="mx-auto flex flex-col md:px-0 md:flex-row gap-4 md:gap-20 xl:gap-8">
         <div className="max-w-lg">
           <h1 className="font-display text-4xl lg:text-5xl font-semibold leading-tight mb-2">
-            Automate Infrastructure on Any Cloud
+            Trusted Partner for Software Solutions
           </h1>
           <p className="text-sm text-neutral-500">
-            Provision, change, and version resources on any environment.
+            Concentrate on growing your business, while we take care of your
+            technical needs.
           </p>
           <Link href="/">
             <a className="text-sm font-medium flex items-center gap-3 group my-8 max-w-fit">
-              View tutorials
+              View our works
               <BsArrowRight
                 size={18}
                 className="group-hover:animate-move-right"
@@ -26,7 +27,7 @@ const Hero = () => {
           </Link>
           <Link href="/">
             <a className="text-sm font-medium flex items-center gap-3 group my-8 max-w-fit">
-              View documentation
+              View our products
               <BsArrowRight
                 size={18}
                 className="group-hover:animate-move-right"

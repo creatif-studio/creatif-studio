@@ -11,9 +11,10 @@ const NavLinks = () => {
   return (
     <div className="h-16 hidden xl:flex items-center justify-start flex-grow">
       <NavLink>Home</NavLink>
-      <NavLinkExpanded dataSource={USECASE_LINK_CONTENT}>
+      {/* <NavLinkExpanded dataSource={USECASE_LINK_CONTENT}>
         Products
-      </NavLinkExpanded>
+      </NavLinkExpanded> */}
+      <NavLink>Products</NavLink>
       <NavLink>Works</NavLink>
       <NavLink>Careers</NavLink>
       <NavLink>Contact</NavLink>
