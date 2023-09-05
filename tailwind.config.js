@@ -102,5 +102,8 @@ module.exports = {
       display: ["Poppins", "system-ui"],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    theme: ["light"],
+  },
 };
