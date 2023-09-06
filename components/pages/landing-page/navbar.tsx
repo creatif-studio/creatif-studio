@@ -33,17 +33,19 @@ const Navbar = () => {
       <Brand />
       <div className="hidden lg:flex items-center gap-10">
         <Link href={"#hero"}>
-          <p>Home</p>
+          <p className="cursor-pointer">Home</p>
         </Link>
         <Link href={"#service"}>
-          <p>Service</p>
+          <p className="cursor-pointer">Service</p>
         </Link>
-        <Link href={"#portfolio"}>Portfolio</Link>
+        <Link href={"#portfolio"}>
+          <p className="cursor-pointer">Testimonial</p>
+        </Link>
         <Link href={"#testi"}>
-          <p>Testimonial</p>
+          <p className="cursor-pointer">Testimonial</p>
         </Link>
         <Link href={"#teams"}>
-          <p>Teams</p>
+          <p className="cursor-pointer">Teams</p>
         </Link>
         {/* <Link href={"#service"}>Service</Link>
         <Link href={"#portfolio"}>Portfolio</Link>
