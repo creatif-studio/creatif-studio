@@ -1,5 +1,4 @@
 import React from "react";
-import { CONSUL } from "@/assets/icons";
 import { MetaData } from "@/components/misc";
 import LandingPage from "@/components/pages/landing-page";
 

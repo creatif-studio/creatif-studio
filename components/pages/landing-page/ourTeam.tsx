@@ -7,11 +7,14 @@ import team4 from "@/assets/images/team4.png";
 
 const OurTeamSection = () => {
   return (
-    <section className="flex items-center flex-col py-13 px-4 gap-12 overflow-x-hidden">
+    <section
+      id="teams"
+      className="flex items-center flex-col py-13 px-4 gap-12 overflow-x-hidden"
+    >
       <div className="px-6">
         <h1 className="text-[42px] font-semibold">Our best team</h1>
       </div>
-      <div className="carousel carousel-center space-x-6 ">
+      <div className="carousel carousel-center flex items-center gap-3 px-12">
         <div className="carousel-item ml-6 flex flex-col items-center gap-4">
           <Image
             width={274}
