@@ -32,44 +32,19 @@ const Navbar = () => {
     <nav className="absolute text-white w-full top-0 left-0 px-6 py-8 flex items-center justify-between md:px-13 lg:px-30">
       <Brand />
       <div className="hidden lg:flex items-center gap-10">
-        <a
-          href={"/"}
-          className={clsx(checkRoute("") ? "text-white" : "text-gray-400")}
-        >
-          Home
-        </a>
-        <a
-          href={"#service"}
-          className={clsx(
-            checkRoute("#service") ? "text-white" : "text-gray-400"
-          )}
-        >
-          Service
-        </a>
-        <a
-          href={"#portfolio"}
-          className={clsx(
-            checkRoute("#portfolio") ? "text-white" : "text-gray-400"
-          )}
-        >
-          Portfolio
-        </a>
-        <a
-          href={"#testi"}
-          className={clsx(
-            checkRoute("#testi") ? "text-white" : "text-gray-400"
-          )}
-        >
-          Testimonial
-        </a>
-        <a
-          href={"#teams"}
-          className={clsx(
-            checkRoute("#teams") ? "text-white" : "text-gray-400"
-          )}
-        >
-          Teams
-        </a>
+        <Link href={"#hero"}>
+          <p>Home</p>
+        </Link>
+        <Link href={"#service"}>
+          <p>Service</p>
+        </Link>
+        <Link href={"#portfolio"}>Portfolio</Link>
+        <Link href={"#testi"}>
+          <p>Testimonial</p>
+        </Link>
+        <Link href={"#teams"}>
+          <p>Teams</p>
+        </Link>
         {/* <Link href={"#service"}>Service</Link>
         <Link href={"#portfolio"}>Portfolio</Link>
         <Link href={"#testi"}>Testimonial</Link>
