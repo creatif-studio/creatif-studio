@@ -13,16 +13,12 @@ import TestimoniSection from "./testimoni";
 import FooterSection from "./footer";
 import { Brand } from "@/components/atoms/brand";
 import OurTeamSection from "./ourTeam";
+import Navbar from "./navbar";
 
 const LandingPage = () => {
   return (
     <div>
-      <nav className="absolute text-white w-full top-0 left-0 px-6 py-8 flex items-center justify-between md:px-13 lg:px-30">
-        <Brand />
-        <button>
-          <HumburgerMenu />
-        </button>
-      </nav>
+      <Navbar />
       <HeroSection />
       <ServiceSection />
       <WorkSection />

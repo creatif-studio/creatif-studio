@@ -1,72 +1,76 @@
 import Image from "next/image";
 import React from "react";
 import userIcon from "@/assets/images/Ellipse 1.png";
+import { Quotes } from "@/assets/icons";
+import CarouselTestimoni from "@/components/molecules/testimoni_carousel";
 
 const TestimoniSection = () => {
   return (
-    <section className="flex flex-col items-center gap-13 px-6 py-13 lg:px-30">
+    <section
+      id="testi"
+      className="flex flex-col items-center gap-3 px-6 py-13 lg:px-30"
+    >
       <div className="text-center flex flex-col gap-13">
         <h1 className="text-4xl font-semibold md:text-[42px]">
           what our clients say
         </h1>
-        <p className="text-center">
-          Kami sangat senang bekerja sama dengan jsolution. Layanan mereka
-          sangat profesional, dan mereka selalu menjaga komunikasi yang baik
-          sepanjang proyek. Hasil akhirnya jauh melebihi ekspektasi kami, dan
-          kami sangat puas dengan kualitas kerja mereka
-        </p>
-      </div>
-      <div className="w-screen-md flex items-end justify-between md:w-full overflow-x-hidden">
-        <div className="flex flex-col items-center gap-4 opacity-50">
-          <Image width={80} height={80} src={userIcon} alt="user" />
-          <div className="text-center">
-            <p className="text-base font-semibold">Vicky Hardia</p>
-            {/* <p>Sinarjaya</p> */}
+        <div className="relative text-center md:max-w-2xl">
+          <div className="hidden md:block absolute -top-16 -left-16">
+            <Quotes />
           </div>
-        </div>
-        <div className="flex flex-col items-center gap-4 opacity-50">
-          <Image width={80} height={80} src={userIcon} alt="user" />
-          <div className="text-center">
-            <p className="text-base font-semibold">Vicky Hardia</p>
-            {/* <p>Sinarjaya</p> */}
-          </div>
-        </div>
-        <div className="flex flex-col items-center gap-4 opacity-50">
-          <Image width={80} height={80} src={userIcon} alt="user" />
-          <div className="text-center">
-            <p className="text-base font-semibold">Vicky Hardia</p>
-            {/* <p>Sinarjaya</p> */}
-          </div>
-        </div>
-        <div className="flex flex-col items-center gap-4">
-          <Image src={userIcon} alt="user" />
-          <div className="text-center">
-            <p className="text-xl font-semibold">Vicky Hardia</p>
-            <p>Sinarjaya</p>
-          </div>
-        </div>
-        <div className="flex flex-col items-center gap-4 opacity-50">
-          <Image width={80} height={80} src={userIcon} alt="user" />
-          <div className="text-center">
-            <p className="text-base font-semibold">Vicky Hardia</p>
-            {/* <p>Sinarjaya</p> */}
-          </div>
-        </div>
-        <div className="flex flex-col items-center gap-4 opacity-50">
-          <Image width={80} height={80} src={userIcon} alt="user" />
-          <div className="text-center">
-            <p className="text-base font-semibold">Vicky Hardia</p>
-            {/* <p>Sinarjaya</p> */}
-          </div>
-        </div>
-        <div className="flex flex-col items-center gap-4 opacity-50">
-          <Image width={80} height={80} src={userIcon} alt="user" />
-          <div className="text-center">
-            <p className="text-base font-semibold">Vicky Hardia</p>
-            {/* <p>Sinarjaya</p> */}
-          </div>
+          We are very happy to work with Creatif Studio. Their service was very
+          professional, and they always maintained good communication throughout
+          the project. The end result far exceeded our expectations, and we are
+          very satisfied with the quality of their work
         </div>
       </div>
+      <CarouselTestimoni />
+      {/* <div className="carousel w-full">
+        <div id="slide1" className="carousel-item relative ">
+          <Image src={userIcon} alt={"gambar"} />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide2" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide2" className="carousel-item relative">
+          <Image src={userIcon} alt={"gambar"} />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide3" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide3" className="carousel-item relative">
+          <Image src={userIcon} alt={"gambar"} />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide4" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide4" className="carousel-item relative">
+          <Image src={userIcon} alt={"gambar"} />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide1" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+      </div> */}
     </section>
   );
 };

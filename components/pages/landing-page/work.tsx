@@ -8,7 +8,7 @@ import work4 from "@/assets/images/work-4.png";
 
 const WorkSection = () => {
   return (
-    <section className="w-full flex flex-col items-center ">
+    <section id="portfolio" className="w-full flex flex-col items-center ">
       <div className="flex flex-col gap-4 py-13 px-6 md:flex-row lg:px-30">
         <h1 className="text-4xl font-semibold capitalize md:text-[42px]">
           {"Awesome project we've ever worked on"}

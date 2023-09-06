@@ -20,23 +20,7 @@ export { default as Mail } from "./mail.svg";
 export { default as Phone } from "./phone.svg";
 export { default as Location } from "./location.svg";
 export { default as HumburgerMenu } from "./humbergerMenu.svg";
-
-// import PACKER from "./packer.svg";
-
-// import CREATIF_SECRETS from "./creatif-secrets.svg";
-// import CREATIF_SECRETS_WHITE from "./creatif-secrets-white.svg";
-
-// import CREATIF from "./creatif.svg";
-// import CREATIF_WHITE from "./creatif.svg";
-
-// import VIDEO_PLAY from "./video-play.svg";
-
-// export {
-//   CONSUL,
-//   PACKER,
-//   CREATIF,
-//   CREATIF_SECRETS,
-//   CREATIF_SECRETS_WHITE,
-//   CREATIF_WHITE,
-//   VIDEO_PLAY,
-// };
+export { default as Quotes } from "./quotes.svg";
+export { default as Clear } from "./Clear.svg";
+export { default as Back } from "./back.svg";
+export { default as Next } from "./next.svg";

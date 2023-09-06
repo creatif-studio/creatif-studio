@@ -49,7 +49,10 @@ const DataService = [
 
 const ServiceSection = () => {
   return (
-    <section className="flex flex-col items-center w-full px-6 py-13">
+    <section
+      id="service"
+      className="flex flex-col items-center w-full px-6 py-13"
+    >
       <div className="text-center space-y-3">
         <h1 className="text-4xl font-semibold md:text-[42px]">
           What we can do for you
