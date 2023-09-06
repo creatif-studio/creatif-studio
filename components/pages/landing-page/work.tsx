@@ -9,7 +9,7 @@ import work4 from "@/assets/images/work-4.png";
 const WorkSection = () => {
   return (
     <section id="portfolio" className="w-full flex flex-col items-center ">
-      <div className="flex flex-col gap-4 py-13 px-6 md:flex-row lg:px-20">
+      <div className="w-full flex flex-col gap-4 py-13 px-6 md:flex-row md:justify-between lg:px-20">
         <h1 className="text-4xl font-semibold capitalize md:text-[42px]">
           {"Awesome project we've ever worked on"}
         </h1>

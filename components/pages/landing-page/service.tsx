@@ -17,25 +17,25 @@ const DataService = [
   },
   {
     icon: <MobileDev />,
-    title: "Mobile/Web dev",
+    title: "Website & Mobile Development",
     description:
       "Transforming your concepts into fully functional web and mobile applications.",
   },
   {
     icon: <Blockchain />,
-    title: "Blockchain/ Web3 Dev",
+    title: "Blockchain/Web3 Development",
     description:
       "Pioneering the future of decentralized applications and technologies.",
   },
   {
     icon: <OtomasiTest />,
-    title: "Manual/ Automation Test",
+    title: "Manual & Automation Testing",
     description:
       "Ensuring your products meet the highest standards of functionality and reliability.",
   },
   {
     icon: <Devops />,
-    title: "DevOps/ Cloud Architecture",
+    title: "DevOps & Cloud Architecture",
     description:
       "Building the backbone of scalable and efficient digital systems.",
   },

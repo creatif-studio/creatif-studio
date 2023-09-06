@@ -16,7 +16,7 @@ import React from "react";
 const FooterSection = () => {
   return (
     <footer className="bg-[#0D0E13] rounded-t-[50px] text-white ">
-      <div className="px-6 py-16 flex flex-col gap-4 md:flex-row md:items-center md:justify-between lg:px-30">
+      <div className="px-6 py-16 flex flex-col gap-4 md:flex-row md:items-center md:justify-between lg:px-16 lg:max-w-screen-xl mx-auto">
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-semibold max-w-xs lg:max-w-full lg:text-6xl">
             Ready to work with us?
@@ -41,7 +41,7 @@ const FooterSection = () => {
         </a>
       </div>
       <div className="w-full h-[1px] opacity-20 bg-white"></div>
-      <div className="px-6 py-16 flex flex-col gap-13 lg:px-30 lg:flex-row">
+      <div className="px-6 py-16 flex flex-col gap-13  lg:flex-row lg:justify-between lg:px-16 lg:max-w-screen-xl mx-auto">
         <div className="space-y-4">
           <Brand />
           <p className="max-w-sm">
@@ -145,7 +145,7 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center md:justify-end px-6 lg:px-30 py-12">
+      <div className="flex items-center justify-center lg:justify-end px-6 py-12 lg:px-16 lg:max-w-screen-xl mx-auto">
         <p className="text-xs">
           ©2023 PT. Creatif Studio International. All rights reserved
         </p>
