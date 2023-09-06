@@ -173,7 +173,7 @@ const CarouselTestimoni = () => {
           <Next className="group-hover:stroke-white stroke-black" />
         </button>
       </div>
-      <div className="hidden carousel carousel-center w-full md:flex items-center justify-between mt-10">
+      <div className="hidden w-full md:flex items-center justify-between mt-10">
         {testimoniData?.map((testimoni, index) => (
           <div
             key={testimoni.id}
@@ -202,7 +202,7 @@ const CarouselTestimoni = () => {
         ))}
       </div>
 
-      <div className="md:hidden carousel carousel-center w-full flex items-center justify-between mt-10">
+      <div className="md:hidden w-full flex items-center justify-between mt-10">
         {testimoniData2?.map((testimoni, index) => (
           <div
             key={testimoni.id}
