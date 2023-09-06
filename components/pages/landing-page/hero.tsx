@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="hero-content text-center mt-10">
         <div className="max-w-md mx-auto md:max-w-full">
           <h1 className="text-5xl font-semibold md:text-[90px] lg:text-[128px]">
-            Creatif Studio.
+            Creatif Studio
           </h1>
           <h2 className="text-3xl font-medium capitalize max-w-xs mx-auto md:text-[32px] md:max-w-full">
             Expertly crafted software solutions

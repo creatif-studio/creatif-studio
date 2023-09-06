@@ -20,10 +20,12 @@ const LandingPage = () => {
     <div>
       <Navbar />
       <HeroSection />
-      <ServiceSection />
-      <WorkSection />
-      <TestimoniSection />
-      <OurTeamSection />
+      <div className="lg:max-w-screen-xl mx-auto">
+        <ServiceSection />
+        <WorkSection />
+        <TestimoniSection />
+        <OurTeamSection />
+      </div>
       <FooterSection />
     </div>
   );
