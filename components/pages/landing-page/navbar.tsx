@@ -33,30 +33,40 @@ const Navbar = () => {
       <Brand />
       <div className="hidden lg:flex items-center gap-10">
         <Link href={"#hero"}>
-          <p className="cursor-pointer">Home</p>
+          <p className="cursor-pointer text-gray-400 hover:text-white transition duration-300 ">
+            Home
+          </p>
         </Link>
         <Link href={"#service"}>
-          <p className="cursor-pointer">Service</p>
+          <p className="cursor-pointer text-gray-400 hover:text-white transition duration-300">
+            Services
+          </p>
         </Link>
         <Link href={"#portfolio"}>
-          <p className="cursor-pointer">Testimonial</p>
+          <p className="cursor-pointer text-gray-400 hover:text-white transition duration-300">
+            Portfolios
+          </p>
         </Link>
         <Link href={"#testi"}>
-          <p className="cursor-pointer">Testimonial</p>
+          <p className="cursor-pointer text-gray-400 hover:text-white transition duration-300">
+            Testimonials
+          </p>
         </Link>
         <Link href={"#teams"}>
-          <p className="cursor-pointer">Teams</p>
+          <p className="cursor-pointer text-gray-400 hover:text-white transition duration-300">
+            Teams
+          </p>
         </Link>
-        {/* <Link href={"#service"}>Service</Link>
-        <Link href={"#portfolio"}>Portfolio</Link>
-        <Link href={"#testi"}>Testimonial</Link>
-        <Link href={"#teams"}>Teams</Link> */}
       </div>
-      <BaseButton
-        variant="secondary"
-        label="Contact Us"
-        className="font-semibold hidden lg:block"
-      />
+
+      <a
+        href="https://api.whatsapp.com/send/?phone=6285159842622&text&type=phone_number&app_absent=0"
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-full text-sm px-6 py-4 bg-white text-black font-semibold hover:opacity-80 transtion duration-200 hidden lg:block"
+      >
+        Contact Us
+      </a>
       <button className="block lg:hidden" onClick={handleOpenNav}>
         <HumburgerMenu />
       </button>

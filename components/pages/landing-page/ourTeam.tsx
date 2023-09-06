@@ -15,7 +15,7 @@ const OurTeamSection = () => {
         <h1 className="text-[42px] font-semibold">Our best team</h1>
       </div>
       <div className="carousel carousel-center flex items-center gap-3 px-12">
-        <div className="carousel-item ml-6 flex flex-col items-center gap-4">
+        <div className="carousel-item ml-6 flex flex-col items-center gap-4 lg:ml-0">
           <Image
             width={274}
             height={389}

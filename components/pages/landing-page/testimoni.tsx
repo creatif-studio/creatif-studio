@@ -8,9 +8,9 @@ const TestimoniSection = () => {
   return (
     <section
       id="testi"
-      className="flex flex-col items-center gap-3 px-6 py-13 lg:px-30"
+      className="flex flex-col items-center gap-3 px-6 py-13 lg:px-16 lg:py-20"
     >
-      <div className="text-center flex flex-col gap-13">
+      {/* <div className="text-center flex flex-col gap-13">
         <h1 className="text-4xl font-semibold md:text-[42px]">
           what our clients say
         </h1>
@@ -23,7 +23,7 @@ const TestimoniSection = () => {
           the project. The end result far exceeded our expectations, and we are
           very satisfied with the quality of their work
         </div>
-      </div>
+      </div> */}
       <CarouselTestimoni />
       {/* <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative ">

@@ -60,36 +60,21 @@ const ServiceSection = () => {
         <p>We specialize in turning your visions into reality.</p>
       </div>
 
-      <div className="grid grid-cols-1 my-12 gap-4 md:grid-cols-2 lg:px-30">
-        {DataService.map((item) =>
-          item.title == "Technical Writing & Documentation" ? (
-            <div
-              key={item.title}
-              className="w-full p-8 bg-[#0D0E13] text-white rounded-3xl flex flex-col gap-4"
-            >
-              <div className="flex items-center gap-4">
-                <div>{item.icon}</div>
-                <h3 className="text-2xl font-semibold md:text-3xl ">
-                  {item.title}
-                </h3>
-              </div>
-              <p>{item.description}</p>
+      <div className="w-full grid grid-cols-1 my-12 gap-4 md:grid-cols-2 lg:px-14">
+        {DataService.map((item) => (
+          <div
+            key={item.title}
+            className="w-full p-8 border border-[#4A5568] hover:bg-[#0D0E13] hover:text-white rounded-3xl flex flex-col gap-4 transition duration-300"
+          >
+            <div className="flex items-center gap-4">
+              <div>{item.icon}</div>
+              <h3 className="text-2xl font-semibold md:text-3xl ">
+                {item.title}
+              </h3>
             </div>
-          ) : (
-            <div
-              key={item.title}
-              className="p-8 border border-[#4A5568] rounded-3xl flex flex-col gap-4"
-            >
-              <div className="flex items-center gap-4">
-                <div>{item.icon}</div>
-                <h3 className="text-2xl font-semibold md:text-3xl ">
-                  {item.title}
-                </h3>
-              </div>
-              <p>{item.description}</p>
-            </div>
-          )
-        )}
+            <p>{item.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
