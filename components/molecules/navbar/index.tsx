@@ -30,7 +30,9 @@ const Navbar = () => {
 
   return (
     <nav className="absolute top-0 left-0 flex items-center justify-between w-full px-6 py-8 text-white md:px-13 lg:px-30">
-      <Brand />
+      <Link href={"/"}>
+        <Brand />
+      </Link>
       <div className="items-center hidden gap-10 lg:flex">
         <Link href={"#hero"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white ">

@@ -107,21 +107,28 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex flex-col items-center gap-8 mt-4">
-          <Link href={"#hero"}>
+          <Link href={"/"}>
             <p onClick={handleCloseNav}>Home</p>
           </Link>
-          <Link href={"#service"}>
+          <Link href={"/#service"}>
             <p onClick={handleCloseNav}>Service</p>
           </Link>
-          <Link href={"#portfolio"} onClick={handleCloseNav}>
-            Portfolio
+          <Link href={"/#portfolio"} onClick={handleCloseNav}>
+            <p onClick={handleCloseNav}>Portfolio</p>
           </Link>
-          <Link href={"#testi"} onClick={handleCloseNav}>
+          <Link href={"/#testi"} onClick={handleCloseNav}>
             <p onClick={handleCloseNav}>Testimonial</p>
           </Link>
-          <Link href={"#teams"} onClick={handleCloseNav}>
+          <Link href={"/#teams"} onClick={handleCloseNav}>
             <p onClick={handleCloseNav}>Teams</p>
           </Link>
+          <a
+            href="https://api.whatsapp.com/send/?phone=6285159842622&text&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Contact Us
+          </a>
         </div>
       </div>
     </nav>

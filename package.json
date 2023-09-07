@@ -19,8 +19,10 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-icons": "^4.4.0",
+    "react-multi-carousel": "^2.8.4",
     "react-nanny": "^2.14.0",
-    "react-popper": "^2.3.0"
+    "react-popper": "^2.3.0",
+    "semantic-ui-react": "^2.1.4"
   },
   "devDependencies": {
     "@types/next": "^9.0.0",

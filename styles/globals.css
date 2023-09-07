@@ -86,7 +86,32 @@ body{
   filter: blur(2px); 
 }
 
+.carousels-container {
+  display: flex;
+  overflow: hidden;
+}
 
+.carousels-items {
+  width: fit-content;
+  display: flex;
+  gap: 6px;
+  transition: transform 0.3s ease-in-out;
+  /* transform: translateX(-${activeIndex * 100}%); */
+}
+
+/* .carousels-item {
+  flex: 0 0 auto;
+  min-width: 100%;
+} */
+
+/* Animasi pergeseran item saat tombol "Next" atau "Previous" ditekan */
+/* .active .next {
+  transform: translateX(-50%);
+}
+
+.active .prev {
+  transform: translateX(100%);
+} */
 
 .bg-products-creatif-hero {
   background: linear-gradient(

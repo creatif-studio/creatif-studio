@@ -13,7 +13,7 @@ const WorkSection = () => {
       id="portfolio"
       className="flex flex-col items-center w-full lg:px-24"
     >
-      <div className="flex flex-col w-full gap-4 px-6 py-13 md:flex-row md:justify-between">
+      <div className="flex flex-col w-full gap-4 px-6 lg:px-0 py-13 md:flex-row md:justify-between">
         <h1 className="text-4xl font-semibold capitalize md:text-[42px]">
           {"Awesome project we've ever worked on"}
         </h1>
@@ -27,7 +27,7 @@ const WorkSection = () => {
           </Link>
         </div>
       </div>
-      <div className="space-x-3 carousel carousel-center">
+      <div className="flex justify-between w-full gap-4 carousel carousel-center">
         <div className="relative ml-6 carousel-item card-image lg:ml-0">
           <Image
             width={274}
@@ -79,6 +79,20 @@ const WorkSection = () => {
             <p className="text-3xl font-semibold">Automation Test</p>
             <p>Lorem ipsum dolor sit amet,</p>
           </div>
+        </div>
+        <div className="flex justify-center w-full gap-2 py-2">
+          <a href="#item1" className="btn btn-xs">
+            1
+          </a>
+          <a href="#item2" className="btn btn-xs">
+            2
+          </a>
+          <a href="#item3" className="btn btn-xs">
+            3
+          </a>
+          <a href="#item4" className="btn btn-xs">
+            4
+          </a>
         </div>
       </div>
     </section>
