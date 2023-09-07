@@ -51,16 +51,16 @@ const ServiceSection = () => {
   return (
     <section
       id="service"
-      className="flex flex-col items-center w-full px-6 py-13"
+      className="flex flex-col items-center w-full px-6 lg:px-24 py-13"
     >
-      <div className="text-center space-y-3">
+      <div className="space-y-3 text-center">
         <h1 className="text-4xl font-semibold md:text-[42px]">
           What we can do for you
         </h1>
         <p>We specialize in turning your visions into reality.</p>
       </div>
 
-      <div className="w-full grid grid-cols-1 my-12 gap-4 md:grid-cols-2 lg:px-14">
+      <div className="grid w-full grid-cols-1 gap-4 my-12 md:grid-cols-2 ">
         {DataService.map((item) => (
           <div
             key={item.title}

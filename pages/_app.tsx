@@ -2,6 +2,7 @@ import React from "react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import "../styles/globals.css";
+import LayoutLandingPage from "@/components/organisms/layout_landing_page";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -13,7 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link href="/favicon.ico" rel="icon" />
       </Head>
-      <Component {...pageProps} />
+      <LayoutLandingPage>
+        <Component {...pageProps} />
+      </LayoutLandingPage>
     </>
   );
 }

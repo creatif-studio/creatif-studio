@@ -98,7 +98,23 @@ const CarouselTestimoni = () => {
     width: undefined || 0,
   });
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(3);
+  const [activeIndex2, setActiveIndex2] = useState(1);
+
+  const adjustedTestimoniData = [...testimoniData];
+  const adjustedTestimoniData2 = [...testimoniData2];
+  const activeItem = adjustedTestimoniData.splice(activeIndex, 1)[0];
+  const activeItem2 = adjustedTestimoniData2.splice(activeIndex2, 1)[0];
+  adjustedTestimoniData.splice(
+    Math.floor(adjustedTestimoniData.length / 2),
+    0,
+    activeItem
+  );
+  adjustedTestimoniData2.splice(
+    Math.floor(adjustedTestimoniData.length / 2),
+    0,
+    activeItem2
+  );
 
   const handleResize = () => {
     setWindowSize({
@@ -108,33 +124,33 @@ const CarouselTestimoni = () => {
 
   const handleNext = () => {
     if (windowSize.width < 600) {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % testimoniData2.length);
+      // setActiveIndex((prevIndex) => (prevIndex + 1) % testimoniData2.length);
+      setActiveIndex2((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
     } else {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % testimoniData.length);
+      setActiveIndex(
+        // (prevIndex) => (prevIndex + 1) % adjustedTestimoniData.length
+        (prevIndex) => (prevIndex === 6 ? 0 : prevIndex + 1)
+      );
     }
   };
 
   const handlePrev = () => {
     if (windowSize.width < 600) {
-      setActiveIndex((prevIndex) =>
-        prevIndex === 0 ? testimoniData2.length - 1 : prevIndex - 1
-      );
+      // setActiveIndex((prevIndex) =>
+      //   prevIndex === 0 ? testimoniData2.length - 1 : prevIndex - 1
+      // );
+      setActiveIndex2((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
     } else {
-      setActiveIndex((prevIndex) =>
-        prevIndex === 0 ? testimoniData.length - 1 : prevIndex - 1
-      );
+      setActiveIndex((prevIndex) => (prevIndex === 0 ? 6 : prevIndex - 1));
     }
   };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // Tambahkan event listener saat komponen di-mount
       window.addEventListener("resize", handleResize);
 
-      // Panggil handleResize untuk menginisialisasi ukuran jendela
       handleResize();
 
-      // Hapus event listener saat komponen di-unmount
       return () => {
         window.removeEventListener("resize", handleResize);
       };
@@ -142,24 +158,24 @@ const CarouselTestimoni = () => {
   }, []);
 
   return (
-    <div className="w-full mx-auto p-4">
-      <div className="text-center flex flex-col justify-center items-center gap-16">
+    <div className="w-full p-4 mx-auto overflow-x-hidden">
+      <div className="flex flex-col items-center justify-center gap-16 text-center">
         <h1 className="text-4xl font-semibold md:text-[42px]">
           what our clients say
         </h1>
         <div className="relative text-center md:max-w-2xl">
-          <div className="hidden md:block absolute -top-4 -left-20">
+          <div className="absolute hidden md:block -top-4 -left-20">
             <Quotes />
           </div>
           <p className="hidden md:block">
             {testimoniData[activeIndex]?.description}
           </p>
           <p className="block md:hidden">
-            {testimoniData2[activeIndex]?.description}
+            {testimoniData2[activeIndex2]?.description}
           </p>
         </div>
       </div>
-      <div className="w-full flex justify-center gap-4 mt-4 md:justify-between">
+      <div className="flex justify-center w-full gap-4 mt-4 md:justify-between">
         <button
           onClick={handlePrev}
           className="group  px-4 py-4 bg-white border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
@@ -173,71 +189,82 @@ const CarouselTestimoni = () => {
           <Next className="group-hover:stroke-white stroke-black" />
         </button>
       </div>
-      <div className="hidden w-full md:flex items-center justify-between mt-10">
-        {testimoniData?.map((testimoni, index) => (
-          <div
-            key={testimoni.id}
-            className={`carousel-item relative transform ${
-              index === activeIndex ? "scale-100" : "scale-75 opacity-50"
-            } transition-transform duration-500 ${
-              index === activeIndex ? "z-10" : "z-0"
-            }`}
-            style={{
-              minWidth: "80px",
-              maxWidth: "80px",
-              minHeight: "80px",
-              maxHeight: "80px",
-              marginRight: "16px",
-            }}
-          >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Image
-                src={testimoni.image}
-                alt={testimoni.name}
-                width={120}
-                height={120}
-              />
+      <div className="items-center justify-between hidden max-w-screen-lg mx-auto mt-10 lg:flex ">
+        {adjustedTestimoniData?.map((testimoni, index) => {
+          const isActive =
+            index === Math.floor(adjustedTestimoniData.length / 2);
+
+          const transformValue = isActive ? "scale(1)" : "scale(0.70)";
+          const opacity = isActive ? "1" : "0.5";
+          const zIndexValue = isActive ? 10 : 0;
+
+          return (
+            <div
+              key={testimoni.id}
+              className={`carousel-item relative transition-transform duration-500`}
+              style={{
+                minWidth: "80px",
+                maxWidth: "80px",
+                minHeight: "80px",
+                maxHeight: "80px",
+                opacity: opacity,
+                transform: transformValue,
+                zIndex: zIndexValue,
+              }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Image src={testimoni.image} alt={testimoni.name} />
+                {/* <p className="p-8 bg-blue-500 rounded-full">{testimoni.name}</p> */}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
-      <div className="md:hidden w-full flex items-center justify-between mt-10">
-        {testimoniData2?.map((testimoni, index) => (
-          <div
-            key={testimoni.id}
-            className={`carousel-item relative transform ${
-              index === activeIndex ? "scale-100" : "scale-75 opacity-50"
-            } transition-transform duration-500 ${
-              index === activeIndex ? "z-10" : "z-0"
-            }`}
-            style={{
-              minWidth: "80px",
-              maxWidth: "80px",
-              minHeight: "80px",
-              maxHeight: "80px",
-              marginRight: "16px",
-            }}
-          >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Image src={testimoni.image} alt={testimoni.name} />
+      <div className="flex items-center justify-between w-full mt-10 md:hidden">
+        {adjustedTestimoniData2?.map((testimoni, index) => {
+          const isActive =
+            index === Math.floor(adjustedTestimoniData2.length / 2);
+
+          const transformValue = isActive ? "scale(1)" : "scale(0.70)";
+          const opacity = isActive ? "1" : "0.5";
+          const zIndexValue = isActive ? 10 : 0;
+
+          return (
+            <div
+              key={testimoni.id}
+              className={`carousel-item relative transition-transform duration-500`}
+              style={{
+                minWidth: "80px",
+                maxWidth: "80px",
+                minHeight: "80px",
+                maxHeight: "80px",
+                opacity: opacity,
+                transform: transformValue,
+                zIndex: zIndexValue,
+              }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Image src={testimoni.image} alt={testimoni.name} />
+                {/* <p className="p-8 bg-blue-500 rounded-full">{testimoni.name}</p> */}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
-      <div className="text-center mt-4">
-        <p className="hidden md:block text-lg font-semibold">
+      <div className="mt-4 text-center">
+        <p className="hidden text-lg font-semibold md:block">
           {testimoniData[activeIndex]?.name}
         </p>
-        <p className="block md:hidden text-lg font-semibold">
-          {testimoniData2[activeIndex]?.name}
+        <p className="block text-lg font-semibold md:hidden">
+          {testimoniData2[activeIndex2]?.name}
         </p>
-        <p className="hidden md:block text-gray-600">
+        <p className="hidden text-gray-600 md:block">
           {testimoniData[activeIndex]?.company}
         </p>
-        <p className="block md:hidden text-gray-600">
-          {testimoniData2[activeIndex]?.company}
+        <p className="block text-gray-600 md:hidden">
+          {testimoniData2[activeIndex2]?.company}
         </p>
       </div>
     </div>
