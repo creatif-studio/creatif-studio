@@ -120,19 +120,19 @@ const OurTeamSection = () => {
         ))}
         <button
           onClick={handlePrev}
-          className="absolute top-40 left-5 group  px-4 py-4 bg-black border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
+          className="hidden xl:block absolute top-40 left-5 group  px-4 py-4 bg-black border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
         >
           <Back className="stroke-white" />
         </button>
         <button
           onClick={handleNext}
-          className="absolute top-40 right-5 group px-4 py-4 bg-black border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
+          className="hidden xl:block absolute top-40 right-5 group px-4 py-4 bg-black border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
         >
           <Next className="stroke-white " />
         </button>
       </div>
 
-      <div className="flex items-center justify-center w-full gap-4 lg:hidden">
+      <div className="flex items-center justify-center w-full gap-4 xl:hidden">
         <button
           onClick={handlePrev}
           className="group  px-4 py-4 bg-white border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
