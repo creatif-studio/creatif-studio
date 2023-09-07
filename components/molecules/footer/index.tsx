@@ -35,7 +35,7 @@ const FooterSection = () => {
           href="https://api.whatsapp.com/send/?phone=6285159842622&text&type=phone_number&app_absent=0"
           target="_blank"
           rel="noreferrer"
-          className="hidden px-6 py-4 text-sm font-semibold text-black duration-200 bg-white rounded-full hover:opacity-80 transtion lg:block"
+          className="px-6 py-4 text-sm font-semibold text-black duration-200 bg-white rounded-full w-fit hover:opacity-80 transtion "
         >
           {"let's Talk"}
         </a>
@@ -145,7 +145,7 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center px-6 py-12 mx-auto lg:justify-end lg:px-16 lg:max-w-screen-xl">
+      <div className="flex items-center justify-center px-6 pb-6 mx-auto lg:py-12 lg:justify-end lg:px-16 lg:max-w-screen-xl">
         <p className="text-xs">
           ©2023 PT. Creatif Studio International. All rights reserved
         </p>

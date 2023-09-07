@@ -164,7 +164,7 @@ const CarouselTestimoni = () => {
           what our clients say
         </h1>
         <div className="relative text-center md:max-w-2xl">
-          <div className="absolute hidden md:block -top-4 -left-20">
+          <div className="absolute hidden lg:block -top-4 -left-20">
             <Quotes />
           </div>
           <p className="hidden md:block">
@@ -189,7 +189,7 @@ const CarouselTestimoni = () => {
           <Next className="group-hover:stroke-white stroke-black" />
         </button>
       </div>
-      <div className="items-center justify-between hidden max-w-screen-lg mx-auto mt-10 lg:flex ">
+      <div className="items-center justify-between hidden max-w-screen-lg mx-auto mt-10 md:flex ">
         {adjustedTestimoniData?.map((testimoni, index) => {
           const isActive =
             index === Math.floor(adjustedTestimoniData.length / 2);

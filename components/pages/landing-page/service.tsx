@@ -23,7 +23,7 @@ const DataService = [
   },
   {
     icon: <Blockchain />,
-    title: "Blockchain/Web3 Development",
+    title: "Blockchain/ Web3 Development",
     description:
       "Pioneering the future of decentralized applications and technologies, harnessing the power of blockchain for innovation.",
   },
