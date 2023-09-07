@@ -9,26 +9,6 @@ import React, { useEffect, useState } from "react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
-  const [scrolling, setScrolling] = useState(false);
-
-  useEffect(() => {
-    // Fungsi untuk mengatur status scroll
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-
-    // Tambahkan event listener untuk scroll
-    window.addEventListener("scroll", handleScroll);
-
-    // Membersihkan event listener pada komponen unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const handleOpenNav = () => {
     setIsOpen(true);
@@ -49,35 +29,30 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={clsx(
-        scrolling ? "bg-[#0D0E13]" : "bg-none",
-        "transition-colors duration-300 fixed top-0 left-0 z-[99]  flex items-center justify-between w-full px-6 py-4 text-white md:px-13 lg:px-24"
-      )}
-    >
+    <nav className="absolute top-0 left-0 flex items-center justify-between w-full px-6 py-8 text-white md:px-13 lg:px-30">
       <Brand />
       <div className="items-center hidden gap-10 lg:flex">
-        <Link href={"/"}>
+        <Link href={"#hero"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white ">
             Home
           </p>
         </Link>
-        <Link href={"/#service"}>
+        <Link href={"#service"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
             Services
           </p>
         </Link>
-        <Link href={"/#portfolio"}>
+        <Link href={"#portfolio"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
             Portfolios
           </p>
         </Link>
-        <Link href={"/#testi"}>
+        <Link href={"#testi"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
             Testimonials
           </p>
         </Link>
-        <Link href={"/#teams"}>
+        <Link href={"#teams"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
             Teams
           </p>
@@ -97,7 +72,7 @@ const Navbar = () => {
       </button>
       <div
         className={clsx(
-          "block top-0 left-0 w-full bg-[#0D0E13] h-screen p-8 z-[999] lg:hidden",
+          "block top-0 left-0 w-full bg-[#0D0E13] h-screen p-8 z-50 lg:hidden",
           isOpen ? "absolute" : "hidden"
         )}
       >

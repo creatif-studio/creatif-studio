@@ -18,15 +18,21 @@ import Navbar from "./navbar";
 const LandingPage = () => {
   return (
     <div>
-      <Navbar />
-      <HeroSection />
-      <div className="lg:max-w-screen-xl mx-auto">
+      {/* <Navbar /> */}
+      <HeroSection
+        page="home"
+        title="Creatif Studio"
+        subTitle="Expertly Crafted Software Solutions"
+        description="We specialize in turning your vision into reality. With our team of highly skilled professionals, we are committed to delivering customized, innovative, and top-quality software solutions that exceed your expectations."
+        buttonLabel="View Our Work"
+      />
+      <div className="">
         <ServiceSection />
         <WorkSection />
         <TestimoniSection />
         <OurTeamSection />
       </div>
-      <FooterSection />
+      {/* <FooterSection /> */}
     </div>
   );
 };

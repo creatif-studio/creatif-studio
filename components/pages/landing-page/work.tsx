@@ -5,11 +5,15 @@ import work1 from "@/assets/images/work1.png";
 import work2 from "@/assets/images/work-2.png";
 import work3 from "@/assets/images/work-3.png";
 import work4 from "@/assets/images/work-4.png";
+import Link from "next/link";
 
 const WorkSection = () => {
   return (
-    <section id="portfolio" className="w-full flex flex-col items-center ">
-      <div className="w-full flex flex-col gap-4 py-13 px-6 md:flex-row md:justify-between lg:px-20">
+    <section
+      id="portfolio"
+      className="flex flex-col items-center w-full lg:px-24"
+    >
+      <div className="flex flex-col w-full gap-4 px-6 py-13 md:flex-row md:justify-between">
         <h1 className="text-4xl font-semibold capitalize md:text-[42px]">
           {"Awesome project we've ever worked on"}
         </h1>
@@ -18,11 +22,13 @@ const WorkSection = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
-          <BaseButton variant="primary" label="See All Project" />
+          <Link href={"/portofolio"}>
+            <BaseButton variant="primary" label="See All Project" />
+          </Link>
         </div>
       </div>
-      <div className="carousel carousel-center space-x-3 px-12">
-        <div className="carousel-item ml-6 relative lg:ml-0">
+      <div className="space-x-3 carousel carousel-center">
+        <div className="relative ml-6 carousel-item card-image lg:ml-0">
           <Image
             width={274}
             height={389}
@@ -35,7 +41,7 @@ const WorkSection = () => {
             <p>Lorem ipsum dolor sit amet,</p>
           </div>
         </div>
-        <div className="carousel-item relative">
+        <div className="relative carousel-item card-image">
           <Image
             width={274}
             height={389}
@@ -48,7 +54,7 @@ const WorkSection = () => {
             <p>Lorem ipsum dolor sit amet,</p>
           </div>
         </div>
-        <div className="carousel-item relative">
+        <div className="relative carousel-item card-image">
           <Image
             width={274}
             height={389}
@@ -56,12 +62,12 @@ const WorkSection = () => {
             className="rounded-box"
             alt="image"
           />
-          <div className="overlay p-3 text-center">
+          <div className="p-3 text-center overlay">
             <p className="text-3xl font-semibold">Technical Writing</p>
             <p>Lorem ipsum dolor sit amet,</p>
           </div>
         </div>
-        <div className="carousel-item relative pr-5 lg:pr-0">
+        <div className="relative pr-5 carousel-item card-image lg:pr-0">
           <Image
             width={274}
             height={389}
@@ -69,7 +75,7 @@ const WorkSection = () => {
             className="rounded-box"
             alt="image"
           />
-          <div className="overlay p-3 text-center lg:p-0">
+          <div className="p-3 text-center overlay lg:p-0">
             <p className="text-3xl font-semibold">Automation Test</p>
             <p>Lorem ipsum dolor sit amet,</p>
           </div>

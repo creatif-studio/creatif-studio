@@ -16,6 +16,7 @@ export { default as Twitter } from "./Twitter.svg";
 export { default as Instagram } from "./Instagram.svg";
 export { default as Linkendin } from "./LinkedIn.svg";
 export { default as Youtube } from "./YouTube.svg";
+export { default as Github } from "./github.svg";
 export { default as Mail } from "./mail.svg";
 export { default as Phone } from "./phone.svg";
 export { default as Location } from "./location.svg";
