@@ -63,27 +63,24 @@ const OurTeamSection = () => {
   return (
     <section
       id="teams"
-      className="flex flex-col items-center gap-12 px-4 overflow-x-hidden py-13 md:pb-28 lg:px-24"
+      className="flex flex-col items-center gap-12 px-4 overflow-x-hidden pb-13 md:pb-28 lg:px-24"
     >
       <div>
         <h1 className="text-[42px] font-semibold text-center">Our best team</h1>
       </div>
       <div
         ref={containerRef}
-        className="relative flex items-center gap-3 px-12 carousel carousel-center lg:px-0"
+        className="relative w-full flex justify-between gap-4 xl:gap-0 items-center px-12 carousel carousel-center lg:px-0"
       >
         {dataTeam.map((item, index) => (
           <div
-            id="container"
             key={item.name}
-            className={`flex flex-col items-center gap-4 carousel-item ${
-              index === activeIndex ? "active" : ""
-            }`}
+            className={`flex flex-col items-center carousel-item`}
           >
-            <div className="relative ml-6 card-image lg:ml-0">
+            <div className="relative card-image last:mr-6 first:ml-0 lg:ml-0 lg:last:mr-0  lg:first:ml-0">
               <Image
-                // width={274}
-                // height={389}
+                width={274}
+                height={389}
                 src={item.profileImage}
                 // className="rounded-box "
                 alt="image"
@@ -120,13 +117,13 @@ const OurTeamSection = () => {
         ))}
         <button
           onClick={handlePrev}
-          className="hidden xl:block absolute top-40 left-5 group  px-4 py-4 bg-black border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
+          className="hidden absolute top-40 left-5 group  px-4 py-4 bg-black border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
         >
           <Back className="stroke-white" />
         </button>
         <button
           onClick={handleNext}
-          className="hidden xl:block absolute top-40 right-5 group px-4 py-4 bg-black border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
+          className="hidden  absolute top-40 right-5 group px-4 py-4 bg-black border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
         >
           <Next className="stroke-white " />
         </button>
