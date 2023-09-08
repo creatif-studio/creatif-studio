@@ -45,6 +45,26 @@ const Project = [
     description: "Heroku Replacement",
     image: sampleProject,
   },
+  {
+    name: "IDrive E2",
+    description: "S3 Compatible Storage",
+    image: sampleProject,
+  },
+  {
+    name: "Muunship",
+    description: "Trading Platform for Crypto",
+    image: sampleProject,
+  },
+  {
+    name: "cQuant.io",
+    description: "Ansible Script for Deployment",
+    image: sampleProject,
+  },  
+  {
+    name: "Kelsiem",
+    description: "Terraform for AWS Management",
+    image: sampleProject,
+  },
 ];
 
 const Portofolio = () => {
