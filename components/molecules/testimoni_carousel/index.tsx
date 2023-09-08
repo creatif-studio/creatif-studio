@@ -6,10 +6,10 @@ import { Back, Next, Quotes } from "@/assets/icons";
 const testimoniData = [
   {
     id: 1,
-    name: "Vicky Hardia",
-    company: "Sinar Jaya",
+    name: "Raghava",
+    company: "IDrive E2",
     description:
-      "We are very happy to work with Creatif Studio. Their service was very professional, and they always maintained good communication throughoutthe project. The end result far exceeded our expectations, and we are very satisfied with the quality of their work",
+      "Good work",
     image: userIcon,
   },
   {
