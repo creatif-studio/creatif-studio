@@ -9,23 +9,23 @@ import Simple from "@/components/molecules/carousel";
 
 const dataTeam = [
   {
-    name: "Wade Warren",
-    position: "Web Designer",
+    name: "Sugeng Agung Suganda",
+    position: "Founder",
     profileImage: team1,
   },
   {
-    name: "Jacob Jones",
-    position: "App Developer",
+    name: "Vebiola Vanessa",
+    position: "Finance",
     profileImage: team2,
   },
   {
-    name: "Dianne Russell",
-    position: "web developer",
+    name: "Rizky Adil Hakim",
+    position: "Tech Lead",
     profileImage: team3,
   },
   {
-    name: "Floyd Miles",
-    position: "cloud arc",
+    name: "Nur Askiah",
+    position: "Backend Developer",
     profileImage: team4,
   },
 ];

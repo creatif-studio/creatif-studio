@@ -161,7 +161,7 @@ const CarouselTestimoni = () => {
     <div className="w-full p-4 mx-auto overflow-x-hidden">
       <div className="flex flex-col items-center justify-center gap-6 text-center">
         <h1 className="text-4xl font-semibold md:text-[42px]">
-          what our clients say
+          What our clients say
         </h1>
         <div className="relative text-center md:max-w-2xl">
           <div className="absolute hidden lg:block -top-4 -left-20">
