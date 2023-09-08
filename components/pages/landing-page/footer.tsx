@@ -28,7 +28,7 @@ const FooterSection = () => {
         </div>
         {/* <BaseButton
           variant="secondary"
-          label="let's Talk"
+          label="Let's Talk"
           className="font-semibold"
         /> */}
         <a
@@ -37,7 +37,7 @@ const FooterSection = () => {
           rel="noreferrer"
           className="hidden px-6 py-4 text-sm font-semibold text-black duration-200 bg-white rounded-full hover:opacity-80 transtion lg:block"
         >
-          {"let's Talk"}
+          {"Let's Talk"}
         </a>
       </div>
       <div className="w-full h-[1px] opacity-20 bg-white"></div>
@@ -45,8 +45,9 @@ const FooterSection = () => {
         <div className="space-y-4">
           <Brand />
           <p className="max-w-sm">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
+            Creatif Studio a.k.a PT. Creatif Studio International
+            Serang - Banten, Kec. Cikande
+            Bumi Cikande Indah, 42186
           </p>
           <div className="flex items-center gap-8">
             <a

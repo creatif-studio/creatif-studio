@@ -6,23 +6,43 @@ import Image from "next/image";
 
 const Project = [
   {
-    name: "Web Design",
-    description: "Lorem ipsum dolor sit amet",
+    name: "DeployPRO",
+    description: "Servers & Apps Management",
     image: sampleProject,
   },
   {
-    name: "Mobile Apps",
-    description: "Lorem ipsum dolor sit amet",
+    name: "Clevis",
+    description: "Laundry & Car Wash",
     image: sampleProject,
   },
   {
-    name: "Goverment Apps",
-    description: "Lorem ipsum dolor sit amet",
+    name: "Practiz",
+    description: "Online Learning Platform",
     image: sampleProject,
   },
   {
-    name: "Industrial App",
-    description: "Lorem ipsum dolor sit amet",
+    name: "Activitylist",
+    description: "Event Sharing Platform",
+    image: sampleProject,
+  },
+  {
+    name: "Cigbot",
+    description: "Image Generator and Twitter Bot",
+    image: sampleProject,
+  },
+  {
+    name: "AppSeed Docs",
+    description: "Technical Documentation",
+    image: sampleProject,
+  },
+  {
+    name: "Bitzaro",
+    description: "Payment Gateway for Web3",
+    image: sampleProject,
+  },
+  {
+    name: "Rilis",
+    description: "Heroku Replacement",
     image: sampleProject,
   },
 ];

@@ -19,8 +19,7 @@ const WorkSection = () => {
         </h1>
         <div className="space-y-6">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            Our portfolio represents the culmination of years of hard work and dedication. Each project tells a unique story of collaboration, innovation, and success.
           </p>
           <Link href={"/portofolio"}>
             <BaseButton variant="primary" label="See All Project" />
@@ -37,8 +36,8 @@ const WorkSection = () => {
             alt="image"
           />
           <div className="overlay">
-            <p className="text-3xl font-semibold">Web Design</p>
-            <p>Lorem ipsum dolor sit amet,</p>
+            <p className="text-3xl font-semibold">DeployPRO</p>
+            <p>Servers & Apps Management</p>
           </div>
         </div>
         <div className="relative carousel-item card-image">
@@ -50,8 +49,8 @@ const WorkSection = () => {
             alt="image"
           />
           <div className="overlay">
-            <p className="text-3xl font-semibold">Mobile Apps</p>
-            <p>Lorem ipsum dolor sit amet,</p>
+            <p className="text-3xl font-semibold">Clevis</p>
+            <p>Laundry and Car Wash</p>
           </div>
         </div>
         <div className="relative carousel-item card-image">
@@ -63,8 +62,8 @@ const WorkSection = () => {
             alt="image"
           />
           <div className="p-3 text-center overlay">
-            <p className="text-3xl font-semibold">Technical Writing</p>
-            <p>Lorem ipsum dolor sit amet,</p>
+            <p className="text-3xl font-semibold">Practiz</p>
+            <p>Online Learning Platform</p>
           </div>
         </div>
         <div className="relative pr-5 carousel-item card-image lg:pr-0">
@@ -76,8 +75,8 @@ const WorkSection = () => {
             alt="image"
           />
           <div className="p-3 text-center overlay lg:p-0">
-            <p className="text-3xl font-semibold">Automation Test</p>
-            <p>Lorem ipsum dolor sit amet,</p>
+            <p className="text-3xl font-semibold">Activitylist</p>
+            <p>Event Sharing Platform</p>
           </div>
         </div>
       </div>

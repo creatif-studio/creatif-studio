@@ -11,7 +11,7 @@ import React from "react";
 const DataService = [
   {
     icon: <UiUxDesign />,
-    title: "UI/UX Strategy, Research & Design",
+    title: "UI/UX Research & Design",
     description:
       "Crafting intuitive, visually stunning interfaces while leveraging in-depth research to create seamless user experiences.",
   },
@@ -23,25 +23,25 @@ const DataService = [
   },
   {
     icon: <Blockchain />,
-    title: "Blockchain/ Web3 Development",
+    title: "Blockchain & Web3 Dev",
     description:
-      "Pioneering the future of decentralized applications and technologies, harnessing the power of blockchain for innovation.",
+      "Pioneering the future of decentralized applications and technologies, harnessing the power of blockchain/web3 for innovation.",
   },
   {
     icon: <OtomasiTest />,
-    title: "Manual & Automation Testing",
+    title: "Manual & Automation Test",
     description:
       "Rigorous testing to ensure the products meet the standards of functionality and reliability, combining manual and auto testing.",
   },
   {
     icon: <Devops />,
-    title: "DevOps & Cloud Architecture",
+    title: "DevOps & Cloud Architect",
     description:
       "Building the backbone of scalable and efficient digital systems through DevOps practices and cloud architecture expertise.",
   },
   {
     icon: <TechnicalWriting />,
-    title: "Technical Writing & Documentation",
+    title: "Technical Writing & Docs",
     description:
       "Creating comprehensive documentation that empowers users to understand and utilize your product to its fullest potential.",
   },
