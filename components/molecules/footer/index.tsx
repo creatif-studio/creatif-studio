@@ -131,13 +131,13 @@ const FooterSection = () => {
               <Link href={"/"}>
                 <div className="flex items-center gap-2">
                   <Phone />
-                  {"(+021) 1580 3658"}
+                  {"(+62) 851 5984 2622"}
                 </div>
               </Link>
               <Link href={"/"}>
                 <div className="flex items-center gap-2">
                   <Location />
-                  Jawabarat, Indonesia
+                  Cikande, Indonesia
                 </div>
               </Link>
             </div>

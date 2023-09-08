@@ -139,7 +139,7 @@ const FooterSection = () => {
               <Link href={"/"}>
                 <div className="flex items-center gap-2">
                   <Location />
-                  Jawabarat, Indonesia
+                  Cikande, Indonesia
                 </div>
               </Link>
             </div>
