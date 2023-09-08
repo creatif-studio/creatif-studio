@@ -51,7 +51,7 @@ const ServiceSection = () => {
   return (
     <section
       id="service"
-      className="flex flex-col items-center w-full px-6 lg:px-24 py-13"
+      className="flex flex-col items-center w-full px-6 lg:px-24 pt-20 pb-2 md:pb-13"
     >
       <div className="space-y-3 text-center">
         <h1 className="text-4xl font-semibold md:text-[42px]">
@@ -64,10 +64,10 @@ const ServiceSection = () => {
         {DataService.map((item) => (
           <div
             key={item.title}
-            className="w-full p-8 border border-[#4A5568] hover:bg-[#0D0E13] hover:text-white rounded-3xl flex flex-col gap-4 transition duration-300"
+            className="w-full p-4 md:p-8 border border-[#4A5568] hover:bg-[#0D0E13] hover:text-white rounded-3xl flex flex-col gap-4 transition duration-300"
           >
             <div className="flex items-center gap-4">
-              <div>{item.icon}</div>
+              <div className="scale-90 md:scale-100">{item.icon}</div>
               <h3 className="text-2xl font-semibold md:text-3xl ">
                 {item.title}
               </h3>

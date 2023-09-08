@@ -159,7 +159,7 @@ const CarouselTestimoni = () => {
 
   return (
     <div className="w-full p-4 mx-auto overflow-x-hidden">
-      <div className="flex flex-col items-center justify-center gap-16 text-center">
+      <div className="flex flex-col items-center justify-center gap-6 text-center">
         <h1 className="text-4xl font-semibold md:text-[42px]">
           what our clients say
         </h1>
@@ -175,7 +175,7 @@ const CarouselTestimoni = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center w-full gap-4 mt-4 md:justify-between">
+      <div className="flex justify-center w-full gap-4 mt-8 md:justify-between">
         <button
           onClick={handlePrev}
           className="group  px-4 py-4 bg-white border border-[#0D0E13] rounded-full hover:bg-[#0D0E13] hover:text-white"
