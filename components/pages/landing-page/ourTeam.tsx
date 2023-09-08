@@ -63,21 +63,21 @@ const OurTeamSection = () => {
   return (
     <section
       id="teams"
-      className="flex flex-col items-center gap-12 px-4 overflow-x-hidden pb-13 md:pb-28 lg:px-24"
+      className="flex flex-col items-center gap-12 overflow-x-hidden pb-13 md:pb-28 lg:px-24"
     >
       <div>
         <h1 className="text-[42px] font-semibold text-center">Our best team</h1>
       </div>
       <div
         ref={containerRef}
-        className="relative w-full flex justify-between gap-4 xl:gap-0 items-center px-12 carousel carousel-center lg:px-0"
+        className="relative w-full flex justify-between  xl:gap-0 items-center  carousel carousel-center  lg:px-0"
       >
         {dataTeam.map((item, index) => (
           <div
             key={item.name}
-            className={`flex flex-col items-center carousel-item`}
+            className={`flex flex-col items-center carousel-item mr-4 last:mr-20 first:ml-6 lg:mr-0 lg:first:ml-0`}
           >
-            <div className="relative card-image last:mr-6 first:ml-0 lg:ml-0 lg:last:mr-0  lg:first:ml-0">
+            <div className="relative card-image lg:ml-0 ">
               <Image
                 width={274}
                 height={389}
