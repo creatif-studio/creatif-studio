@@ -1,64 +1,63 @@
 import { useEffect, useState } from "react";
-import userIcon from "@/assets/images/Ellipse-user.png";
+import userIcon from "@/assets/images/user.png";
 import Image from "next/image";
 import { Back, Next, Quotes } from "@/assets/icons";
 
 const testimoniData = [
   {
     id: 1,
-    name: "Raghava",
-    company: "IDrive E2",
+    name: "Chevan Baker",
+    company: "ChevanB",
     description:
-      "Good work",
+      "Sugeng was amazing as he was able to understand the issue presented and provide the solution successfully. He offered some great insight and I look forward to being able to work again in the future.",
     image: userIcon,
   },
   {
     id: 2,
-    name: "Jane Smith",
-    company: "Sinar Jaya",
+    name: "Arthur Aivazian",
+    company: "Bell Standard, Inc.",
     description:
-      "Kami sangat senang bekerja sama dengan jsolution. Layanan mereka sangat profesional, dan mereka selalu menjaga komunikasi yang baik sepanjang proyek. Hasil akhirnya jauh melebihi ekspektasi kami, dan kami sangat puas dengan kualitas kerja mereka",
+      "Quick to communicate and get the job. Will work with him again!",
     image: userIcon,
   },
   {
     id: 3,
-    name: "Jane Canany",
-    company: "Sinar Jaya",
+    name: "David Brooks",
+    company: "Booked.MD",
     description:
-      "We are very happy to work with Creatif Studio. Their service was very professional, and they always maintained good communication throughoutthe project. The end result far exceeded our expectations, and we are very satisfied with the quality of their work",
+      "Sugeng helped save us $$$ by turning off unused/wasted AWS costs. Easily more than 3X the value.",
     image: userIcon,
   },
   {
     id: 4,
-    name: "Albert",
-    company: "Sinar Jaya",
+    name: "Shi Shyang Lim",
+    company: "Osmos",
     description:
-      "Kami sangat senang bekerja sama dengan jsolution. Layanan mereka sangat profesional, dan mereka selalu menjaga komunikasi yang baik sepanjang proyek. Hasil akhirnya jauh melebihi ekspektasi kami, dan kami sangat puas dengan kualitas kerja mereka",
+      "Sugeng was great! Solved quickly and communication was great. He even explained some details to help me understand the problem.",
     image: userIcon,
   },
   {
     id: 5,
-    name: "Viktor",
-    company: "Sinar Jaya",
+    name: "Sasi Movva",
+    company: "cQuant.io",
     description:
-      "We are very happy to work with Creatif Studio. Their service was very professional, and they always maintained good communication throughoutthe project. The end result far exceeded our expectations, and we are very satisfied with the quality of their work",
+      "Helped us get setup with Ansible. We look forward to using Sugeng again.",
     image: userIcon,
   },
   {
     id: 6,
-    name: "Miss Nina",
-    company: "Sinar Jaya",
+    name: "Chirilov Adrian",
+    company: "Rosoft Business SRL",
     description:
-      "Kami sangat senang bekerja sama dengan jsolution. Layanan mereka sangat profesional, dan mereka selalu menjaga komunikasi yang baik sepanjang proyek. Hasil akhirnya jauh melebihi ekspektasi kami, dan kami sangat puas dengan kualitas kerja mereka",
+      "Sugeng is a skilled DevOps engineer, very proficient in Docker and virtualization concepts, for sure I will work with him in the future",
     image: userIcon,
   },
   {
     id: 7,
-    name: "Stephen",
-    company: "Sinar Jaya",
+    name: "Hani",
+    company: "Tim Bobob Trading",
     description:
-      "We are very happy to work with Creatif Studio. Their service was very professional, and they always maintained good communication throughoutthe project. The end result far exceeded our expectations, and we are very satisfied with the quality of their work",
-
+      "Mr. Suganda is a complete professional. He finished the project successfully in a timely manner and followed up with me to make sure everything was ok even after he completed his task. He also recommended how to secure, protect, and maximize efficiency in the network. He knows devops tech, from Rancher, DB's, Longhorn.io, networks, security, firewalls, and configurations. If you are looking for a really good DevOps engineer, then you need to hire Mr. Suganda. I will continue working with him.",
     image: userIcon,
   },
   // Tambahkan lebih banyak data testimoni di sini...
