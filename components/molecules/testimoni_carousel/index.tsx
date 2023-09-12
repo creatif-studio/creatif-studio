@@ -227,7 +227,7 @@ const CarouselTestimoni = () => {
           const isActive =
             index === Math.floor(adjustedTestimoniData.length / 2);
 
-          const transformValue = isActive ? "scale(1)" : "hidden";
+          const transformValue = isActive ? "scale(1)" : "scale(0.70)";
           const opacity = isActive ? "1" : "0.5";
           const zIndexValue = isActive ? 10 : 0;
 
