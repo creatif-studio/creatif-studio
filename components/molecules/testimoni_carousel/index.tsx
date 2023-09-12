@@ -1,4 +1,9 @@
 import { useEffect, useState } from "react";
+import muunship from "@/assets/images/muunship.png";
+import bellstandard from "@/assets/images/bellstandard.png";
+import bookedmd from "@/assets/images/bookedmd.png";
+import cquant from "@/assets/images/cquant.png";
+import rosoft from "@/assets/images/rosoft.png";
 import userIcon from "@/assets/images/user.png";
 import Image from "next/image";
 import { Back, Next, Quotes } from "@/assets/icons";
@@ -18,7 +23,7 @@ const testimoniData = [
     company: "Bell Standard, Inc.",
     description:
       "Quick to communicate and get the job. Will work with him again!",
-    image: userIcon,
+    image: bellstandard,
   },
   {
     id: 3,
@@ -26,7 +31,7 @@ const testimoniData = [
     company: "Booked.MD",
     description:
       "Sugeng helped save us $$$ by turning off unused/wasted AWS costs. Easily more than 3X the value.",
-    image: userIcon,
+    image: bookedmd,
   },
   {
     id: 4,
@@ -42,7 +47,7 @@ const testimoniData = [
     company: "cQuant.io",
     description:
       "Helped us get setup with Ansible. We look forward to using Sugeng again.",
-    image: userIcon,
+    image: cquant,
   },
   {
     id: 6,
@@ -50,45 +55,74 @@ const testimoniData = [
     company: "Rosoft Business SRL",
     description:
       "Sugeng is a skilled DevOps engineer, very proficient in Docker and virtualization concepts, for sure I will work with him in the future",
-    image: userIcon,
+    image: rosoft,
   },
   {
     id: 7,
     name: "Hani",
-    company: "Tim Bobob Trading",
+    company: "Muunship",
     description:
-      "Mr. Suganda is a complete professional. He finished the project successfully in a timely manner and followed up with me to make sure everything was ok even after he completed his task. He also recommended how to secure, protect, and maximize efficiency in the network. He knows devops tech, from Rancher, DB's, Longhorn.io, networks, security, firewalls, and configurations. If you are looking for a really good DevOps engineer, then you need to hire Mr. Suganda. I will continue working with him.",
-    image: userIcon,
+      "Sugeng finished the project successfully in a timely manner and followed up with me to make sure everything was ok even after he completed his task. He also recommended how to secure, protect, and maximize efficiency in the network. He knows devops tech, from Rancher, DB's, Longhorn.io, networks, security, firewalls, and configurations. If you are looking for a really good DevOps engineer, then you need to hire Mr. Suganda. I will continue working with him.",
+    image: muunship,
   },
   // Tambahkan lebih banyak data testimoni di sini...
 ];
 const testimoniData2 = [
   {
     id: 1,
-    name: "Vicky Hardia",
-    company: "Sinar Jaya",
+    name: "Chevan Baker",
+    company: "ChevanB",
     description:
-      "We are very happy to work with Creatif Studio. Their service was very professional, and they always maintained good communication throughoutthe project. The end result far exceeded our expectations, and we are very satisfied with the quality of their work",
-
+      "Sugeng was amazing as he was able to understand the issue presented and provide the solution successfully. He offered some great insight and I look forward to being able to work again in the future.",
     image: userIcon,
   },
   {
     id: 2,
-    name: "Jane Smith",
-    company: "Sinar Jaya",
+    name: "Arthur Aivazian",
+    company: "Bell Standard, Inc.",
     description:
-      "Kami sangat senang bekerja sama dengan jsolution. Layanan mereka sangat profesional, dan mereka selalu menjaga komunikasi yang baik sepanjang proyek. Hasil akhirnya jauh melebihi ekspektasi kami, dan kami sangat puas dengan kualitas kerja mereka",
-
-    image: userIcon,
+      "Quick to communicate and get the job. Will work with him again!",
+    image: bellstandard,
   },
   {
     id: 3,
-    name: "Jane Canany",
-    company: "Sinar Jaya",
+    name: "David Brooks",
+    company: "Booked.MD",
     description:
-      "We are very happy to work with Creatif Studio. Their service was very professional, and they always maintained good communication throughoutthe project. The end result far exceeded our expectations, and we are very satisfied with the quality of their work",
-
+      "Sugeng helped save us $$$ by turning off unused/wasted AWS costs. Easily more than 3X the value.",
+    image: bookedmd,
+  },
+  {
+    id: 4,
+    name: "Shi Shyang Lim",
+    company: "Osmos",
+    description:
+      "Sugeng was great! Solved quickly and communication was great. He even explained some details to help me understand the problem.",
     image: userIcon,
+  },
+  {
+    id: 5,
+    name: "Sasi Movva",
+    company: "cQuant.io",
+    description:
+      "Helped us get setup with Ansible. We look forward to using Sugeng again.",
+    image: cquant,
+  },
+  {
+    id: 6,
+    name: "Chirilov Adrian",
+    company: "Rosoft Business SRL",
+    description:
+      "Sugeng is a skilled DevOps engineer, very proficient in Docker and virtualization concepts, for sure I will work with him in the future",
+    image: rosoft,
+  },
+  {
+    id: 7,
+    name: "Hani",
+    company: "Muunship",
+    description:
+      "Sugeng finished the project successfully in a timely manner and followed up with me to make sure everything was ok even after he completed his task. He also recommended how to secure, protect, and maximize efficiency in the network. He knows devops tech, from Rancher, DB's, Longhorn.io, networks, security, firewalls, and configurations. If you are looking for a really good DevOps engineer, then you need to hire Mr. Suganda. I will continue working with him.",
+    image: muunship,
   },
 ];
 
@@ -193,7 +227,7 @@ const CarouselTestimoni = () => {
           const isActive =
             index === Math.floor(adjustedTestimoniData.length / 2);
 
-          const transformValue = isActive ? "scale(1)" : "scale(0.70)";
+          const transformValue = isActive ? "scale(1)" : "hidden";
           const opacity = isActive ? "1" : "0.5";
           const zIndexValue = isActive ? 10 : 0;
 
