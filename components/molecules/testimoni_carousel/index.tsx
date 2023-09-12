@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import muunship from "@/assets/images/muunship.png";
-import bellstandard from "@/assets/images/bellstandard.png";
-import bookedmd from "@/assets/images/bookedmd.png";
-import cquant from "@/assets/images/cquant.png";
-import rosoft from "@/assets/images/rosoft.png";
-import userIcon from "@/assets/images/user.png";
+import muunship from "@/assets/images/testimonials/bellstandard.png";
+import bellstandard from "@/assets/images/testimonials/bellstandard.png";
+import bookedmd from "@/assets/images/testimonials/bookedmd.png";
+import cquant from "@/assets/images/testimonials/cquant.png";
+import rosoft from "@/assets/images/testimonials/rosoft.png";
+import userIcon from "@/assets/images/testimonials/user.png";
 import Image from "next/image";
 import { Back, Next, Quotes } from "@/assets/icons";
 
