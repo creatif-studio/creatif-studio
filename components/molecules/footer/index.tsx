@@ -1,11 +1,9 @@
 import {
-  Facebook,
-  Instagram,
+  Github,
   Linkendin,
   Location,
   Mail,
   Phone,
-  Twitter,
   Youtube,
 } from "@/assets/icons";
 import { BaseButton } from "@/components/atoms";
@@ -48,37 +46,7 @@ const FooterSection = () => {
             Creatif Studio a.k.a PT. Creatif Studio International, Serang - Banten, Kecamatan Cikande, Bumi Cikande Indah, 42186.
           </p>
           <div className="flex items-center gap-8">
-            <a
-              href={"https://facebook.com/creatifstudiointernational"}
-              className="cursor-pointer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="cursor-pointer">
-                <Facebook />
-              </div>
-            </a>
-            <a
-              href={"#"}
-              // target="_blank"
-              // rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              <div className="cursor-pointer">
-                <Twitter />
-              </div>
-            </a>
-            <a
-              href={"#"}
-              // target="_blank"
-              // rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              <div className="cursor-pointer">
-                <Instagram />
-              </div>
-            </a>
-            <a
+          <a
               href={"https://linkedin.com/company/creatif-studio-int"}
               className="cursor-pointer"
               target="_blank"
@@ -96,6 +64,16 @@ const FooterSection = () => {
             >
               <div className="cursor-pointer">
                 <Youtube />
+              </div>
+            </a>
+            <a
+              href={"https://github.com/creatif-studio"}
+              className="cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="cursor-pointer">
+                <Github />
               </div>
             </a>
           </div>
