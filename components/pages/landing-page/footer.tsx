@@ -1,5 +1,4 @@
 import {
-  Facebook,
   Instagram,
   Linkendin,
   Location,
@@ -7,6 +6,7 @@ import {
   Phone,
   Twitter,
   Youtube,
+  Github
 } from "@/assets/icons";
 import { BaseButton } from "@/components/atoms";
 import { Brand } from "@/components/atoms/brand";
@@ -50,38 +50,8 @@ const FooterSection = () => {
             Bumi Cikande Indah, 42186
           </p>
           <div className="flex items-center gap-8">
-            <a
-              href={"https://facebook.com/creatifstudiointernational"}
-              className="cursor-pointer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="cursor-pointer">
-                <Facebook />
-              </div>
-            </a>
-            <a
-              href={"#"}
-              // target="_blank"
-              // rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              <div className="cursor-pointer">
-                <Twitter />
-              </div>
-            </a>
-            <a
-              href={"#"}
-              // target="_blank"
-              // rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              <div className="cursor-pointer">
-                <Instagram />
-              </div>
-            </a>
-            <a
-              href={"https://linkedin.com/company/creatif-studio-international"}
+          <a
+              href={"https://linkedin.com/company/creatif-studio-int"}
               className="cursor-pointer"
               target="_blank"
               rel="noopener noreferrer"
@@ -98,6 +68,16 @@ const FooterSection = () => {
             >
               <div className="cursor-pointer">
                 <Youtube />
+              </div>
+            </a>
+            <a
+              href={"https://github.com/creatif-studio"}
+              className="cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="cursor-pointer">
+                <Github />
               </div>
             </a>
           </div>

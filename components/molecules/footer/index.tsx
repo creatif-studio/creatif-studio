@@ -79,7 +79,7 @@ const FooterSection = () => {
               </div>
             </a>
             <a
-              href={"https://linkedin.com/company/creatif-studio-international"}
+              href={"https://linkedin.com/company/creatif-studio-int"}
               className="cursor-pointer"
               target="_blank"
               rel="noopener noreferrer"
