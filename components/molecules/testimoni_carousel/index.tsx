@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import muunship from "@/assets/images/testimonials/bellstandard.png";
+import muunship from "@/assets/images/testimonials/muunship.png";
 import bellstandard from "@/assets/images/testimonials/bellstandard.png";
 import bookedmd from "@/assets/images/testimonials/bookedmd.png";
 import cquant from "@/assets/images/testimonials/cquant.png";
@@ -22,7 +22,7 @@ const testimoniData = [
     name: "Arthur Aivazian",
     company: "Bell Standard, Inc.",
     description:
-      "Quick to communicate and get the job. Will work with him again!",
+      "Quick to communicate and get the job done, Sugeng swiftly excelled in Golang and API integrations to provide a successful solution. His expertise and insights were invaluable. Will work with him again!",
     image: bellstandard,
   },
   {
@@ -30,7 +30,7 @@ const testimoniData = [
     name: "David Brooks",
     company: "Booked.MD",
     description:
-      "Sugeng helped save us $$$ by turning off unused/wasted AWS costs. Easily more than 3X the value.",
+      "Sugeng played a pivotal role in cost-saving efforts by effectively identifying and mitigating unnecessary AWS expenditures, delivering over 3X the expected value. Highly recommended!",
     image: bookedmd,
   },
   {
@@ -38,7 +38,7 @@ const testimoniData = [
     name: "Shi Shyang Lim",
     company: "Osmos",
     description:
-      "Sugeng was great! Solved quickly and communication was great. He even explained some details to help me understand the problem.",
+      "Sugeng was outstanding! He resolved the issue promptly, maintained excellent communication throughout, and even took the time to provide detailed explanations to enhance my understanding of the problem.",
     image: userIcon,
   },
   {
@@ -46,7 +46,7 @@ const testimoniData = [
     name: "Sasi Movva",
     company: "cQuant.io",
     description:
-      "Helped us get setup with Ansible. We look forward to using Sugeng again.",
+      "Sugeng was instrumental in facilitating our successful setup with Ansible. His expertise and guidance were invaluable, and we eagerly anticipate the opportunity to collaborate with him once more.",
     image: cquant,
   },
   {
@@ -54,7 +54,7 @@ const testimoniData = [
     name: "Chirilov Adrian",
     company: "Rosoft Business SRL",
     description:
-      "Sugeng is a skilled DevOps engineer, very proficient in Docker and virtualization concepts, for sure I will work with him in the future",
+      "Sugeng impressively demonstrates his expertise as a DevOps Engineer, showcasing his mastery of Docker and Virtualization concepts. I'm looking forward to collaborating with him in future endeavors.",
     image: rosoft,
   },
   {
@@ -62,7 +62,7 @@ const testimoniData = [
     name: "Hani",
     company: "Muunship",
     description:
-      "Sugeng finished the project successfully in a timely manner and followed up with me to make sure everything was ok even after he completed his task. He also recommended how to secure, protect, and maximize efficiency in the network. He knows devops tech, from Rancher, DB's, Longhorn.io, networks, security, firewalls, and configurations. If you are looking for a really good DevOps engineer, then you need to hire Mr. Suganda. I will continue working with him.",
+      "Sugeng successfully completed the project on time and offered valuable expertise in Rancher, PostgreSQL, Longhorn, Networks, and Security. I plan to continue working with him.",
     image: muunship,
   },
 ];
