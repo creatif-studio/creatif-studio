@@ -20,8 +20,7 @@ const FooterSection = () => {
             Ready to work with us?
           </h1>
           <p>
-            Partner with our digital agency for your business with amazing
-            results.
+            Partner with our digital agency for amazing results in your business.
           </p>
         </div>
         {/* <BaseButton
