@@ -13,20 +13,30 @@ const WorkSection = () => {
       id="portfolio"
       className="flex flex-col items-center w-full lg:px-24"
     >
-      <div className="flex flex-col w-full gap-4 px-6 lg:px-0 py-13 md:flex-row md:justify-between">
+      <div className="space-y-3 text-center">
+        <h1 className="text-4xl font-semibold md:text-[42px]">
+          Our Amazing Project
+        </h1>
+        <p>
+          Our portfolio reflects years of hard work, dedication, and successful collaborations.
+        </p>
+      </div>
+
+      {/* <div className="flex flex-col w-full gap-4 px-6 lg:px-0 py-13 md:flex-row md:justify-between">
         <h1 className="text-4xl font-semibold capitalize md:text-[42px]">
-          {"Awesome project we've ever worked on"}
+          {"Our Amazing Project"}
         </h1>
         <div className="space-y-6">
           <p>
-            Our portfolio represents the culmination of years of hard work and dedication. Each project tells a unique story of collaboration, innovation, and success.
+            Our portfolio reflects years of hard work, dedication, and successful collaborations.
           </p>
           <Link href={"/portofolio"}>
             <BaseButton variant="primary" label="See All Project" />
           </Link>
         </div>
-      </div>
-      <div className="flex justify-between w-full gap-4 carousel carousel-center">
+      </div> */}
+
+      <div className="flex justify-between w-full gap-4 carousel carousel-center my-12">
         <div className="relative ml-6 carousel-item card-image lg:ml-0">
           <Image
             width={274}
