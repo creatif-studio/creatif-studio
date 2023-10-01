@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-This is an open-source project landing page for creatif.studio
+This is an open-source project, a landing page for creatif.studio
 
 ## Installation
 
