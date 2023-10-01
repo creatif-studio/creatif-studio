@@ -66,7 +66,7 @@ const OurTeamSection = () => {
       className="flex flex-col items-center gap-12 overflow-x-hidden pb-13 md:pb-28 lg:px-24"
     >
       <div>
-        <h1 className="text-[42px] font-semibold text-center">Our best team</h1>
+        <h1 className="text-[42px] font-semibold text-center">Our best teams</h1>
       </div>
       <div
         ref={containerRef}
