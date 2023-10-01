@@ -15,7 +15,7 @@ const WorkSection = () => {
     >
       <div className="space-y-3 text-center">
         <h1 className="text-4xl font-semibold md:text-[42px]">
-          Our Amazing Project
+          Our amazing projects
         </h1>
         <p>
           Our portfolio reflects years of hard work, dedication, and successful collaborations.
