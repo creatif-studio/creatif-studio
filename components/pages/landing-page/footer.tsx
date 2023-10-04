@@ -84,21 +84,20 @@ const FooterSection = () => {
         </div>
         <div className="flex flex-col gap-8 md:flex-row md:gap-24">
           <div className="flex flex-col gap-4">
-            <h4 className="text-xl font-medium">Other Pages</h4>
+            <h4 className="text-xl font-medium">Sections</h4>
             <div className="flex flex-col gap-4">
               <Link href={"/"}>Home</Link>
-              <Link href={"/"}>Portofolios</Link>
-              <Link href={"/"}>Services</Link>
-              <Link href={"/"}>Blog</Link>
+              <Link href={"#service"}>Services</Link>
+              <Link href={"#portfolio"}>Portofolios</Link>
+              <Link href={"#testi"}>Testimonials</Link>
             </div>
           </div>
           <div className="flex flex-col gap-4">
             <h4 className="text-xl font-medium">Company</h4>
             <div className="flex flex-col gap-4">
-              <Link href={"/"}>Terms Conditions</Link>
-              <Link href={"/"}>Privacy Policy</Link>
-              <Link href={"/"}>Cookies</Link>
-              <Link href={"/"}>Careers</Link>
+              <Link href={"https://ptp.ahu.go.id/sertifikat?id=385eb2632e16c80896acb2c29c8cdafd:794c2f04cbca596ab1cd94c5992e1615"}>About</Link>
+              <Link href={"https://audaxly.com/privacy-policy?code=ln7gcpzkj0kz3f"}>Terms & Privacy</Link>
+              <Link href={"https://linkedin.com/company/creatif-studio-int/jobs"}>Careers</Link>
             </div>
           </div>
           <div className="flex flex-col gap-4">

@@ -90,9 +90,9 @@ const FooterSection = () => {
           <div className="flex flex-col gap-4">
             <h4 className="text-xl font-medium">Company</h4>
             <div className="flex flex-col gap-4">
+              <Link href={"https://ptp.ahu.go.id/sertifikat?id=385eb2632e16c80896acb2c29c8cdafd:794c2f04cbca596ab1cd94c5992e1615"}>About</Link>
               <Link href={"https://audaxly.com/privacy-policy?code=ln7gcpzkj0kz3f"}>Terms & Privacy</Link>
               <Link href={"https://linkedin.com/company/creatif-studio-int/jobs"}>Careers</Link>
-              <Link href={"#teams"}>Teams</Link>
             </div>
           </div>
           <div className="flex flex-col gap-4">
