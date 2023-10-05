@@ -115,7 +115,7 @@ const OurTeamSection = () => {
         {dataTeam.map((item, index) => (
           <div
             key={item.name}
-            className={`flex flex-col items-center carousel-item mr-4 last:mr-20 first:ml-6 lg:mr-0 lg:first:ml-0`}
+            className={`flex flex-col items-center carousel-item mr-4 last:mr-20 first:ml-6 lg:mr-4 lg:first:ml-0`}
           >
             <div className="relative card-image lg:ml-0 ">
               <Image
