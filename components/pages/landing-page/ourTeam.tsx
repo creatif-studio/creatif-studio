@@ -1,7 +1,17 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import man from "@/assets/images/teams/man.png";
-import woman from "@/assets/images/teams/woman.png";
+import sugeng from "@/assets/images/teams/man.png";
+import vebiola from "@/assets/images/teams/woman.png";
+import rizky from "@/assets/images/teams/man.png";
+import hikaru from "@/assets/images/teams/woman.png";
+import dharma from "@/assets/images/teams/man.png";
+import aulia from "@/assets/images/teams/woman.png";
+import askiah from "@/assets/images/teams/man.png";
+import zaki from "@/assets/images/teams/woman.png";
+import andika from "@/assets/images/teams/man.png";
+import sidik from "@/assets/images/teams/woman.png";
+import dhafit from "@/assets/images/teams/man.png";
+import rian from "@/assets/images/teams/woman.png";
 import { Back, Github, Linkendin, Next, Twitter } from "@/assets/icons";
 import Simple from "@/components/molecules/carousel";
 
@@ -9,62 +19,62 @@ const dataTeam = [
   {
     name: "Sugeng Agung Suganda",
     position: "Founder",
-    profileImage: man,
+    profileImage: sugeng,
   },
   {
     name: "Vebiola Vanessa",
     position: "Finance",
-    profileImage: woman,
+    profileImage: vebiola,
   },
   {
     name: "Rizky Adil Hakim",
     position: "VPoE",
-    profileImage: man,
+    profileImage: rizky,
   },
   {
     name: "Muhammad Hikaru Fauzi",
     position: "UI/UX Designer",
-    profileImage: man,
+    profileImage: hikaru,
   },
   {
     name: "Bagus Dharma Putra",
     position: "DevOps Engineer",
-    profileImage: man,
+    profileImage: dharma,
   },
   {
     name: "Aulia Romadon Darmayanti",
     position: "Technical Writer",
-    profileImage: woman,
+    profileImage: aulia,
   },
   {
     name: "Nur Askiah",
     position: "Full-Stack Developer",
-    profileImage: woman,
+    profileImage: askiah,
   },
   {
     name: "Rian Kristian Luao",
     position: "Full-Stack Developer",
-    profileImage: man,
+    profileImage: rian,
   },
   {
     name: "Dhuta Dhafit Farenza",
     position: "Full-Stack Developer",
-    profileImage: man,
+    profileImage: dhafit,
   },
   {
     name: "Andika Perdana Dirgantara",
     position: "Full-Stack Developer",
-    profileImage: man,
+    profileImage: andika,
   },
   {
     name: "Fauzi Zaki Ma'ruf",
     position: "Full-Stack Developer",
-    profileImage: man,
+    profileImage: zaki,
   },
   {
     name: "Ahmad Sidik Rudini",
     position: "Full-Stack Developer",
-    profileImage: man,
+    profileImage: sidik,
   },
 ];
 
