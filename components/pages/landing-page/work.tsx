@@ -1,10 +1,18 @@
 import { BaseButton } from "@/components/atoms";
 import Image from "next/image";
 import React from "react";
-import work1 from "@/assets/images/work1.png";
-import work2 from "@/assets/images/work-2.png";
-import work3 from "@/assets/images/work-3.png";
-import work4 from "@/assets/images/work-4.png";
+import activitylist from "@/assets/images/portfolios/activitylist.png";
+// import appseed from "@/assets/images/portfolios/appseed.png";
+// import bitzaro from "@/assets/images/portfolios/bitzario.png";
+import clevis from "@/assets/images/portfolios/celvis.png";
+// import cmsmanajer from "@/assets/images/portfolios/cmsmanajer.png";
+// import cquant from "@/assets/images/portfolios/cquant.png";
+import deploypro from "@/assets/images/portfolios/deploypro.png";
+// import idrive from "@/assets/images/portfolios/idrive.png";
+// import kelsiem from "@/assets/images/portfolios/kelsiem.png";
+// import muunship from "@/assets/images/portfolios/muunship.png";
+import practiz from "@/assets/images/portfolios/practiz.png";
+// import bookedmd from "@/assets/images/portfolios/bookedmd.png";
 import Link from "next/link";
 
 const WorkSection = () => {
@@ -41,7 +49,7 @@ const WorkSection = () => {
           <Image
             width={274}
             height={389}
-            src={work1}
+            src={deploypro}
             className="rounded-box "
             alt="image"
           />
@@ -54,7 +62,7 @@ const WorkSection = () => {
           <Image
             width={274}
             height={389}
-            src={work2}
+            src={clevis}
             className="rounded-box"
             alt="image"
           />
@@ -67,7 +75,7 @@ const WorkSection = () => {
           <Image
             width={274}
             height={389}
-            src={work3}
+            src={practiz}
             className="rounded-box"
             alt="image"
           />
@@ -80,7 +88,7 @@ const WorkSection = () => {
           <Image
             width={274}
             height={389}
-            src={work4}
+            src={activitylist}
             className="rounded-box"
             alt="image"
           />

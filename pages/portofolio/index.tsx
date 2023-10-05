@@ -1,70 +1,81 @@
 import HeroSection from "@/components/pages/landing-page/hero";
 import Navbar from "@/components/pages/landing-page/navbar";
 import React from "react";
-import sampleProject from "@/assets/images/sample-project.png";
+import activitylist from "@/assets/images/portfolios/activitylist.png";
+import appseed from "@/assets/images/portfolios/appseed.png";
+import bitzaro from "@/assets/images/portfolios/bitzario.png";
+import clevis from "@/assets/images/portfolios/celvis.png";
+import cmsmanajer from "@/assets/images/portfolios/cmsmanajer.png";
+import cquant from "@/assets/images/portfolios/cquant.png";
+import deploypro from "@/assets/images/portfolios/deploypro.png";
+import idrive from "@/assets/images/portfolios/idrive.png";
+import kelsiem from "@/assets/images/portfolios/kelsiem.png";
+import muunship from "@/assets/images/portfolios/muunship.png";
+import practiz from "@/assets/images/portfolios/practiz.png";
+// import bookedmd from "@/assets/images/portfolios/bookedmd.png";
 import Image from "next/image";
 
 const Project = [
   {
     name: "DeployPRO",
     description: "Servers & Apps Management",
-    image: sampleProject,
+    image: deploypro,
   },
   {
     name: "Clevis",
     description: "Laundry & Car Wash",
-    image: sampleProject,
+    image: clevis,
   },
   {
     name: "Practiz",
     description: "Online Learning Platform",
-    image: sampleProject,
+    image: practiz,
   },
   {
     name: "Activitylist",
     description: "Event Sharing Platform",
-    image: sampleProject,
-  },
-  {
-    name: "Cigbot",
-    description: "Image Generator and Twitter Bot",
-    image: sampleProject,
+    image: activitylist,
   },
   {
     name: "AppSeed Docs",
     description: "Technical Documentation",
-    image: sampleProject,
+    image: appseed,
   },
   {
     name: "Bitzaro",
     description: "Payment Gateway for Web3",
-    image: sampleProject,
+    image: bitzaro,
   },
   {
-    name: "Rilis",
+    name: "CMS Manajer",
     description: "Heroku Replacement",
-    image: sampleProject,
+    image: cmsmanajer,
   },
   {
     name: "IDrive E2",
     description: "S3 Compatible Storage",
-    image: sampleProject,
+    image: idrive,
   },
   {
     name: "Muunship",
     description: "Trading Platform for Crypto",
-    image: sampleProject,
+    image: muunship,
   },
   {
     name: "cQuant.io",
     description: "Ansible Script for Deployment",
-    image: sampleProject,
+    image: cquant,
   },  
   {
     name: "Kelsiem",
     description: "Terraform for AWS Management",
-    image: sampleProject,
+    image: kelsiem,
   },
+  // {
+  //   name: "BookedMD",
+  //   description: "Image Generator and Twitter Bot",
+  //   image: bookedmd,
+  // }
 ];
 
 const Portofolio = () => {
