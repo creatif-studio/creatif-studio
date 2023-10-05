@@ -28,6 +28,26 @@ const dataTeam = [
     position: "Backend Developer",
     profileImage: team4,
   },
+  // {
+  //   name: "Sugeng Agung Suganda",
+  //   position: "Founder",
+  //   profileImage: team1,
+  // },
+  // {
+  //   name: "Vebiola Vanessa",
+  //   position: "Finance",
+  //   profileImage: team2,
+  // },
+  // {
+  //   name: "Rizky Adil Hakim",
+  //   position: "Tech Lead",
+  //   profileImage: team3,
+  // },
+  // {
+  //   name: "Nur Askiah",
+  //   position: "Backend Developer",
+  //   profileImage: team4,
+  // },
 ];
 
 const OurTeamSection = () => {

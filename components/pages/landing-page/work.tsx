@@ -147,7 +147,7 @@ const WorkSection = () => {
           />
           <div className="p-3 text-center overlay lg:p-0">
             <p className="text-3xl font-semibold">cQuant</p>
-            <p>Ansible Script for Deployment</p>
+            <p>Energy Risk Management</p>
           </div>
         </div>
         <div className="relative pr-5 carousel-item card-image lg:pr-0">
@@ -173,7 +173,7 @@ const WorkSection = () => {
           />
           <div className="p-3 text-center overlay lg:p-0">
             <p className="text-3xl font-semibold">Kelsiem</p>
-            <p>Terraform for AWS Management</p>
+            <p>Realtime Security</p>
           </div>
         </div>
         <div className="relative pr-5 carousel-item card-image lg:pr-0">
