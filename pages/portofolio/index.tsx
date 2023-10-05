@@ -12,7 +12,7 @@ import idrive from "@/assets/images/portfolios/idrive.png";
 import kelsiem from "@/assets/images/portfolios/kelsiem.png";
 import muunship from "@/assets/images/portfolios/muunship.png";
 import practiz from "@/assets/images/portfolios/practiz.png";
-// import bookedmd from "@/assets/images/portfolios/bookedmd.png";
+import bookedmd from "@/assets/images/portfolios/booked.png";
 import Image from "next/image";
 
 const Project = [
@@ -71,11 +71,11 @@ const Project = [
     description: "Terraform for AWS Management",
     image: kelsiem,
   },
-  // {
-  //   name: "BookedMD",
-  //   description: "Image Generator and Twitter Bot",
-  //   image: bookedmd,
-  // }
+  {
+    name: "BookedMD",
+    description: "Image Generator and Twitter Bot",
+    image: bookedmd,
+  }
 ];
 
 const Portofolio = () => {

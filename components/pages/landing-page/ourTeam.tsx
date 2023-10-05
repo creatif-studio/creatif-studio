@@ -20,34 +20,54 @@ const dataTeam = [
   },
   {
     name: "Rizky Adil Hakim",
-    position: "Tech Lead",
+    position: "VPoE",
+    profileImage: team3,
+  },
+  {
+    name: "Muhammad Hikaru Fauzi",
+    position: "UI/UX Designer",
+    profileImage: team4,
+  },
+  {
+    name: "Bagus Dharma Putra",
+    position: "DevOps Engineer",
+    profileImage: team4,
+  },
+  {
+    name: "Aulia Romadon Darmayanti",
+    position: "Technical Writer",
     profileImage: team3,
   },
   {
     name: "Nur Askiah",
-    position: "Backend Developer",
+    position: "Full-Stack Developer",
     profileImage: team4,
   },
-  // {
-  //   name: "Sugeng Agung Suganda",
-  //   position: "Founder",
-  //   profileImage: team1,
-  // },
-  // {
-  //   name: "Vebiola Vanessa",
-  //   position: "Finance",
-  //   profileImage: team2,
-  // },
-  // {
-  //   name: "Rizky Adil Hakim",
-  //   position: "Tech Lead",
-  //   profileImage: team3,
-  // },
-  // {
-  //   name: "Nur Askiah",
-  //   position: "Backend Developer",
-  //   profileImage: team4,
-  // },
+  {
+    name: "Rian Kristian Luao",
+    position: "Full-Stack Developer",
+    profileImage: team1,
+  },
+  {
+    name: "Dhuta Dhafit Farenza",
+    position: "Full-Stack Developer",
+    profileImage: team2,
+  },
+  {
+    name: "Andika Perdana Dirgantara",
+    position: "Full-Stack Developer",
+    profileImage: team2,
+  },
+  {
+    name: "Fauzi Zaki Ma'ruf",
+    position: "Full-Stack Developer",
+    profileImage: team2,
+  },
+  {
+    name: "Ahmad Sidik Rudini",
+    position: "Full-Stack Developer",
+    profileImage: team2,
+  },
 ];
 
 const OurTeamSection = () => {
@@ -90,7 +110,7 @@ const OurTeamSection = () => {
       </div>
       <div
         ref={containerRef}
-        className="relative w-full flex justify-between  xl:gap-0 items-center  carousel carousel-center  lg:px-0"
+        className="relative w-full flex justify-between xl:gap-0 items-center carousel carousel-center lg:px-0"
       >
         {dataTeam.map((item, index) => (
           <div
@@ -130,7 +150,7 @@ const OurTeamSection = () => {
               </div>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl font-semibold">{item.name}</h3>
+              <h4 className="text-1xl font-semibold">{item.name}</h4>
               <p>{item.position}</p>
             </div>
           </div>

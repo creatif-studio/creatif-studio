@@ -12,7 +12,7 @@ import idrive from "@/assets/images/portfolios/idrive.png";
 import kelsiem from "@/assets/images/portfolios/kelsiem.png";
 import muunship from "@/assets/images/portfolios/muunship.png";
 import practiz from "@/assets/images/portfolios/practiz.png";
-// import bookedmd from "@/assets/images/portfolios/bookedmd.png";
+import bookedmd from "@/assets/images/portfolios/booked.png";
 import Link from "next/link";
 
 const WorkSection = () => {
@@ -189,7 +189,7 @@ const WorkSection = () => {
             <p>Trading Platform for Crypto</p>
           </div>
         </div>
-        {/* <div className="relative pr-5 carousel-item card-image lg:pr-0">
+        <div className="relative pr-5 carousel-item card-image lg:pr-0">
           <Image
             width={274}
             height={389}
@@ -201,7 +201,7 @@ const WorkSection = () => {
             <p className="text-3xl font-semibold">BookedMD</p>
             <p>Doctor Finders</p>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
