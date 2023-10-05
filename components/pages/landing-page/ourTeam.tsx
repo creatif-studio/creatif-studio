@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import team1 from "@/assets/images/team1.png";
-import team2 from "@/assets/images/team2.png";
-import team3 from "@/assets/images/team3.png";
-import team4 from "@/assets/images/team4.png";
+import man from "@/assets/images/teams/man.png";
+import woman from "@/assets/images/teams/woman.png";
 import { Back, Github, Linkendin, Next, Twitter } from "@/assets/icons";
 import Simple from "@/components/molecules/carousel";
 
@@ -11,62 +9,62 @@ const dataTeam = [
   {
     name: "Sugeng Agung Suganda",
     position: "Founder",
-    profileImage: team1,
+    profileImage: man,
   },
   {
     name: "Vebiola Vanessa",
     position: "Finance",
-    profileImage: team2,
+    profileImage: woman,
   },
   {
     name: "Rizky Adil Hakim",
     position: "VPoE",
-    profileImage: team3,
+    profileImage: man,
   },
   {
     name: "Muhammad Hikaru Fauzi",
     position: "UI/UX Designer",
-    profileImage: team4,
+    profileImage: man,
   },
   {
     name: "Bagus Dharma Putra",
     position: "DevOps Engineer",
-    profileImage: team4,
+    profileImage: man,
   },
   {
     name: "Aulia Romadon Darmayanti",
     position: "Technical Writer",
-    profileImage: team3,
+    profileImage: woman,
   },
   {
     name: "Nur Askiah",
     position: "Full-Stack Developer",
-    profileImage: team4,
+    profileImage: woman,
   },
   {
     name: "Rian Kristian Luao",
     position: "Full-Stack Developer",
-    profileImage: team1,
+    profileImage: man,
   },
   {
     name: "Dhuta Dhafit Farenza",
     position: "Full-Stack Developer",
-    profileImage: team2,
+    profileImage: man,
   },
   {
     name: "Andika Perdana Dirgantara",
     position: "Full-Stack Developer",
-    profileImage: team2,
+    profileImage: man,
   },
   {
     name: "Fauzi Zaki Ma'ruf",
     position: "Full-Stack Developer",
-    profileImage: team2,
+    profileImage: man,
   },
   {
     name: "Ahmad Sidik Rudini",
     position: "Full-Stack Developer",
-    profileImage: team2,
+    profileImage: man,
   },
 ];
 
