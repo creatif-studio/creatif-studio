@@ -4,10 +4,10 @@
 
 This is an open-source landing page for creatif studio and our open-source projects
 
-- creatif.studio
-- creatif.studio/foss/tasty
-- creatif.studio/foss/speedy
-- creatif.studio/foss/deploy
+- https://creatif.studio
+- https://creatif.studio/foss/tasty
+- https://creatif.studio/foss/speedy
+- https://creatif.studio/foss/deploy
 
 ## Installation
 
