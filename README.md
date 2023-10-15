@@ -2,7 +2,12 @@
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-This is an open-source project, a landing page for creatif.studio
+This is an open-source landing page for creatif studio and our open-source projects
+
+- creatif.studio
+- creatif.studio/foss/tasty
+- creatif.studio/foss/speedy
+- creatif.studio/foss/deploy
 
 ## Installation
 
