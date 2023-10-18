@@ -6,9 +6,7 @@ Expertly Crafted Software Solutions
 This is an open-source landing page for creatif studio and our open-source projects
 
 - https://creatif.studio
-- https://creatif.studio/foss/tasty
-- https://creatif.studio/foss/speedy
-- https://creatif.studio/foss/deploy
+- https://deploy.creatif.studio
 
 ## Installation
 
