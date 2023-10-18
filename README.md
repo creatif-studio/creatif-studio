@@ -1,5 +1,5 @@
 # Creatif Studio
-Creatif Studio: Expertly Crafted Software Solutions
+Expertly Crafted Software Solutions
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
