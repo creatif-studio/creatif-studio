@@ -1,12 +1,9 @@
 # Creatif Studio
-Expertly Crafted Software Solutions
+Expertly crafted software solutions
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is an open-source landing page for creatif studio and our open-source projects
-
-- https://creatif.studio
-- https://deploy.creatif.studio
+This is an open-source landing page for Creatif Studio and our open-source projects
 
 ## Installation
 
