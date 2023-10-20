@@ -12,6 +12,7 @@ Instructions on how to install this project, including any prerequisites.
 
 ```bash
 git clone https://github.com/creatif-studio/creatif-studio.git
+cd creatif-studio
 npm install
 npm run build
 ```
