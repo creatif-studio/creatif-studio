@@ -49,6 +49,11 @@ const Navbar = () => {
             Portfolios
           </p>
         </Link>
+        <Link href={"/projects"}>
+          <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
+            Projects
+          </p>
+        </Link>
         <Link href={"#testi"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
             Testimonials
@@ -69,6 +74,8 @@ const Navbar = () => {
       >
         Contact Us
       </a>
+
+      {/* Mobile Navbar */}
       <button className="block lg:hidden" onClick={handleOpenNav}>
         <HumburgerMenu />
       </button>
@@ -93,6 +100,11 @@ const Navbar = () => {
           <Link href={"#portfolio"} onClick={handleCloseNav}>
             Portfolio
           </Link>
+          <Link href={"/projects"}>
+            <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
+              Portfolios
+            </p>
+          </Link>
           <Link href={"#testi"} onClick={handleCloseNav}>
             <p onClick={handleCloseNav}>Testimonial</p>
           </Link>
@@ -101,6 +113,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+      {/* Mobile Navbar */}
     </nav>
   );
 };
