@@ -52,7 +52,7 @@ const dataTeam = [
     profileImage: askiah,
   },
   {
-    name: "Rian Kristian Luao",
+    name: "Rian Kristian Lauo",
     position: "Full-Stack Developer",
     profileImage: rian,
   },
@@ -111,10 +111,12 @@ const OurTeamSection = () => {
   return (
     <section
       id="teams"
-      className="flex flex-col items-center gap-12 overflow-x-hidden pb-13 md:pb-28 lg:px-24"
+      className="flex flex-col items-center gap-12 overflow-x-hidden pt-24 pb-13 md:pb-28 lg:px-24"
     >
       <div>
-        <h1 className="text-[42px] font-semibold text-center">Our best teams</h1>
+        <h1 className="text-[42px] font-semibold text-center">
+          Our best teams
+        </h1>
       </div>
       <div
         ref={containerRef}
