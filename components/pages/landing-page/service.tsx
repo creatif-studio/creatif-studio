@@ -1,6 +1,10 @@
 import {
   Blockchain,
+  ChatGptIcon,
+  CodeIcon,
+  DatabaseIcon,
   Devops,
+  IotIcon,
   MobileDev,
   OtomasiTest,
   TechnicalWriting,
@@ -44,6 +48,30 @@ const DataService = [
     title: "Technical Writing & Docs",
     description:
       "Creating comprehensive documentation that empowers users to understand and utilize your product to its fullest potential.",
+  },
+  {
+    icon: <ChatGptIcon />,
+    title: "AI/ChatGPT Development",
+    description:
+      "Pioneering the future of decentralized applications and technologies.",
+  },
+  {
+    icon: <IotIcon />,
+    title: "IoT/embedded Development",
+    description:
+      "Building the backbone of scalable and efficient digital systems.",
+  },
+  {
+    icon: <CodeIcon />,
+    title: "Low-Code Development",
+    description:
+      "Pioneering the future of decentralized applications and technologies.",
+  },
+  {
+    icon: <DatabaseIcon />,
+    title: "Big Data Development",
+    description:
+      "Building the backbone of scalable and efficient digital systems.",
   },
 ];
 

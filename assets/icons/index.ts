@@ -26,3 +26,7 @@ export { default as Clear } from "./Clear.svg";
 export { default as Back } from "./back.svg";
 export { default as Next } from "./next.svg";
 export { default as ArrowRight } from "./arrow-right.svg";
+export { default as ChatGptIcon } from "./chatgpt.svg";
+export { default as IotIcon } from "./iot.svg";
+export { default as CodeIcon } from "./code.svg";
+export { default as DatabaseIcon } from "./database.svg";
