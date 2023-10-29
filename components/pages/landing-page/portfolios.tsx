@@ -14,7 +14,7 @@ import muunship from "@/assets/images/portfolios/muunship.png";
 import practiz from "@/assets/images/portfolios/practiz.png";
 import bookedmd from "@/assets/images/portfolios/booked.png";
 
-const WorkSection = () => {
+const PortfolioSection = () => {
   return (
     <section
       id="portfolios"
@@ -193,4 +193,4 @@ const WorkSection = () => {
   );
 };
 
-export default WorkSection;
+export default PortfolioSection;

@@ -78,7 +78,7 @@ const dataTeam = [
   },
 ];
 
-const OurTeamSection = () => {
+const TeamSection = () => {
   // const [activeIndex, setActiveIndex] = useState(0);
 
   // const handleNext = () => {
@@ -197,4 +197,4 @@ const OurTeamSection = () => {
   );
 };
 
-export default OurTeamSection;
+export default TeamSection;
