@@ -87,9 +87,9 @@ const FooterSection = () => {
             <h4 className="text-xl font-medium">Sections</h4>
             <div className="flex flex-col gap-4">
               <Link href={"/"}>Home</Link>
-              <Link href={"#service"}>Services</Link>
-              <Link href={"#portfolio"}>Portofolios</Link>
-              <Link href={"#testi"}>Testimonials</Link>
+              <Link href={"#services"}>Services</Link>
+              <Link href={"#portfolios"}>Portofolios</Link>
+              <Link href={"#testimonials"}>Testimonials</Link>
             </div>
           </div>
           <div className="flex flex-col gap-4">

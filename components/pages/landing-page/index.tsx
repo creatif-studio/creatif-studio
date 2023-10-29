@@ -1,9 +1,9 @@
 import React from "react";
 import HeroSection from "./hero";
-import ServiceSection from "./service";
-import WorkSection from "./work";
-import TestimoniSection from "./testimoni";
-import OurTeamSection from "./ourTeam";
+import ServiceSection from "./services";
+import WorkSection from "./portfolios";
+import TestimoniSection from "./testimonials";
+import OurTeamSection from "./teams";
 
 const LandingPage = () => {
   return (

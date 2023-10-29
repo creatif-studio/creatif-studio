@@ -39,22 +39,22 @@ const Navbar = () => {
             Home
           </p>
         </Link>
-        <Link href={"#service"}>
+        <Link href={"#services"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
             Services
           </p>
         </Link>
-        <Link href={"#portfolio"}>
+        <Link href={"#portfolios"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
             Portfolios
           </p>
         </Link>
-        <Link href={"/projects"}>
+        <Link href={"/products"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
             Products
           </p>
         </Link>
-        <Link href={"#testi"}>
+        <Link href={"#testimonials"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
             Testimonials
           </p>
@@ -94,19 +94,19 @@ const Navbar = () => {
           <Link href={"#hero"}>
             <p onClick={handleCloseNav}>Home</p>
           </Link>
-          <Link href={"#service"}>
-            <p onClick={handleCloseNav}>Service</p>
+          <Link href={"#services"}>
+            <p onClick={handleCloseNav}>Services</p>
           </Link>
-          <Link href={"#portfolio"} onClick={handleCloseNav}>
-            Portfolio
+          <Link href={"#portfolios"} onClick={handleCloseNav}>
+            Portfolios
           </Link>
-          <Link href={"/projects"}>
+          <Link href={"/products"}>
             <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
-              Portfolios
+              Products
             </p>
           </Link>
-          <Link href={"#testi"} onClick={handleCloseNav}>
-            <p onClick={handleCloseNav}>Testimonial</p>
+          <Link href={"#testimonials"} onClick={handleCloseNav}>
+            <p onClick={handleCloseNav}>Testimonials</p>
           </Link>
           <Link href={"#teams"} onClick={handleCloseNav}>
             <p onClick={handleCloseNav}>Teams</p>

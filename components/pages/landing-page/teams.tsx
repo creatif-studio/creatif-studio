@@ -32,7 +32,7 @@ const dataTeam = [
     profileImage: rizky,
   },
   {
-    name: "Muhammad Hikaru Fauzi",
+    name: "Muhammad Hikaru N.",
     position: "UI/UX Designer",
     profileImage: hikaru,
   },

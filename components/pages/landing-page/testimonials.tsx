@@ -7,7 +7,7 @@ import CarouselTestimoni from "@/components/molecules/testimoni_carousel";
 const TestimoniSection = () => {
   return (
     <section
-      id="testi"
+      id="testimonials"
       className="flex flex-col items-center gap-3 px-6 pt-30 lg:px-24 "
     >
       <CarouselTestimoni />

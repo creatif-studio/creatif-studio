@@ -77,7 +77,7 @@ const DataService = [
 
 const ServiceSection = () => {
   return (
-    <div id="service">
+    <div id="services">
       <section className="flex flex-col items-center w-full px-6 lg:px-24 pt-20 pb-2 ">
         <div className="space-y-3 text-center mt-10">
           <h1 className="text-4xl font-semibold md:text-[42px]">

@@ -92,7 +92,7 @@ const Project = [
   },
 ];
 
-const Portofolio = () => {
+const Products = () => {
   return (
     <div>
       <Navbar />
@@ -129,4 +129,4 @@ const Portofolio = () => {
   );
 };
 
-export default Portofolio;
+export default Products;

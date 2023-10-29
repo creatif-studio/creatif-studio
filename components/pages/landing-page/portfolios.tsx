@@ -17,7 +17,7 @@ import bookedmd from "@/assets/images/portfolios/booked.png";
 const WorkSection = () => {
   return (
     <section
-      id="portfolio"
+      id="portfolios"
       className="flex flex-col items-center w-full lg:px-24 pt-30"
     >
       <div className="space-y-3 text-center px-4">
