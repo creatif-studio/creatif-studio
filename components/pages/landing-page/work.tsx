@@ -20,8 +20,8 @@ const WorkSection = () => {
       id="portfolio"
       className="flex flex-col items-center w-full lg:px-24 pt-30"
     >
-      <div className="space-y-3 text-center">
-        <h1 className="text-4xl font-semibold md:text-[42px]">
+      <div className="space-y-3 text-center px-4">
+        <h1 className="text-4xl font-semibold md:text-[42px] ">
           Our amazing projects
         </h1>
         <p>
