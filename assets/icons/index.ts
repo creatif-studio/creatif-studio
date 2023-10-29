@@ -25,3 +25,4 @@ export { default as Quotes } from "./quotes.svg";
 export { default as Clear } from "./Clear.svg";
 export { default as Back } from "./back.svg";
 export { default as Next } from "./next.svg";
+export { default as ArrowRight } from "./arrow-right.svg";
