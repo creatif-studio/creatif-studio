@@ -51,7 +51,7 @@ const Navbar = () => {
         </Link>
         <Link href={"/projects"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
-            Projects
+            Products
           </p>
         </Link>
         <Link href={"#testi"}>

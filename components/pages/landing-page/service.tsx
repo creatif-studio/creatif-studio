@@ -53,25 +53,25 @@ const DataService = [
     icon: <ChatGptIcon />,
     title: "AI/ChatGPT Development",
     description:
-      "Pioneering the future of decentralized applications and technologies.",
+      "Unleash the potential of AI and ChatGPT to create intelligent, interactive solutions that redefine the way you engage with your audience.",
   },
   {
     icon: <IotIcon />,
-    title: "IoT/embedded Development",
+    title: "IoT/Embedded Development",
     description:
-      "Building the backbone of scalable and efficient digital systems.",
+      "Our expertise ensures that your digital systems are scalable, efficient, and ready to meet the challenges of the future.",
   },
   {
     icon: <CodeIcon />,
     title: "Low-Code Development",
     description:
-      "Pioneering the future of decentralized applications and technologies.",
+      "Empower us to rapidly bring your ideas to life with minimal coding, reducing development time and costs while maximizing flexibility.",
   },
   {
     icon: <DatabaseIcon />,
     title: "Big Data Development",
     description:
-      "Building the backbone of scalable and efficient digital systems.",
+      "Build robust, scalable systems for collecting, processing, and deriving insights from large volumes of data, empowering you to make decisions.",
   },
 ];
 
