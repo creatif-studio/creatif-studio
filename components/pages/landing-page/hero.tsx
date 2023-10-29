@@ -48,7 +48,7 @@ const HeroSection = ({
           </h2>
           <p className="max-w-xs py-6 mx-auto md:max-w-4xl">{description}</p>
           {buttonLabel && (
-            <Link href={"#portfolio"}>
+            <Link href={"#portfolios"}>
               <BaseButton
                 variant="secondary"
                 label={buttonLabel}
