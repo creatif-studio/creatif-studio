@@ -1,6 +1,10 @@
 import {
   Blockchain,
+  ChatGptIcon,
+  CodeIcon,
+  DatabaseIcon,
   Devops,
+  IotIcon,
   MobileDev,
   OtomasiTest,
   TechnicalWriting,
@@ -45,13 +49,36 @@ const DataService = [
     description:
       "Creating comprehensive documentation that empowers users to understand and utilize your product to its fullest potential.",
   },
+  {
+    icon: <ChatGptIcon />,
+    title: "AI/ChatGPT Development",
+    description:
+      "Pioneering the future of decentralized applications and technologies.",
+  },
+  {
+    icon: <IotIcon />,
+    title: "IoT/embedded Development",
+    description:
+      "Building the backbone of scalable and efficient digital systems.",
+  },
+  {
+    icon: <CodeIcon />,
+    title: "Low-Code Development",
+    description:
+      "Pioneering the future of decentralized applications and technologies.",
+  },
+  {
+    icon: <DatabaseIcon />,
+    title: "Big Data Development",
+    description:
+      "Building the backbone of scalable and efficient digital systems.",
+  },
 ];
 
 const ServiceSection = () => {
   return (
     <div id="service">
       <section className="flex flex-col items-center w-full px-6 lg:px-24 pt-20 pb-2 ">
-        {/* md:mb-13 */}
         <div className="space-y-3 text-center mt-10">
           <h1 className="text-4xl font-semibold md:text-[42px]">
             What we can do for you
