@@ -67,7 +67,7 @@ const Navbar = () => {
             Services
           </p>
         </Link>
-        <Link href={"/#portfolios"}>
+        <Link href={"/#portfolio"}>
           <p className="text-gray-400 transition duration-300 cursor-pointer hover:text-white">
             Portfolios
           </p>
@@ -118,7 +118,7 @@ const Navbar = () => {
           <Link href={"/#services"}>
             <p onClick={handleCloseNav}>Services</p>
           </Link>
-          <Link href={"/#portfolios"} onClick={handleCloseNav}>
+          <Link href={"/#portfolio"} onClick={handleCloseNav}>
             <p onClick={handleCloseNav}>Portfolios</p>
           </Link>
           <Link href={"/products"}>

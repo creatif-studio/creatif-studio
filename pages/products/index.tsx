@@ -101,7 +101,7 @@ const Products = () => {
         {Project.map((item) => (
           <div
             key={item.name}
-            className="w-full flex items-start justify-items-center card-image"
+            className="w-full flex items-start justify-items-center card-image cursor-pointer"
           >
             <div className="relative">
               <Image
