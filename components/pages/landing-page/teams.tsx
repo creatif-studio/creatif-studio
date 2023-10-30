@@ -79,7 +79,7 @@ const dataTeam = [
   },
 ];
 
-const OurTeamSection = () => {
+const TeamSection = () => {
   return (
     <section
       id="teams"
@@ -96,4 +96,4 @@ const OurTeamSection = () => {
   );
 };
 
-export default OurTeamSection;
+export default TeamSection;

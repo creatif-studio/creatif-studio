@@ -1,9 +1,9 @@
 import React from "react";
 import HeroSection from "./hero";
 import ServiceSection from "./service";
-import WorkSection from "./work";
-import TestimoniSection from "./testimoni";
-import OurTeamSection from "./ourTeam";
+import PortfolioSection from "./portfolios";
+import TestimonialSection from "./testimonials";
+import TeamSection from "./teams";
 
 const LandingPage = () => {
   return (
@@ -17,9 +17,9 @@ const LandingPage = () => {
       />
       <div className="">
         <ServiceSection />
-        <WorkSection />
-        <TestimoniSection />
-        <OurTeamSection />
+        <PortfolioSection />
+        <TestimonialSection />
+        <TeamSection />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import userIcon from "@/assets/images/Ellipse 1.png";
 import { Quotes } from "@/assets/icons";
 import CarouselTestimoni from "@/components/molecules/testimoni_carousel";
 
-const TestimoniSection = () => {
+const TestimonialSection = () => {
   return (
     <section
       id="testi"
@@ -15,4 +15,4 @@ const TestimoniSection = () => {
   );
 };
 
-export default TestimoniSection;
+export default TestimonialSection;
