@@ -27,6 +27,59 @@ body {
   font-family: "ClashDisplay-Variable", sans-serif;
 }
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.carousels {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.carousels:before,
+.carousels:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.carousels:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.carousels:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.carousels:hover .carousels-slide {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.carousels-slide {
+  width: fit-content;
+  display: inline-flex;
+  animation: 15s slide infinite linear;
+}
+
+.carousels-slide .item {
+  width: fit-content;
+  margin: 0 20px;
+}
+
 .img-hero {
   background-image: linear-gradient(
       rgba(13, 14, 19, 0.8),
