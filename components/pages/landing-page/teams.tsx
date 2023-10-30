@@ -85,9 +85,9 @@ const dataTeam = [
     name: "Dhuta Dhafit Farenza",
     position: "Full-Stack Developer",
     profileImage: dhafit,
-    linkendin: "",
+    linkendin: "https://www.linkedin.com/in/rianlauo/",
     twitter: "",
-    github: "",
+    github: "https://github.com/rianllauo",
   },
   {
     name: "Andika Perdana Dirgantara",
