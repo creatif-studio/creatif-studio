@@ -22,24 +22,20 @@ const TeamCarousel = ({ data }: Props) => {
               />
               <div className="gap-3 overlay-s">
                 <a
-                  href="https://www.linkedin.com/"
+                  href={item.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Linkendin />
                 </a>
                 <a
-                  href="https://twitter.com/"
+                  href={item.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Twitter />
                 </a>
-                <a
-                  href="https://github.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={item.github} target="_blank" rel="noopener noreferrer">
                   <Github />
                 </a>
               </div>
