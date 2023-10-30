@@ -14,77 +14,102 @@ import muunship from "@/assets/images/portfolios/muunship.png";
 import practiz from "@/assets/images/portfolios/practiz.png";
 import bookedmd from "@/assets/images/portfolios/booked.png";
 
+import activitylistShow from "@/assets/images/projects/activitylist.png";
+import appseedShow from "@/assets/images/projects/appseed.png";
+import bitzaroShow from "@/assets/images/projects/bitzario.png";
+import clevisShow from "@/assets/images/projects/celvis.png";
+import cmsmanajerShow from "@/assets/images/projects/cmsmanajer.png";
+import cquantShow from "@/assets/images/projects/cquant.png";
+import deployproShow from "@/assets/images/projects/deploypro.png";
+import idriveShow from "@/assets/images/projects/idrive.png";
+import kelsiemShow from "@/assets/images/projects/kelsiem.png";
+import muunshipShow from "@/assets/images/projects/muunship.png";
+import practizShow from "@/assets/images/projects/practiz.png";
+import bookedmdShow from "@/assets/images/projects/booked.png";
+
 const dataProjects = [
   {
     id: 1,
     name: "DeployPRO",
     description: "Servers & Apps Management",
+    imageShow: deployproShow,
     image: deploypro,
   },
   {
     id: 2,
     name: "Clevis",
     description: "Laundry and Car Wash",
+    imageShow: clevisShow,
     image: clevis,
   },
   {
     id: 3,
     name: "Practiz",
     description: "Online Learning Platform",
+    imageShow: practizShow,
     image: practiz,
   },
   {
     id: 4,
     name: "Activitylist",
     description: "Event Sharing Platform<",
+    imageShow: activitylistShow,
     image: activitylist,
   },
   {
     id: 5,
     name: "Appseed Docs",
     description: "Technical Documentation",
+    imageShow: appseedShow,
     image: appseed,
   },
   {
     id: 6,
     name: "Bitzaro",
     description: "Payment Gateway for Web3<",
+    imageShow: bitzaroShow,
     image: bitzaro,
   },
   {
     id: 7,
     name: "CMS Manajer",
     description: "Heroku Replacement",
+    imageShow: cmsmanajerShow,
     image: cmsmanajer,
   },
   {
     id: 8,
     name: "cQuant",
     description: "Energy Risk Management",
+    imageShow: cquantShow,
     image: cquant,
   },
   {
     id: 9,
     name: "IDrive E2",
     description: "S3 Compatible Storage",
+    imageShow: idriveShow,
     image: idrive,
   },
   {
     id: 10,
     name: "Kelsiem",
     description: "Realtime Security",
+    imageShow: kelsiemShow,
     image: kelsiem,
   },
   {
     id: 11,
     name: "Muunship",
     description: "Trading Platform for Crypto",
+    imageShow: muunshipShow,
     image: muunship,
   },
   {
     id: 12,
     name: "BookedMD",
     description: "Doctor Finders",
+    imageShow: bookedmdShow,
     image: bookedmd,
   },
 ];
@@ -165,12 +190,12 @@ const PortfolioSection = () => {
           className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-60 z-50 flex items-center justify-center"
           onClick={() => setShowModal(false)}
         >
-          <div className="w-[30%]">
+          <div className="w-fit mt-10">
             <Image
-              src={selectedItem.image}
+              src={selectedItem.imageShow}
               alt={selectedItem.name}
-              width={474}
-              height={589}
+              width={984}
+              height={799}
             />
           </div>
         </div>

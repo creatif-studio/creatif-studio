@@ -72,7 +72,7 @@ body {
 .carousels-slide {
   width: fit-content;
   display: inline-flex;
-  animation: 15s slide infinite linear;
+  animation: 35s slide infinite linear;
 }
 
 .carousels-slide .item {
