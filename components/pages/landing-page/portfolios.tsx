@@ -89,7 +89,7 @@ const dataProjects = [
   },
 ];
 
-const WorkSection = () => {
+const PortfolioSection = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedItem, setSelectedItem] = useState<any>();
 
@@ -179,4 +179,4 @@ const WorkSection = () => {
   );
 };
 
-export default WorkSection;
+export default PortfolioSection;
