@@ -19,7 +19,7 @@ import TeamCarousel from "@/components/molecules/team_carousel";
 const dataTeam = [
   {
     name: "Sugeng Agung Suganda",
-    position: "Founder",
+    position: "Chief Executive Officer",
     profileImage: sugeng,
     linkedin: "https://linkedin.com/in/sgnd",
     // twitter: "https://x.com/sgndreal",
@@ -27,7 +27,7 @@ const dataTeam = [
   },
   {
     name: "Vebiola Vanessa",
-    position: "Finance",
+    position: "Chief Financial Officer",
     profileImage: vebiola,
     linkedin: "https://linkedin.com/in/vebiolavanessa",
     // twitter: "",
@@ -35,7 +35,7 @@ const dataTeam = [
   },
   {
     name: "Rizky Adil Hakim",
-    position: "VPoE",
+    position: "Chief Technology Officer",
     profileImage: rizky,
     linkedin: "https://linkedin.com/in/rizky-tanjung",
     // twitter: "",
@@ -114,10 +114,11 @@ const TeamSection = () => {
       id="teams"
       className="flex flex-col items-center gap-12 overflow-x-hidden pt-24 pb-13 md:pb-28 lg:px-24"
     >
-      <div>
-        <h1 className="text-[42px] font-semibold text-center">
+      <div className="space-y-3 text-center mt-10">
+      <h1 className="text-4xl font-semibold md:text-[42px]">
           Our best teams
         </h1>
+        <p>The people behind our success...</p>
       </div>
 
       <TeamCarousel data={dataTeam} />
