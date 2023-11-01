@@ -130,7 +130,7 @@ const PortfolioSection = () => {
     >
       <div className="space-y-3 text-center px-4">
         <h1 className="text-4xl font-semibold md:text-[42px]">
-          Our amazing projects
+          Our amazing portfolios
         </h1>
         <p>
           Our portfolio reflects years of hard work, dedication, and successful
@@ -194,8 +194,8 @@ const PortfolioSection = () => {
             <Image
               src={selectedItem.imageShow}
               alt={selectedItem.name}
-              width={984}
-              height={799}
+              width={550}
+              height={550}
             />
           </div>
         </div>
