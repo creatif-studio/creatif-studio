@@ -1,10 +1,10 @@
 // import CONSUL from "./consul.svg";
-export { default as CONSUL } from "./consul.svg";
+// export { default as CONSUL } from "./consul.svg";
 export { default as Creatif } from "./creatif.svg";
 export { default as CreatifDark } from "./creatif-dark-transparent.svg";
-export { default as CreatifWhite } from "./creatif-white.svg";
-export { default as CreatifSecretsWhite } from "./creatif-secrets-white.svg";
-export { default as CreatifSecrets } from "./creatif-secrets.svg";
+// export { default as CreatifWhite } from "./creatif-white.svg";
+// export { default as CreatifSecretsWhite } from "./creatif-secrets-white.svg";
+// export { default as CreatifSecrets } from "./creatif-secrets.svg";
 export { default as UiUxDesign } from "./ui-uix-icon.svg";
 export { default as MobileDev } from "./mobile-dev.svg";
 export { default as Blockchain } from "./blockchain.svg";
