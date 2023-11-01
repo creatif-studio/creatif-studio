@@ -35,11 +35,7 @@ const TeamCarousel = ({ data }: Props) => {
                 >
                   <Twitter />
                 </a> */}
-                <a
-                  href={item.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
+                <a href={item.github} target="_blank" rel="noopener noreferrer">
                   <Github />
                 </a>
               </div>
@@ -77,11 +73,7 @@ const TeamCarousel = ({ data }: Props) => {
                 >
                   <Twitter />
                 </a> */}
-                <a 
-                  href={item.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
+                <a href={item.github} target="_blank" rel="noopener noreferrer">
                   <Github />
                 </a>
               </div>
