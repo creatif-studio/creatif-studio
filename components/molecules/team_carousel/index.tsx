@@ -28,13 +28,13 @@ const TeamCarousel = ({ data }: Props) => {
                 >
                   <Linkendin />
                 </a>
-                <a
+                {/* <a
                   href={item.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Twitter />
-                </a>
+                </a> */}
                 <a href={item.github} target="_blank" rel="noopener noreferrer">
                   <Github />
                 </a>

@@ -52,7 +52,7 @@ const dataProjects = [
   {
     id: 4,
     name: "Activitylist",
-    description: "Event Sharing Platform<",
+    description: "Event Sharing Platform",
     imageShow: activitylistShow,
     image: activitylist,
   },
