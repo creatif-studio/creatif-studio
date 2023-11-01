@@ -14,7 +14,7 @@ const testimoniData = [
     name: "Chevan Baker",
     company: "ChevanB",
     description:
-      "Sugeng was amazing as he was able to understand the issue presented and provide the solution successfully. He offered some great insight and I look forward to being able to work again in the future.",
+      "Creatif Studio was amazing as he was able to understand the issue presented and provide the solution successfully. He offered some great insight and I look forward to being able to work again in the future.",
     image: userIcon,
   },
   {
@@ -22,7 +22,7 @@ const testimoniData = [
     name: "Arthur Aivazian",
     company: "Bell Standard, Inc.",
     description:
-      "Quick to communicate and get the job done, Sugeng swiftly excelled in Golang and API integrations to provide a successful solution. His expertise and insights were invaluable. Will work with him again!",
+      "Quick to communicate and get the job done, Creatif Studio swiftly excelled in Golang and API integrations to provide a successful solution. His expertise and insights were invaluable. Will work with him again!",
     image: bellstandard,
   },
   {
@@ -30,7 +30,7 @@ const testimoniData = [
     name: "David Brooks",
     company: "Booked.MD",
     description:
-      "Sugeng played a pivotal role in cost-saving efforts by effectively identifying and mitigating unnecessary AWS expenditures, delivering over 3X the expected value. Highly recommended!",
+      "Creatif Studio played a pivotal role in cost-saving efforts by effectively identifying and mitigating unnecessary AWS expenditures, delivering over 3X the expected value. Highly recommended!",
     image: bookedmd,
   },
   {
@@ -38,7 +38,7 @@ const testimoniData = [
     name: "Shi Shyang Lim",
     company: "Osmos",
     description:
-      "Sugeng was outstanding! He resolved the issue promptly, maintained excellent communication throughout, and even took the time to provide detailed explanations to enhance my understanding of the problem.",
+      "Creatif Studio was outstanding! He resolved the issue promptly, maintained excellent communication throughout, and even took the time to provide detailed explanations to enhance my understanding of the problem.",
     image: userIcon,
   },
   {
@@ -46,7 +46,7 @@ const testimoniData = [
     name: "Sasi Movva",
     company: "cQuant.io",
     description:
-      "Sugeng was instrumental in facilitating our successful setup with Ansible. His expertise and guidance were invaluable, and we eagerly anticipate the opportunity to collaborate with him once more.",
+      "Creatif Studio was instrumental in facilitating our successful setup with Ansible. His expertise and guidance were invaluable, and we eagerly anticipate the opportunity to collaborate with him once more.",
     image: cquant,
   },
   {
@@ -54,7 +54,7 @@ const testimoniData = [
     name: "Chirilov Adrian",
     company: "Rosoft Business SRL",
     description:
-      "Sugeng impressively demonstrates his expertise as a DevOps Engineer, showcasing his mastery of Docker and Virtualization concepts. I'm looking forward to collaborating with him in future endeavors.",
+      "Creatif Studio impressively demonstrates his expertise as a DevOps Engineer, showcasing his mastery of Docker and Virtualization concepts. I'm looking forward to collaborating with him in future endeavors.",
     image: rosoft,
   },
   {
@@ -62,7 +62,7 @@ const testimoniData = [
     name: "Hani",
     company: "Muunship",
     description:
-      "Sugeng successfully completed the project on time and offered valuable expertise in Rancher, PostgreSQL, Longhorn, Networks, and Security. I plan to continue working with him.",
+      "Creatif Studio successfully completed the project on time and offered valuable expertise in Rancher, PostgreSQL, Longhorn, Networks, and Security. I plan to continue working with him.",
     image: muunship,
   },
 ];
