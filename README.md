@@ -5,6 +5,7 @@ Expertly crafted software solutions
 [![GitHub issues](https://img.shields.io/github/issues/creatif-studio/creatif-studio)](https://github.com/creatif-studio/creatif-studio/issues)
 [![GitHub stars](https://img.shields.io/github/stars/creatif-studio/creatif-studio)](https://github.com/creatif-studio/creatif-studio/stargazers)
 
+## Welcome
 This is Creatif Studio's website, showcasing our products, projects and open-sources.
 
 ### Products
@@ -25,7 +26,6 @@ This is Creatif Studio's website, showcasing our products, projects and open-sou
 - https://github.com/creatif-studio/creatif-landing
 
 ## Installation
-
 Instructions on how to install this project, including any prerequisites.
 
 ```bash
