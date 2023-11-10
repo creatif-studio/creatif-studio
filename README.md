@@ -6,7 +6,7 @@ Expertly crafted software solutions
 [![GitHub stars](https://img.shields.io/github/stars/creatif-studio/creatif-studio)](https://github.com/creatif-studio/creatif-studio/stargazers)
 
 ## Welcome
-This is Creatif Studio's website, showcasing our products, projects and open-sources.
+This is Creatif Studio's website, showcasing our products, projects, and open sources.
 
 ### Products
 - https://creatif.studio
