@@ -5,7 +5,24 @@ Expertly crafted software solutions
 [![GitHub issues](https://img.shields.io/github/issues/creatif-studio/creatif-studio)](https://github.com/creatif-studio/creatif-studio/issues)
 [![GitHub stars](https://img.shields.io/github/stars/creatif-studio/creatif-studio)](https://github.com/creatif-studio/creatif-studio/stargazers)
 
-This is an open-source landing page for Creatif Studio and our open-source projects
+This is Creatif Studio's website, showcasing our products, projects and open-sources.
+
+### Products
+- https://creatif.studio
+- https://creatif.studio/codes
+- https://creatif.studio/academy
+- https://creatif.studio/talents
+
+### Projects
+- https://yukerjo.com
+- https://turboco.de
+- https://inovattor.com
+
+### Open Sources
+- https://github.com/creatif-studio/creatif-deploy
+- https://github.com/creatif-studio/creatif-docs
+- https://github.com/creatif-studio/creatif-blog
+- https://github.com/creatif-studio/creatif-landing
 
 ## Installation
 
