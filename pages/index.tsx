@@ -7,7 +7,7 @@ export default function Landing() {
     <>
       <MetaData
         title="Creatif Studio - Expertly crafted software solutions"
-        description="Expertly crafted software solutions"
+        description="Specializing in Custom Software Development, UI/UX Design, Web and Mobile Application Development, Blockchain, Testing, DevOps, Technical Writing, AI, IoT, Low-Code, and Big Data Solutions."
       />
       <LandingPage />
     </>
