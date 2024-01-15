@@ -67,7 +67,7 @@ const Navbar = () => {
       </div>
 
       <a
-        href="https://api.whatsapp.com/send/?phone=6285159842622&text&type=phone_number&app_absent=0"
+        href="https://api.whatsapp.com/send/?phone=6282120608209&text&type=phone_number&app_absent=0"
         target="_blank"
         rel="noreferrer"
         className="hidden px-6 py-4 text-sm font-semibold text-black duration-200 bg-white rounded-full hover:opacity-80 transtion lg:block"
