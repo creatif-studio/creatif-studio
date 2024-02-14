@@ -107,7 +107,7 @@ const FooterSection = () => {
               <Link href={"/"}>
                 <div className="flex items-center gap-2">
                   <Phone />
-                  {"(+62) 851 5984 2622"}
+                  {"(+62) 821 2060 8209"}
                 </div>
               </Link>
               <Link href={"/"}>
