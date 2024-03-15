@@ -36,7 +36,7 @@ const testimoniData = [
   {
     id: 4,
     name: "Shi Shyang Lim",
-    company: "Vazex International Sdn Bhd",
+    company: "Vazex International",
     description:
       "Creatif Studio was outstanding! They resolved the issue promptly, maintained excellent communication throughout, and even took the time to provide detailed explanations to enhance my understanding of the problem.",
     image: userIcon,
